@@ -1,0 +1,3 @@
+[submodule "rust-workshop"]
+	path = rust-workshop
+	url = gh:senekor/rust-workshop
