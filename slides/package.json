@@ -1,0 +1,16 @@
+{
+  "name": "rust-workshop-slides",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "example": "slidev --open example/slides.md",
+    "help": "slidev --help",
+    "session_1": "slidev --open session/1/index.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.44.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest"
+  }
+}

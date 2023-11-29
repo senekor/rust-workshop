@@ -27,7 +27,6 @@ The second hour is a hands-on practice session.
         you are confident to start new projects in Rust where it is the best technical fit
     - agenda
         - map out the book (which session covers which chapters, what is skipped)
-        - map out the sessions (what's from the book, what is added, exercises and projects)
         - invite students to come up with their own final project ideas
     - theory
         - 1: setup (also do editor setup, rustfmt, clippy, testing, clone demos & exercises)
@@ -78,6 +77,7 @@ The second hour is a hands-on practice session.
         - demo of two crates showcasing the power of the language:
             - `itertools`
             - `serde`
+        - This Week in Rust
         - how to setup a CI/CD pipeline
         - quick note about the state of embedded
     - homework
