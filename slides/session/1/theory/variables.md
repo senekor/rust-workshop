@@ -15,25 +15,11 @@ layout: center
 transition: slide-up
 ```
 
-# Variable declaration
+# Variable Declaration
 
-```rust
+```rust {1|3}
 let x = 5;
-```
 
----
-
-```yaml
-layout: center
-transition: slide-up
-```
-
-# Type annotation
-
-usually inferred, sometimes necessary
-
-```rust
-// signed 32-bit integer
 let x: i32 = 5;
 ```
 

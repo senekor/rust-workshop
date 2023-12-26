@@ -45,7 +45,7 @@ layout: cover
 
 ---
 
-# We are speedrunning the book
+# Speedrunning the Book
 
 <div style="display: flex; flex-direction: row">
 <img src="images/book_toc_1.png" style="width: 25%; height: 1%"/>
@@ -76,12 +76,12 @@ layout: cover
 layout: cover
 ```
 
-# Group projects
+# Group Projects
 
 - web services
 - CLI tools
 
-## Bring your own idea!
+## Bring Your Own Idea!
 
 must be <Orange>composable</Orange> → use all projects together at the end!
 

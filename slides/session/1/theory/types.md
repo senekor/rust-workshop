@@ -15,7 +15,7 @@ layout: center
 transition: slide-up
 ```
 
-# Integer types
+# Integer Types
 
 | length  | signed  | unsigned |
 |---------|---------|----------|
@@ -33,7 +33,7 @@ layout: center
 transition: slide-up
 ```
 
-| Number literals  | Example       |
+| Number Literals  | Example       |
 |------------------|---------------|
 | Decimal          | `98_222`      |
 | Hex              | `0xff`        |
@@ -49,7 +49,7 @@ layout: center
 transition: slide-up
 ```
 
-# Floating-point types
+# Floating-point Types
 
 IEEE-754
 
@@ -65,7 +65,7 @@ layout: center
 transition: slide-up
 ```
 
-# Arithmetic operators
+# Arithmetic Operators
 
 ```rust
 let x = 1 + 2 - 3 * 4 / 5 % 6;
@@ -126,9 +126,9 @@ layout: center
 transition: slide-up
 ```
 
-# The empty tuple
+# The Empty Tuple
 
-also known as "unit type"
+also known as the "unit"
 
 ```rust
 let rusty_void: () = println!("printing doesn't return anything");

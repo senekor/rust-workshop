@@ -4,7 +4,7 @@ class: text-center
 transition: slide-up
 ```
 
-# Control flow
+# Control Flow
 
 book chapter 3.5
 
@@ -15,7 +15,7 @@ layout: center
 transition: slide-up
 ```
 
-# `if` expressions
+# `if` Expressions
 
 no parentheses around condition, curly brackets mandatory
 
@@ -40,6 +40,8 @@ transition: slide-up
 
 # `loop`
 
+`continue` and `break` work as expected
+
 ```rust
 loop {
     println!("computer go brrr");
@@ -53,28 +55,7 @@ layout: center
 transition: slide-up
 ```
 
-# `loop` expressions
-
-```rust {3,7,9|all}
-let mut counter = 0;
-
-let result = loop {
-    counter += 1;
-
-    if counter == 10 {
-        break counter * 2;
-    }
-};
-```
-
----
-
-```yaml
-layout: center
-transition: slide-up
-```
-
-# `while` loops
+# `while` Loops
 
 ```rust {3,7|all}
 let mut number = 3;
@@ -94,7 +75,7 @@ println!("LIFTOFF!!!");
 layout: center
 ```
 
-# `for` loops
+# `for` Loops
 
 more details on day 3
 

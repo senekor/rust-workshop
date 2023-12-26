@@ -15,7 +15,7 @@ layout: center
 transition: slide-up
 ```
 
-# Basic function
+# Basic Function
 
 ```rust {9-11|4-6,9-11|all}
 fn main() {
@@ -78,7 +78,7 @@ let y = {
 layout: center
 ```
 
-# Return values
+# Return Values
 
 The `return` keyword is only needed for early return.
 

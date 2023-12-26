@@ -4,7 +4,7 @@ class: text-center
 transition: slide-up
 ```
 
-# Language basics 1
+# Language Basics 1
 
 book chapters 3 & 4
 
