@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "example": "slidev example/slides.md",
     "help": "slidev --help",
-    "session_1": "slidev session/1/index.md"
+    "slidev": "slidev"
   },
   "dependencies": {
     "@slidev/cli": "^0.44.0",
