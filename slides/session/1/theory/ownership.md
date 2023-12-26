@@ -12,7 +12,7 @@ book chapter 4
 
 ```yaml
 layout: center
-transition: slide-up
+transition: slide-left
 ```
 
 # TODO

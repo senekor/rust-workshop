@@ -2,6 +2,9 @@
 
 Slides and other material primarily intended for the workshop organizer.
 
+The template for the participants is [here][rust-workshop-repo].
+(or in the submodule `rust-workshop`)
+
 ## Invitation
 
 When inviting people to the workshop, include the information in [`invitation.md`](./invitation.md).
@@ -19,7 +22,11 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [x] 3: common programming concepts
     - [ ] 4: ownership (mention elided chapter 15, reference counters and mutexes)
   - [ ] practice
-    - [ ] setup (also do editor setup, rustfmt, clippy, testing, fork+clone demos & exercises)
+    - [ ] setup
+      - [x] toolchain
+      - [x] copy rust-workshop repo
+      - [ ] install vscode extensions
+      - [ ] editor setup (clippy)
     - [ ] rustlings (variables, functions, if, primitive_types)
   - [ ] homework:
     - [ ] finish setup of editor if not using vscode (lsp + clippy)
@@ -84,3 +91,5 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [ ] python extension module (PyO3 & maturin)
   - [ ] ...
 - [ ] finish project, wrap up, discussion, feedback etc.
+
+[rust-workshop-repo]: https://github.com/senekor/rust-workshop
