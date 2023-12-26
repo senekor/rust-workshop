@@ -22,15 +22,14 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [x] 3: common programming concepts
     - [ ] 4: ownership (mention elided chapter 15, reference counters and mutexes)
   - [ ] practice
-    - [ ] setup
+    - [x] setup
       - [x] toolchain
       - [x] copy rust-workshop repo
-      - [ ] install vscode extensions
-      - [ ] editor setup (clippy)
+      - [x] install vscode extensions
+      - [x] editor setup (clippy)
     - [ ] rustlings (variables, functions, if, primitive_types)
   - [ ] homework:
     - [ ] finish setup of editor if not using vscode (lsp + clippy)
-    - [ ] finish rustlings (until primitive_types)
     - [ ] bonus: solve a day-1 advent of code exercise, create a PR and add `senekor` as reviewer
 - [ ] language basics 2 (chapters 5-9)
   - [ ] theory
