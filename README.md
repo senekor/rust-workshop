@@ -2,19 +2,9 @@
 
 Slides and other material primarily intended for the workshop organizer.
 
-Please suggest improvements of this workshop _continuously_ and _generously_ !
-Here's the [anonymous form][feedback-form].
-Thank you! ❤️
+## Invitation
 
-## What to expect from this workshop
-
-- You will get an overview of what the language has to offer and how to find all the information you need.
-- You will get hands-on experience with all of the core language features solving purpose-built exercises.
-- You will spend enough time with Rust's standout features to understand and experience how they uniquely empower you to write great software.
-- You will learn how to find, evaluate and use libraries to get things done fast.
-- You will learn about CI/CD tools to kickstart your next Rust project using state-of-the-art engineering practices.
-
-Finally, employing everything you've learned, you will collaborate in a group writing a production-ready piece of composable software, like a CLI tool or network service.
+When inviting people to the workshop, include the information in [`invitation.md`](./invitation.md).
 
 ## Agenda
 
