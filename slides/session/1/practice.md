@@ -19,7 +19,7 @@ layout: center
 transition: slide-up
 ```
 
-![](images/install-page.png)
+![](/install-page.png)
 
 <div
     style="border-color: red"
@@ -42,7 +42,7 @@ layout: center
 transition: slide-up
 ```
 
-![](images/repo-template.png)
+![](/repo-template.png)
 
 <div
     style="border-color: red"
@@ -89,7 +89,7 @@ transition: slide-up
 ```
 
 <img
-    src="images/vscode-clippy.png"
+    src="/vscode-clippy.png"
     class="w-80%"
 />
 

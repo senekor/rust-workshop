@@ -5,3 +5,6 @@ dist
 index.html
 .remote-assets
 components.d.ts
+
+# generated during gh-pages build
+vite.config.js

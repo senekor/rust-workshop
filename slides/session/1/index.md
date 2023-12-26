@@ -48,10 +48,10 @@ layout: cover
 # Speedrunning the Book
 
 <div style="display: flex; flex-direction: row">
-<img src="images/book_toc_1.png" style="width: 25%; height: 1%"/>
-<img src="images/book_toc_2.png" style="width: 25%; height: 1%"/>
-<img src="images/book_toc_3.png" style="width: 25%; height: 1%"/>
-<img src="images/book_toc_4.png" style="width: 25%; height: 1%"/>
+<img src="/book_toc_1.png" style="width: 25%; height: 1%"/>
+<img src="/book_toc_2.png" style="width: 25%; height: 1%"/>
+<img src="/book_toc_3.png" style="width: 25%; height: 1%"/>
+<img src="/book_toc_4.png" style="width: 25%; height: 1%"/>
 </div>
 
 <div
