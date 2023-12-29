@@ -328,6 +328,20 @@ now how do we combine these?
 
 # Traits: Definition
 
+```rust {1|2-3|5-6|all}
+trait TraitName {
+    // Required Function to be implemented
+    fn requiredFunction(&self) -> u32;
+
+    // function with a default implementation
+    fn requiredFunctionTimeTwo(&self) -> u32 { self.requiredFunction() * 2 }
+}
+```
+
+---
+
+# Traits: Definition
+
 ```rust {1-3|1-3,9,19|all}
 trait Shape {
     fn area(&self) -> f64;
@@ -842,6 +856,7 @@ You might see suggestions to use the 'static lifetime in error messages. But
 honestly at that point you should rethink what you are doing, as it is rarely
 the correct call.
 -->
+
 ---
 
 # Lifetimes: Generic Type + Trait Bound + Lifetimes
@@ -863,5 +878,177 @@ where
     } else {
         y
     }
+}
+```
+
+---
+
+# Closures
+
+- Anonymous function that can capture their environment
+- Basically function ptr and a prefilled struct it carries with itself.
+
+```rust
+fn  add_one_v1   (x: u32) -> u32 { x + 1 }
+let add_one_v2 = |x: u32| -> u32 { x + 1 };
+let add_one_v3 = |x|             { x + 1 };
+```
+
+```rust
+struct Wrapper {
+    callback: Box<dyn Fn(usize, usize) -> usize>,
+}
+
+```
+
+---
+
+# Closure: Traits
+
+Special bounds (uses a bit of compiler magic for the trait syntax)
+
+### FnOnce
+
+Can be called <Orange>only once</Orange> and can be used a bound for all types of functions.
+
+### FnMut
+
+Can be called <Orange>more then once</Orange> and is <Orange>guaranteed to mutate</Orange> at least one captured
+variable.
+
+```rust
+let mut x = 44;
+let f  = |s: u32| { x += 2; s * x };
+let b : Box<dyn FnMut(u32) -> u32> = Box::new(f);
+```
+
+### Fn
+
+Can be called <Orange>more then once</Orange> and is <Orange>guaranteed not to mutate</Orange> any captured
+variables.
+
+```rust
+let x = 44;
+let f = |s: u32| { s * x };
+```
+
+<!--
+Higher-Rank Trait Bounds (use a bit of compiler magic because of the syntax)
+see https://doc.rust-lang.org/nomicon/hrtb.html
+
+It is rare that you will have to care about these three traits, but in case
+where you need to store a callback function. It is good to know.
+-->
+
+---
+
+# Iterator
+
+Allows to process a series of items
+
+- Ranges (1..10) || (1..=10)
+- Collections (Array, Vector, HashMap, Slices)
+- Operation Chaining
+
+```rust
+pub trait Iterator {
+    type Item;
+
+    // required
+    fn next(&mut self) -> Option<Self::Item>;
+
+    // methods with default implementations elided
+}
+```
+
+<!--
+I don't plan on explaining the type Item here.
+But in essence it allows to abstract over a generic
+return type Self::Item.
+-->
+
+---
+
+# Iterators: Magic
+
+It is not magic!
+
+<v-click>
+
+```rust {1-3|1-8|all}
+for i in 0..10 {
+    // ...
+}
+
+let mut s = 0..10;
+while let Some(i) = s.next() {
+    // ...
+}
+
+let mut s = 0..10;
+loop {
+    match s.next() {
+        None -> break,
+        Some(i) = {
+            // ...
+        }
+    }
+}
+```
+
+</v-click>
+
+<!--
+In some languages itarators are magical, not in rust
+There is some syntax sugger, but only to an extend.
+-->
+
+---
+
+# Iterators: Chaining
+
+Say we want to sum up all the even numbers pow them to six from 1 until and
+including 100.
+
+$\sum^{100}_{i=1} i^3$
+
+<v-clicks>
+
+```rust
+let mut s : u64 = 0;
+for i in 1..=100u64 {
+    if i % 2 == 0 {
+        s += i.pow(6);
+    }
+}
+```
+
+```rust
+let s : u64 = (1..=100u64)
+    .filter(|e| *e % 2 == 0)
+    .map(|e| e.pow(6))
+    .sum(); // consumes the iterator above
+```
+
+</v-clicks>
+
+<!--
+It is a bit searched, but bear with me please. :)
+-->
+
+---
+
+# Iterators: Enumerate
+
+```rust
+let v = vec!['a', 'b', 'c', ...];
+
+for i in 0..(v.len()) {
+    let val = v[i];
+    // ...
+}
+
+for (i, val) in v.iter().enumerate() {
+    // ...
 }
 ```
