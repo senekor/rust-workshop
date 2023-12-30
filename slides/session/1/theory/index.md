@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Language Basics 1

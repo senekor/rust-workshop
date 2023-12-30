@@ -40,6 +40,52 @@ transition: slide-up
 ```yaml
 layout: center
 transition: slide-up
+lineNumbers: false
+```
+
+# Choose your `$PATH`
+
+should be handled by the install script
+
+Make sure you you can call `cargo`.\
+If you can't, try some of these:
+
+```bash
+# POSIX shell
+source ~/.cargo/env
+# or
+export PATH="$HOME/.cargo/bin:$PATH"
+```
+
+```sh
+# fish
+fish_add_path ~/.cargo/bin
+```
+
+---
+
+```yaml
+layout: center
+transition: slide-up
+```
+
+# Batteries included
+
+| component     | purpose                 | example                    |
+| ------------- | ----------------------- | -------------------------- |
+| rustup        | toolchain manager       | `rustup update`            |
+| cargo         | package manager         | `cargo add my-fav-library` |
+| rustc         | compiler                | `cargo run` `cargo build`  |
+| rustdoc       | documentation generator | `cargo doc --open`         |
+| rustfmt       | formatter               | `cargo fmt`                |
+| clippy        | linter                  | `cargo clippy`             |
+| rust-analyzer | LSP implementation      | N/A                        |
+
+---
+
+```yaml
+layout: center
+transition: slide-up
 ```
 
 ![](/repo-template.png)
