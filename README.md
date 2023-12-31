@@ -13,14 +13,14 @@ When inviting people to the workshop, include the information in [`invitation.md
 
 The following agenda serves as a progress tracker for the workshop preparation.
 
-- [ ] agenda, setup & language basics (chapters 1, 3, 4)
+- [ ] language basics 1
   - [x] introduction, goal of the workshop
   - [x] agenda
     - [x] map out the book (which session covers which chapters, what is skipped)
     - [x] invite students to come up with their own final project ideas
-  - [ ] theory
+  - [x] theory
     - [x] 3: common programming concepts
-    - [ ] 4: ownership (mention elided chapter 15, reference counters and mutexes)
+    - [x] 4: ownership
   - [ ] practice
     - [x] setup
       - [x] toolchain
@@ -31,7 +31,7 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [ ] homework:
     - [ ] finish setup of editor if not using vscode (lsp + clippy)
     - [ ] bonus: solve a day-1 advent of code exercise, create a PR and add `senekor` as reviewer
-- [ ] language basics 2 (chapters 5-9)
+- [ ] language basics 2
   - [ ] theory
     - [ ] 5: structs
     - [ ] 6: enums & match
