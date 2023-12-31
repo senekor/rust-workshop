@@ -142,12 +142,10 @@ layout: center
 transition: slide-up
 ```
 
-# Ownership and Borrowing Rules
+# Ownership Rules
 
 1. Every value has exactly one owner.
 1. When the owner goes out of scope, the destructor is run.
-1. There can be either one mutable reference or multiple immutable ones.
-1. References must always be valid.
 
 ---
 
@@ -299,7 +297,7 @@ fn take_i32(arg: i32) {}
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
+transition: slide-up
 ```
 
 # Ownership is expressive
@@ -307,7 +305,7 @@ transition: slide-left
 file handles, mutexes etc.\
 ownership handles all kinds of resources
 
-```rust
+```rust {1|2|4,5|4,6,7|all}
 fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
     let guard = m.lock().ok()?;
 
@@ -316,5 +314,27 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
     } else {
         None
     }
+}
+```
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-left
+```
+
+# Limitations
+
+```rust {1|2-3|6,8|7|all}
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() returns the length of a String
+    (s, length)
+}
+fn main() {
+    let s1 = String::from("hello");
+    let (s2, len) = calculate_length(s1);
+    println!("The length of '{}' is {}.", s2, len);
 }
 ```
