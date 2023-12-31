@@ -73,11 +73,12 @@ println!("LIFTOFF!!!");
 
 ```yaml
 layout: center
+transition: slide-up
 ```
 
 # `for` Loops
 
-more details on day 3
+more details in session 3
 
 ```rust {1,4-7|1,9-11|all}
 let a = [10, 20, 30, 40, 50];
@@ -92,3 +93,21 @@ for element in a {
     println!("the value is: {element}");
 }
 ```
+
+---
+
+```yaml
+layout: center
+transition: slide-left
+```
+
+# Off-Topic: Operators
+
+| Comparison | `==` `!=` `<` `<=` `>` `>=` |
+| --- | --- |
+| Arithmetic | `+` `-` `*` `/` `%` |
+| Boolean | `&&` `\|\|` `!` |
+| Bitwise | `&` `\|` `^` `!` (no tilde!) |
+| Range | `..` `..=` (integers and `char`) |
+
+assignment variants: `+=`, `|=`, `<<=` etc.
