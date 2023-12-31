@@ -48,3 +48,7 @@ src: ./ownership.md
 ---
 src: ./references.md
 ---
+
+---
+src: ./slices.md
+---
