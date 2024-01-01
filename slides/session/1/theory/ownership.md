@@ -303,7 +303,7 @@ transition: slide-up
 # Ownership is expressive
 
 file handles, mutexes etc.\
-ownership handles all kinds of resources
+ownership applies to all kinds of resources
 
 ```rust {1|2|4,5|4,6,7|all}
 fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {

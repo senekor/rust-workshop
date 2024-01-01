@@ -131,7 +131,7 @@ recommendations cover:
 
 ```yaml
 layout: center
-transition: slide-up
+transition: slide-left
 ```
 
 <img

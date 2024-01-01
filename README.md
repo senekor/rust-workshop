@@ -13,7 +13,7 @@ When inviting people to the workshop, include the information in [`invitation.md
 
 The following agenda serves as a progress tracker for the workshop preparation.
 
-- [ ] language basics 1
+- [x] language basics 1
   - [x] introduction, goal of the workshop
   - [x] agenda
     - [x] map out the book (which session covers which chapters, what is skipped)
@@ -21,16 +21,16 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [x] theory
     - [x] 3: common programming concepts
     - [x] 4: ownership
-  - [ ] practice
+  - [x] practice
     - [x] setup
       - [x] toolchain
       - [x] copy rust-workshop repo
       - [x] install vscode extensions
       - [x] editor setup (clippy)
-    - [ ] rustlings (variables, functions, if, primitive_types)
-  - [ ] homework:
-    - [ ] finish setup of editor if not using vscode (lsp + clippy)
-    - [ ] bonus: solve a day-1 advent of code exercise, create a PR and add `senekor` as reviewer
+    - [x] rustlings (until move semantics)
+  - [x] homework:
+    - [x] standard library reading
+    - [x] suggested bonus exercises
 - [ ] language basics 2
   - [ ] theory
     - [ ] 5: structs
