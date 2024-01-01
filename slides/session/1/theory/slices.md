@@ -106,11 +106,32 @@ println!("{s}");
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
+transition: slide-up
 ```
 
 # String Literals
 
 ```rust
 let greeting: &str = "Hello, world!";
+```
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-left
+```
+
+# Off-Topic: Vectors
+
+needed for exercises
+
+```rust
+let v: Vec<f64> = Vec::new(); // create empty, elems of type f64
+
+let mut v = vec![1, 2, 3]; // macro for "vector literals"
+
+v.push(4);
+assert_eq!(v.pop().unwrap(), 4); // `unwrap` because `pop` might return "nothing"
 ```

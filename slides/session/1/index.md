@@ -92,3 +92,16 @@ src: ./theory/index.md
 ---
 src: ./practice.md
 ---
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Please suggest improvements
+# for next week!
+# 🦀
+
+Check the readme of your repository for the form link.

@@ -98,7 +98,7 @@ for element in a {
 
 ```yaml
 layout: center
-transition: slide-left
+transition: slide-up
 ```
 
 # Off-Topic: Operators
@@ -111,3 +111,22 @@ transition: slide-left
 | Range | `..` `..=` (integers and `char`) |
 
 assignment variants: `+=`, `|=`, `<<=` etc.
+
+---
+
+```yaml
+layout: center
+transition: slide-left
+```
+
+# Off-Topic: Integer Conversions
+
+`as` exists, it but has some footguns
+
+```rust
+// infallible
+let x: i32 = 42_i16.into();
+
+// fallible
+let x: u32 = 42_i64.try_into().unwrap();
+```
