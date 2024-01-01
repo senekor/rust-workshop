@@ -80,7 +80,7 @@ let s: &str = &owned[3..9]; // "lo, wo"
 let s: &str = &"😱"[1..];
 ```
 
-computer says:
+compiler says:
 
 > byte index 1 is not a char boundary; it is inside '😱' (bytes 0..4) of `😱`
 
