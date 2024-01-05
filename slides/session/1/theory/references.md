@@ -25,6 +25,7 @@ transition: slide-up
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -36,16 +37,31 @@ let r: &i32 = &x;
 let y: i32 = *r;
 ```
 
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77 left-125 w-7"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77 left-137 w-5"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-81.5 left-136 w-4"
+></div>
+
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
+clicks: 2
 ```
 
 # Fixing the earlier example
 
-```rust {1,7|1-4|all}
+```rust {1,7|2-3|all}
 fn calculate_length(s: &String) -> usize {
     s.len()
     // s goes out of scope, but its destructor is not run.
@@ -57,10 +73,22 @@ fn main() {
 }
 ```
 
+<div
+    style="border-color: red"
+    class="border-1 absolute top-59 left-116.5 w-2.5"
+    v-click="[0,1]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-86 left-130.5 w-3"
+    v-click="[0,1]"
+></div>
+
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -71,6 +99,11 @@ let mut x = 42;
 let r = &mut x;
 *r = 43;
 ```
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77.5 left-109 w-11"
+></div>
 
 ---
 
@@ -94,11 +127,34 @@ transition: none
 
 # Mutable references are exclusive
 
-```rust {all|4}
+```rust
 let mut x = 12;
 
 let r1 = &mut x;
-let r2 = &mut x;
+let r2 = &mut x; // error
+
+*r1 = 13;
+```
+
+compiler says:
+
+> cannot borrow `x` as mutable more than once at a time
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: none
+```
+
+# Mutable references are exclusive
+
+```rust {4}
+let mut x = 12;
+
+let r1 = &mut x;
+let r2 = &mut x; // error
 
 *r1 = 13;
 ```
@@ -121,7 +177,7 @@ transition: slide-up
 let mut x = 12;
 
 let r1 = &mut x;
-let r2 = &x;
+let r2 = &x;     // error
 
 *r1 = 13;
 ```
@@ -140,7 +196,7 @@ transition: slide-up
 
 # Non-Lexical Lifetimes
 
-```rust
+```rust {4,7-8}
 fn main() {
     let mut s = String::from("hello");
 
@@ -168,8 +224,12 @@ let r;
     let s = String::from("hello");
     r = &s;
 }
-println!("{}", r); // compiler says no
+println!("{}", r); // error
 ```
+
+compiler says:
+
+> `s` does not live long enough
 
 ---
 
@@ -191,6 +251,7 @@ transition: slide-up
 layout: center
 class: text-center
 transition: slide-left
+clicks: 4
 ```
 
 # Bending the Rules
@@ -199,17 +260,33 @@ book chapter 15
 
 This is advanced and not needed in most Rust programs.
 
-```rust
+```rust {0|1|2|4-7|all}
 let r1 = Rc::new(RefCell::new(String::from("Hello")));
-let r2 = Rc::clone(&s);
+let r2 = Rc::clone(&r1);
 
-// overlapping mutable borrows!
+// both owners can do interleaved mutations!
 r1.borrow_mut().push_str(" Venus");
 r2.borrow_mut().push_str(", Mars");
 r1.borrow_mut().push_str(" and Jupiter!");
 
-println!("{}", s.borrow()); // -> Hello Venus, Mars and Jupiter!
+println!("{}", r1.borrow()); // -> Hello Venus, Mars and Jupiter!
 ```
 
 `Rc` : reference counting\
 `RefCell` : interior mutability
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-76.5 left-69 w-4"
+    v-click="[3,4]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-81 left-69 w-4"
+    v-click="[3,4]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-85.5 left-69 w-4"
+    v-click="[3,4]"
+></div>

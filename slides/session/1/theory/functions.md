@@ -12,22 +12,19 @@ book chapter 3.3
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # Basic Function
 
-```rust {9-11|4-6,9-11|all}
+```rust {5-7|1-3}
 fn main() {
-    println!("Hello, world!");
-
-    // latest compiler technology:
-    // functions can be used above their definition
     another_function();
 }
 
 fn another_function() {
-    println!("Another function.");
+    println!("Hello from another function!");
 }
 ```
 
@@ -35,16 +32,16 @@ fn another_function() {
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
+clicks: 1
 ```
 
 # Parameters
 
-type annotation mandatory
-
-```rust {1|1,6}
+```rust {1|6}
 fn print_labeled_measurement(value: i32, unit_label: char) {
-    println!("The measurement is: {value}{unit_label}");
+    println!("The measurement is: {}{}", value, unit_label);
 }
 
 fn main() {
@@ -52,10 +49,23 @@ fn main() {
 }
 ```
 
+<div
+    style="border-color: red"
+    class="border-1 absolute top-64 left-126 w-18"
+    v-click="[0,1]"
+></div>
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-86.5 left-127 w-12"
+    v-click="[1,2]"
+></div>
+
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -67,7 +77,7 @@ of the block becomes the value of the entire block.
 ```rust
 let y = {
     let x = 3;
-    x + 1 // <- note the lacking semicolon
+    x + 1  // <- note the lacking semicolon
 };
 // y == 4
 ```
@@ -76,6 +86,8 @@ let y = {
 
 ```yaml
 layout: center
+class: text-center
+clicks: 2
 ```
 
 # Return Values
@@ -86,10 +98,16 @@ The `return` keyword is only needed for early return.
 fn main() {
     let x = plus_one(5);
 
-    println!("The value of x is: {x}"); // 6
+    println!("The value of x is: {}", x); // 6
 }
 
 fn plus_one(x: i32) -> i32 {
     x + 1  // <- last expression of block
 }
 ```
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-90.5 left-117 w-11"
+    v-click="[0,1]"
+></div>

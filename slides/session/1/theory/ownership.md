@@ -16,13 +16,13 @@ class: text-center
 transition: slide-up
 ```
 
-# Approaches to memory management
+# Memory Management
 
-|                    |                                                           |
-| ------------------ | --------------------------------------------------------- |
-| manual             | fast & predictable, but unsafe                            |
-| garbage-collection | slow & unpredictable, but safe                            |
-| ownership          | <Orange>fast, predictable, safe _and expressive_</Orange> |
+| approach           | properties                                              |        |
+| :----------------- | :------------------------------------------------------ | :----- |
+| manual             | fast & predictable, but unsafe                          | ✅❌   |
+| garbage-collection | slow & unpredictable, but safe                          | ❌✅   |
+| ownership          | fast, predictable, safe and <Orange>expressive</Orange> | ✅✅✅ |
 
 ---
 
@@ -40,7 +40,8 @@ a short history of manual memory management
 
 ```yaml
 layout: center
-transition: slide-up
+class: text-center
+transition: none
 ```
 
 # Double `free`
@@ -55,6 +56,7 @@ free(p);
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -70,6 +72,7 @@ free(p);
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -95,13 +98,11 @@ transition: slide-up
 some_t *foo(some_t *p);
 ```
 
-Is the function going to free the pointer, or do I have to?
-
-Does the function only read from the pointer or does it write to it?
-
-Can the return value alias the argument?
-
-Where is the documentation? <Orange>Please</Orange> let there be documentation.
+- Is the function going to free the pointer, or do I have to?
+- Does the function only read from the pointer or does it write to it?
+- Can the return value alias the argument?
+- Where is the documentation?
+- Please let there be documentation.
 
 ---
 
@@ -187,6 +188,7 @@ println!("{}, world!", s1); // error
 ---
 
 ```yaml
+class: text-center
 transition: slide-up
 ```
 
@@ -273,24 +275,20 @@ transition: slide-up
 
 # Ownership and Functions
 
-```rust {2-7}
-// recall: Foo has a destructor with a print statement
-fn main() { // order of print statements?
+```rust {3-8,10}
+// recall: Foo's destructor prints "drop!"
+
+fn main() {
     let x = Foo;
     take_foo(x);
-    println!("Hello, world!")
+    println!("Hello, world!");
 }
-fn take_foo(arg: Foo) {}
+fn take_foo(arg: Foo) {
+    // empty function body
+}
 ```
 
-```rust
-fn main() { // does this compile?
-    let x = 42;
-    take_i32(x);
-    println!("The number is {x}")
-}
-fn take_i32(arg: i32) {}
-```
+What's the output of this program?
 
 ---
 
@@ -298,6 +296,7 @@ fn take_i32(arg: i32) {}
 layout: center
 class: text-center
 transition: slide-up
+clicks: 5
 ```
 
 # Ownership is expressive
@@ -305,9 +304,9 @@ transition: slide-up
 file handles, mutexes etc.\
 ownership applies to all kinds of resources
 
-```rust {1|2|4,5|4,6,7|all}
+```rust {1|1|2|4,5|4,6,7|all} {at: 0}
 fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
-    let guard = m.lock().ok()?;
+    let guard: MutexGuard<i32> = m.lock().unwrap();
 
     if random_choice {
         Some(guard)
@@ -317,17 +316,29 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
 }
 ```
 
+<div
+    style="border-color: red"
+    class="border-1 absolute top-66.5 left-75 w-25"
+    v-click="[0,1]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-66.5 left-148 w-39"
+    v-click="[1,2]"
+></div>
+
 ---
 
 ```yaml
 layout: center
 class: text-center
 transition: slide-left
+clicks: 4
 ```
 
 # Limitations
 
-```rust {1|2-3|6,8|7|all}
+```rust {1|2-3|6,8|7|all} {at: 0}
 fn calculate_length(s: String) -> (String, usize) {
     let length = s.len(); // len() returns the length of a String
     (s, length)
@@ -338,3 +349,9 @@ fn main() {
     println!("The length of '{}' is {}.", s2, len);
 }
 ```
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-59.5 left-131 w-25.5"
+    v-click="[0,1]"
+></div>

@@ -19,21 +19,21 @@ transition: slide-up
 # Slices in C ?
 
 ```c
-void print_int_list(int *start, size_t len) {
+void print_slice(int *start, size_t len) {
     for (size_t i = 0; i < len; i++) {
         printf("%d ", start[i]);
     }
 }
 void main() {
-    int numbers[5] = {1,2,3,4,5};
-    print_int_list(numbers + 1, 3);  // 2 3 4
-    print_int_list(numbers + 3, 10); // 👻
+    int numbers[5] = {1, 2, 3, 4, 5};
+    print_slice(numbers + 1, 3);  // 2 3 4
+    print_slice(numbers + 3, 10); // 👻👻👻
 }
 ```
 
 Start pointer and length are disconnected,\
 the compiler cannot reason about memory safety.\
-➔ buffer owerflow
+➔ buffer overflow
 
 ---
 
@@ -48,19 +48,28 @@ transition: slide-up
 ```rust
 fn print_int_list(list: &[i32]) {
     for elem in list {
-        print!("{elem} ");
+        print!("{} ", elem);
     }
 }
 fn main() {
     let numbers: [i32; 5] = [1, 2, 3, 4, 5];
-    print_int_list(&numbers[1..4]);   // 2 3 4
-    print_int_list(&numbers[3..13)]); // panic: index out of range
+    print_int_list(&numbers[1..4]); // 2 3 4
+    print_int_list(&numbers[3..13]); // panic: index out of range
 }
 ```
 
 Rust slices store their length alongside the start pointer.\
 The full length of a slice is guaranteed valid memory.\
-➔ no buffer owerflow
+➔ no buffer overflow
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-45 left-112 w-12"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-81 left-103 w-27"
+></div>
 
 ---
 
@@ -80,7 +89,7 @@ let s: &str = &owned[3..9]; // "lo, wo"
 let s: &str = &"😱"[1..];
 ```
 
-compiler says:
+computer says:
 
 > byte index 1 is not a char boundary; it is inside '😱' (bytes 0..4) of `😱`
 
@@ -98,7 +107,7 @@ transition: slide-up
 let mut owned = String::from("hello");
 let s: &str = &owned[2..];
 owned.pop(); // error: cannot borrow as mutable
-println!("{s}");
+println!("{}", s);
 ```
 
 ---

@@ -16,6 +16,7 @@ The following practice sessions will allow a more individual learning pace.
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -39,8 +40,8 @@ transition: slide-up
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
-lineNumbers: false
 ```
 
 # Choose your `$PATH`
@@ -50,14 +51,14 @@ should be handled by the install script
 Make sure you you can call `cargo`.\
 If you can't, try some of these:
 
-```bash
+```bash {lineNumbers: false}
 # POSIX shell
 source ~/.cargo/env
 # or
 export PATH="$HOME/.cargo/bin:$PATH"
 ```
 
-```sh
+```sh {lineNumbers: false}
 # fish
 fish_add_path ~/.cargo/bin
 ```
@@ -66,20 +67,21 @@ fish_add_path ~/.cargo/bin
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # Batteries included
 
-| component     | purpose                 | example                    |
-| ------------- | ----------------------- | -------------------------- |
-| rustup        | toolchain manager       | `rustup update`            |
-| cargo         | package manager         | `cargo add my-fav-library` |
-| rustc         | compiler                | `cargo run` `cargo build`  |
-| rustdoc       | documentation generator | `cargo doc --open`         |
-| rustfmt       | formatter               | `cargo fmt`                |
-| clippy        | linter                  | `cargo clippy`             |
-| rust-analyzer | LSP implementation      | N/A                        |
+|     component | purpose                 | example                     |
+| ------------: | :---------------------- | :-------------------------- |
+|        rustup | toolchain manager       | `rustup update`             |
+|         cargo | package manager         | `cargo add my-fav-library`  |
+|         rustc | compiler                | `cargo run` , `cargo build` |
+|       rustdoc | documentation generator | `cargo doc --open`          |
+|       rustfmt | formatter               | `cargo fmt`                 |
+|        clippy | linter                  | `cargo clippy`              |
+| rust-analyzer | LSP implementation      | N/A                         |
 
 ---
 
@@ -117,7 +119,7 @@ layout: center
 transition: slide-up
 ```
 
-# Visual Studio Code extensions
+# Visual Studio Code Extensions
 
 recommendations cover:
 
@@ -131,6 +133,7 @@ recommendations cover:
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-left
 ```
 
