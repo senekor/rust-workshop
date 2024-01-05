@@ -71,21 +71,6 @@ class: text-center
 ></div>
 
 ---
-
-```yaml
-layout: cover
-```
-
-# Group Projects
-
-- web services
-- CLI tools
-
-## Bring Your Own Idea!
-
-must be <Orange>composable</Orange> → use all projects together at the end!
-
----
 src: ./theory/index.md
 ---
 
