@@ -6,5 +6,5 @@ _default:
     cd slides && [ -d node_modules ] || npm install
 
 # render slides on a dev server
-slides session: _setup-slides
-    cd slides && npm run slidev -- session/{{session}}/index.md
+slides day: _setup-slides
+    cd slides && npm run slidev -- day/{{day}}/index.md
