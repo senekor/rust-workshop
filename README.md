@@ -16,7 +16,7 @@ The following agenda serves as a progress tracker for the workshop preparation.
 - [x] language basics 1
   - [x] introduction, goal of the workshop
   - [x] agenda
-    - [x] map out the book (which session covers which chapters, what is skipped)
+    - [x] map out the book (which day covers which chapters, what is skipped)
     - [x] invite students to come up with their own final project ideas
   - [x] theory
     - [x] 3: common programming concepts

@@ -110,7 +110,7 @@ layout: center
 transition: slide-up
 ```
 
-# `rust-workshop/session_1/index.md`
+# `rust-workshop/day_1/index.md`
 
 ---
 
