@@ -1,0 +1,43 @@
+digraph proj_structure {
+    // high-res
+    graph [dpi = 300;];
+    // transparent
+    bgcolor = "#00000000";
+    node [color = "#00000000";];
+    edge [color = white;];
+    
+    workspace [style = filled;fillcolor = "mediumaquamarine";];
+    
+    workspace -> "package 1";
+    workspace -> "package 2";
+    workspace -> "package ...";
+    
+    "package 1" [style = filled;fillcolor = "darkolivegreen4";];
+    "package 2" [style = filled;fillcolor = "darkolivegreen4";];
+    "package ..." [style = filled;fillcolor = "darkolivegreen4";];
+    
+    "package 2" -> lib;
+    "package 2" -> "bin 1";
+    "package 2" -> "bin 2";
+    "package 2" -> "bin ...";
+    
+    lib [style = filled;fillcolor = "darkgoldenrod2";];
+    "bin 1" [style = filled;fillcolor = "darkorange3";];
+    "bin 2" [style = filled;fillcolor = "darkorange3";];
+    "bin ..." [style = filled;fillcolor = "darkorange3";];
+    
+    "bin 1" -> "mod 1";
+    "bin 1" -> "mod 2";
+    "bin 1" -> "mod 3";
+    
+    "mod 3" -> "mod 4";
+    "mod 3" -> "mod 5";
+    "mod 3" -> "mod ...";
+    
+    "mod 1" [style = filled;fillcolor = "purple1";];
+    "mod 2" [style = filled;fillcolor = "purple1";];
+    "mod 3" [style = filled;fillcolor = "purple1";];
+    "mod 4" [style = filled;fillcolor = "purple1";];
+    "mod 5" [style = filled;fillcolor = "purple1";];
+    "mod ..." [style = filled;fillcolor = "purple1";];
+}

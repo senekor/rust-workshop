@@ -33,13 +33,13 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [x] suggested bonus exercises
 - [ ] language basics 2
   - [ ] theory
-    - [ ] 5: structs
-    - [ ] 6: enums & match
-    - [ ] 7: crates & modules (only overview)
-    - [ ] 8: `std` collections (only overview)
-    - [ ] 9: error handling (only overview)
-    - [ ] navigate `std` documentation
+    - [x] 5: structs
+    - [x] 6: enums & match
+    - [x] 7: crates & modules
+    - [x] 8: `std` collections
+    - [ ] 9: error handling
   - [ ] practice
+    - [ ] navigate `std` documentation
   - [ ] homework
     - [ ] Read list of modules in the standard libraries.
           Pick a couple of them and read the module-level documentation.

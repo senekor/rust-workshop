@@ -12,10 +12,22 @@ class: text-center
 ## Day 2
 
 ---
+src: ./theory/index.md
+---
+
+---
+src: ./practice.md
+---
+
+---
 
 ```yaml
-layout: cover
+layout: center
 class: text-center
 ```
 
-# TODO
+# Please suggest improvements
+# for next week!
+# 🦀
+
+Check the readme of your repository for the form link.
