@@ -15,6 +15,7 @@ ownership
 
 ```yaml
 layout: center
+class: text-center
 ```
 
 # Hello, world!

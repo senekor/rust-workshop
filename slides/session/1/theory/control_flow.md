@@ -12,6 +12,7 @@ book chapter 3.5
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -31,10 +32,13 @@ let size = if number < 5 {
 };
 ```
 
+What is the type of `size` ?
+
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
@@ -52,16 +56,17 @@ loop {
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # `while` Loops
 
-```rust {3,7|all}
-let mut number = 3;
+```rust {3,7}
+let mut number = 10;
 
 while number != 0 {
-    println!("{number}!");
+    println!("{}!", number);
 
     number -= 1;
 }
@@ -73,60 +78,99 @@ println!("LIFTOFF!!!");
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
+clicks: 3
 ```
 
 # `for` Loops
 
-more details in session 3
+more details on day 3
 
-```rust {1,4-7|1,9-11|all}
+```rust {1,4,7|1,4-7|1,9,11|all}
 let a = [10, 20, 30, 40, 50];
 
 // `..` is the range operator
 for i in 0..a.len() {
     let element = a[i];
-    println!("the value is: {element}");
+    println!("the value is: {}", element);
 }
 
 for element in a {
-    println!("the value is: {element}");
+    println!("the value is: {}", element);
 }
 ```
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-72.3 left-106 w-17.5"
+    v-click="[0,1]"
+></div>
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77 left-122 w-8"
+    v-click="[1,2]"
+></div>
 
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # Off-Topic: Operators
 
-| Comparison | `==` `!=` `<` `<=` `>` `>=` |
-| --- | --- |
-| Arithmetic | `+` `-` `*` `/` `%` |
-| Boolean | `&&` `\|\|` `!` |
-| Bitwise | `&` `\|` `^` `!` (no tilde!) |
-| Range | `..` `..=` (integers and `char`) |
+some assignment variants exist ( `+=` )
 
-assignment variants: `+=`, `|=`, `<<=` etc.
+| Comparison | `==` `!=` `<` `<=` `>` `>=`      |
+| ---------: | :------------------------------- |
+| Arithmetic | `+` `-` `*` `/` `%`              |
+| Boolean    | `&&` `\|\|` `!`                  |
+| Bitwise    | `&` `\|` `^` `!` (no tilde!)     |
+| Range      | `..` `..=` (integers and `char`) |
 
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-left
+clicks: 1
 ```
 
 # Off-Topic: Integer Conversions
 
 `as` exists, it but has some footguns
 
-```rust
+```rust {1,2|4,5}
 // infallible
 let x: i32 = 42_i16.into();
 
 // fallible
 let x: u32 = 42_i64.try_into().unwrap();
 ```
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77 left-87 w-4.5"
+    v-click="[0,1]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-77 left-103 w-5"
+    v-click="[0,1]"
+></div>
+
+<div
+    style="border-color: red"
+    class="border-1 absolute top-90.5 left-87 w-4.5"
+    v-click="[1,2]"
+></div>
+<div
+    style="border-color: red"
+    class="border-1 absolute top-90.5 left-103 w-5"
+    v-click="[1,2]"
+></div>
