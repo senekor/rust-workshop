@@ -27,21 +27,21 @@ class: text-center
 
 ```yaml
 layout: cover
+class: text-center
 ```
 
-# Agenda
+# Program
 
-1. Day: toolchain setup & language <Orange>basics 1</Orange> (common concepts & <Orange>ownership</Orange>)
+<div></div> <!-- prevent subheading -->
 
-1. Day: language <Orange>basics 2</Orange> (structs, <Orange>enums</Orange>, modules, collections, error handling)
-
-1. Day: <Orange>advanced</Orange> language features (generics, <Orange>traits</Orange>, lifetimes, closures, <Orange>iterators</Orange>)
-
-1. Day: navigating the <Orange>ecosystem</Orange> (libraries, tools, news, CI/CD)
-
-1. Day: start of <Orange>group projects</Orange>
-
-1. Day: finish group projects & workshop wrap-up
+|       |                       |                                                           |
+| :---- | --------------------: | :-------------------------------------------------------- |
+| Day 1 |  Language Basics 1 🤔 | common programming concepts & ownership                   |
+| Day 2 |  Language Basics 2 🤓 | structs, enums, modules, collections, error handling      |
+| Day 3 |  Advanced Features 🤯 | generics, traits, lifetimes, closures, iterators          |
+| Day 4 | The Rust Ecosystem 📦 | libraries, tools, news, CI/CD                             |
+| Day 5 | Shippable Projects 🚀 | CLI tools, web APIs, python modules, WASM apps            |
+| Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback, self-congratulation |
 
 ---
 
