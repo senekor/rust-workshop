@@ -24,26 +24,27 @@ Here's a checklist for this week's tasks:
 
 ## Homework
 
-### Standard library reading
-
-The purpose here is to get you comfortable reading the standard library documentation and make you aware of some useful things.
+The purpose here is to get you comfortable reading documentation and make you aware of some useful things.
 Don't get bogged down in the details.
-Read until you are satisfied and make a mental note these things exist.
+Read until you are satisfied and make a mental note that these things exist.
 
-- [`str::chars`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.chars)
-- [`str::split`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.split)
-- [`str::lines`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.lines)
-- [`str::parse`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.parse)
-- [`fmt`](https://doc.rust-lang.org/stable/std/fmt/index.html) (module-level documentation of string formatting syntax, used in `println!`)
-- [`env::args`](https://doc.rust-lang.org/stable/std/env/fn.args.html)
-- [`slice::reverse`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.reverse)
-- [`slice::sort`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.sort)
-- [`slice::windows`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.windows)
-- [`dbg!`](https://doc.rust-lang.org/stable/std/macro.dbg.html)
-- [`include_str!`](https://doc.rust-lang.org/stable/std/macro.include_str.html)
-- [`todo!`](https://doc.rust-lang.org/stable/std/macro.todo.html)
+- [ ] Check out "Rust By Example"
+  - [Nesting and labels](https://doc.rust-lang.org/rust-by-example/flow_control/loop/nested.html)
+- [ ] standard library documentation
+  - [`str::chars`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.chars)
+  - [`str::split`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.split)
+  - [`str::lines`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.lines)
+  - [`str::parse`](https://doc.rust-lang.org/stable/std/primitive.str.html#method.parse)
+  - [`fmt`](https://doc.rust-lang.org/stable/std/fmt/index.html) (module-level documentation of string formatting syntax, used in `println!`)
+  - [`env::args`](https://doc.rust-lang.org/stable/std/env/fn.args.html)
+  - [`slice::reverse`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.reverse)
+  - [`slice::sort`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.sort)
+  - [`slice::windows`](https://doc.rust-lang.org/stable/std/primitive.slice.html#method.windows)
+  - [`dbg!`](https://doc.rust-lang.org/stable/std/macro.dbg.html)
+  - [`include_str!`](https://doc.rust-lang.org/stable/std/macro.include_str.html)
+  - [`todo!`](https://doc.rust-lang.org/stable/std/macro.todo.html)
 
-### Optional exercises
+## Optional exercises
 
 If you have time and enthusiasm to spare, you can solve some of these exercises.
 You are encouraged to ping your workshop organizer for a code review!
