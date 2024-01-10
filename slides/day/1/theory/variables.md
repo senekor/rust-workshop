@@ -25,8 +25,8 @@ let x: i32 = 5;
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-81.5 left-103 w-9"
+    style="background-color: red"
+    class="h-0.5 absolute top-81.5 left-103 w-9"
     v-click="[1,2]"
 ></div>
 
@@ -35,38 +35,24 @@ let x: i32 = 5;
 ```yaml
 layout: center
 class: text-center
-transition: none
+transition: slide-up
+clicks: 1
 ```
 
 # Mutability
 
-<div style="width: 20vw">
-```rust
+```rust {1-2|4-5} {at:0}
 let x = 5;
 x = 6; // error: cannot assign twice to immutable variable `x`
-```
-</div>
 
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
-
-# Mutability
-
-<div style="width: 20vw">
-```rust
 let mut x = 5;
 x = 6; // ✅
 ```
-</div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-75 left-77.5 w-5.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-81.5 left-78.8 w-5.5"
+    v-click="1"
 ></div>
 
 ---
@@ -89,14 +75,14 @@ static EMBEDDED_TEXT_FILE: &str = include_str!("path/to/some/file.txt");
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-72.5 left-63 w-8"
+    style="background-color: red"
+    class="h-0.5 absolute top-72.5 left-63 w-8"
     v-click="[0,1]"
 ></div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-86 left-63 w-10"
+    style="background-color: red"
+    class="h-0.5 absolute top-86 left-63 w-10"
     v-click="[1,2]"
 ></div>
 
@@ -141,23 +127,23 @@ let x: &str = "five";
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-61.5 left-115.5 w-2.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-61.5 left-115.5 w-2.5"
     v-click="[0,1]"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-70.2 left-122.6 w-2.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-70.2 left-122.6 w-2.5"
     v-click="[0,1]"
 ></div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-61.5 left-115.5 w-11"
+    style="background-color: red"
+    class="h-0.5 absolute top-61.5 left-115.5 w-11"
     v-click="[1,2]"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-93 left-115.5 w-13"
+    style="background-color: red"
+    class="h-0.5 absolute top-93 left-115.5 w-13"
     v-click="[1,2]"
 ></div>

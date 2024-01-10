@@ -63,12 +63,12 @@ The full length of a slice is guaranteed valid memory.\
 ➔ no buffer overflow
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-45 left-112 w-12"
+    style="background-color: red"
+    class="h-0.5 absolute top-45 left-112 w-12"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-81 left-103 w-27"
+    style="background-color: red"
+    class="h-0.5 absolute top-81 left-103 w-27"
 ></div>
 
 ---
