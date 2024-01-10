@@ -1,0 +1,4 @@
+.slidev-code {
+  --slidev-code-font-size: 14px; /* default: 12px */
+  --slidev-code-line-height: 20px; /* default: 18px */
+}

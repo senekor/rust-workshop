@@ -26,7 +26,7 @@ let x: i32 = 5;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81.5 left-103 w-9"
+    class="h-0.5 absolute top-82 left-105 w-10"
     v-click="[1,2]"
 ></div>
 
@@ -51,7 +51,7 @@ x = 6; // ✅
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81.5 left-78.8 w-5.5"
+    class="h-0.5 absolute top-82 left-70.5 w-6.5"
     v-click="1"
 ></div>
 
@@ -76,13 +76,13 @@ static EMBEDDED_TEXT_FILE: &str = include_str!("path/to/some/file.txt");
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-72.5 left-63 w-8"
+    class="h-0.5 absolute top-72.5 left-52 w-10.5"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-86 left-63 w-10"
+    class="h-0.5 absolute top-87.3 left-52 w-12.5"
     v-click="[1,2]"
 ></div>
 
@@ -128,22 +128,22 @@ let x: &str = "five";
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-61.5 left-115.5 w-2.5"
+    class="h-0.5 absolute top-59.5 left-113.5 w-3"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-70.2 left-122.6 w-2.5"
+    class="h-0.5 absolute top-69.5 left-122 w-3"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-61.5 left-115.5 w-11"
+    class="h-0.5 absolute top-59.5 left-113.5 w-13"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-93 left-115.5 w-13"
+    class="h-0.5 absolute top-94.5 left-113.5 w-15"
     v-click="[1,2]"
 ></div>

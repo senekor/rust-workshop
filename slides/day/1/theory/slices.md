@@ -64,11 +64,11 @@ The full length of a slice is guaranteed valid memory.\
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-45 left-112 w-12"
+    class="h-0.5 absolute top-43 left-110 w-12"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81 left-103 w-27"
+    class="h-0.5 absolute top-83 left-99 w-31"
 ></div>
 
 ---
@@ -136,7 +136,7 @@ transition: slide-left
 
 needed for exercises
 
-```rust
+```rust {1|3|5-6|all}
 let v: Vec<f64> = Vec::new(); // create empty, elems of type f64
 
 let mut v = vec![1, 2, 3]; // macro for "vector literals"
