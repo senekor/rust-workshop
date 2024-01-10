@@ -44,7 +44,7 @@ class: text-center
 transition: none
 ```
 
-# Double `free`
+# Double free
 
 ```c
 int *p = malloc(sizeof(int));
@@ -60,7 +60,7 @@ class: text-center
 transition: slide-up
 ```
 
-# Use after `free`
+# Use after free
 
 ```c
 int *p = malloc(sizeof(int));
@@ -317,13 +317,13 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-66.5 left-75 w-25"
+    style="background-color: red"
+    class="h-0.5 absolute top-66.5 left-75 w-25"
     v-click="[0,1]"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-66.5 left-148 w-39"
+    style="background-color: red"
+    class="h-0.5 absolute top-66.5 left-148 w-39"
     v-click="[1,2]"
 ></div>
 
@@ -351,7 +351,7 @@ fn main() {
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-59.5 left-131 w-25.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-59.5 left-131 w-25.5"
     v-click="[0,1]"
 ></div>

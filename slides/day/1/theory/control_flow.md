@@ -102,14 +102,14 @@ for element in a {
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-72.3 left-106 w-17.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-72.3 left-106 w-17.5"
     v-click="[0,1]"
 ></div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-77 left-122 w-8"
+    style="background-color: red"
+    class="h-0.5 absolute top-77 left-122 w-8"
     v-click="[1,2]"
 ></div>
 
@@ -154,23 +154,23 @@ let x: u32 = 42_i64.try_into().unwrap();
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-77 left-87 w-4.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-77 left-87 w-4.5"
     v-click="[0,1]"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-77 left-103 w-5"
+    style="background-color: red"
+    class="h-0.5 absolute top-77 left-103 w-5"
     v-click="[0,1]"
 ></div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-90.5 left-87 w-4.5"
+    style="background-color: red"
+    class="h-0.5 absolute top-90.5 left-87 w-4.5"
     v-click="[1,2]"
 ></div>
 <div
-    style="border-color: red"
-    class="border-1 absolute top-90.5 left-103 w-5"
+    style="background-color: red"
+    class="h-0.5 absolute top-90.5 left-103 w-5"
     v-click="[1,2]"
 ></div>

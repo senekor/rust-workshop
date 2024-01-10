@@ -50,14 +50,14 @@ fn main() {
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-64 left-126 w-18"
+    style="background-color: red"
+    class="h-0.5 absolute top-64 left-126 w-18"
     v-click="[0,1]"
 ></div>
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-86.5 left-127 w-12"
+    style="background-color: red"
+    class="h-0.5 absolute top-86.5 left-127 w-12"
     v-click="[1,2]"
 ></div>
 
@@ -107,7 +107,7 @@ fn plus_one(x: i32) -> i32 {
 ```
 
 <div
-    style="border-color: red"
-    class="border-1 absolute top-90.5 left-117 w-11"
+    style="background-color: red"
+    class="h-0.5 absolute top-90.5 left-117 w-11"
     v-click="[0,1]"
 ></div>
