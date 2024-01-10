@@ -2,3 +2,13 @@
   --slidev-code-font-size: 14px; /* default: 12px */
   --slidev-code-line-height: 20px; /* default: 18px */
 }
+
+/* remove backticks from inline code blocks */
+:not(pre) > code::before {
+  content: "";
+  margin-right: 0.28em;
+}
+:not(pre) > code::after {
+  content: "";
+  margin-left: 0.3em;
+}
