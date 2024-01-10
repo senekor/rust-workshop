@@ -194,14 +194,12 @@ transition: slide-up
 
 # Reading the error message
 
-```txt
-$ cargo run
-   Compiling ownership v0.1.0 (file:///projects/ownership)
+```txt {all|1,5,13}
 error[E0382]: borrow of moved value: `s1`
  --> src/main.rs:5:28
   |
 2 |     let s1 = String::from("hello");
-  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+  |         -- move occurs because `s1` has type String, which doesn't implement the Copy trait
 3 |     let s2 = s1;
   |              -- value moved here
 4 |
@@ -218,40 +216,29 @@ For more information about this error, try `rustc --explain E0382`.
 error: could not compile `ownership` due to previous error
 ```
 
-<div
-    style="border-color: red"
-    class="border-2 absolute top-34.5 left-49.5 w-51.5 h-5.5"
-></div>
-<div
-    style="border-color: red"
-    class="border-2 absolute top-52.5 left-51 w-157 h-5.5"
-></div>
-<div
-    style="border-color: red"
-    class="border-2 absolute top-88.5 left-24 w-130 h-5.5"
-></div>
-
 ---
 
 ```yaml
 layout: center
-class: text-center
 transition: slide-up
 ```
 
-# Stack-only Data: Copy
-
-recall the error message:\
-"move occurs because [String] does not implement the Copy trait"
+# Reading the error message
 
 ```rust
-let x = 5;
-let y = x;
+let s1 = String::from("hello");
+let s2 = s1;
 
-println!("x = {}, y = {}", x, y); // this is fine!
+println!("{}, world!", s1); // error
 ```
 
-stack-only types, like `i32`, can be copied cheaply and automatically
+- borrow of moved value: `s1`
+
+- move occurs because `s1` has type `String`,\
+  which does not implement the `Copy` trait
+
+- help: consider cloning the value\
+  if the performance cost is acceptable
 
 ---
 
@@ -296,7 +283,7 @@ What's the output of this program?
 layout: center
 class: text-center
 transition: slide-up
-clicks: 5
+clicks: 6
 ```
 
 # Ownership is expressive
@@ -304,7 +291,7 @@ clicks: 5
 file handles, mutexes etc.\
 ownership applies to all kinds of resources
 
-```rust {1|1|2|4,5|4,6,7|all} {at: 0}
+```rust {0|1|1|2|4,5|4,6,7|all} {at: 0}
 fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
     let guard: MutexGuard<i32> = m.lock().unwrap();
 
@@ -318,13 +305,13 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-66.5 left-75 w-25"
-    v-click="[0,1]"
+    class="h-0.5 absolute top-64.5 left-67 w-29"
+    v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-66.5 left-148 w-39"
-    v-click="[1,2]"
+    class="h-0.5 absolute top-64.5 left-151 w-47"
+    v-click="[2,3]"
 ></div>
 
 ---
@@ -352,6 +339,6 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-59.5 left-131 w-25.5"
+    class="h-0.5 absolute top-57.5 left-132 w-29"
     v-click="[0,1]"
 ></div>

@@ -39,15 +39,15 @@ let y: i32 = *r;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77 left-125 w-7"
+    class="h-0.5 absolute top-77 left-124 w-9"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77 left-137 w-5"
+    class="h-0.5 absolute top-77 left-139 w-5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81.5 left-136 w-4"
+    class="h-0.5 absolute top-82 left-137.5 w-4"
 ></div>
 
 ---
@@ -75,12 +75,12 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-59 left-116.5 w-2.5"
+    class="h-0.5 absolute top-57 left-114.5 w-3"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-86 left-130.5 w-3"
+    class="h-0.5 absolute top-87 left-131.5 w-3"
     v-click="[0,1]"
 ></div>
 
@@ -102,7 +102,7 @@ let r = &mut x;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77.5 left-109 w-11"
+    class="h-0.5 absolute top-77.5 left-111 w-9"
 ></div>
 
 ---
@@ -277,16 +277,16 @@ println!("{}", r1.borrow()); // -> Hello Venus, Mars and Jupiter!
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-76.5 left-69 w-4"
+    class="h-0.5 absolute top-76.7 left-59 w-5"
     v-click="[3,4]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81 left-69 w-4"
+    class="h-0.5 absolute top-81.8 left-59 w-5"
     v-click="[3,4]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-85.5 left-69 w-4"
+    class="h-0.5 absolute top-86.7 left-59 w-5"
     v-click="[3,4]"
 ></div>
