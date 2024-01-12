@@ -25,15 +25,8 @@ layout: cover
 
 - Chapter 10: Generic Types, Traits and Lifetimes
 - Chapter 13: Functional Language Features: Iterators and Closures
-- Excursion: Async Rust\*
 
 </v-clicks>
-
-<!--
-
-if we have time "Async Rust"
-
--->
 
 ---
 
@@ -132,6 +125,8 @@ Generics in rust use these <> (less then and greater then) symbols and to denote
 -> looks like in java/ C++ with templates
 
 Removing Duplication by Extracting
+
+uses capital Letters (because it represents a struct)
 
 -->
 
@@ -378,6 +373,33 @@ a single function
 
 ---
 
+# Traits: Definition #2
+
+```rust
+struct Circle {
+    radius: f64,
+}
+
+impl Circle {
+    fn circumference(&self) -> f64 {
+        self.radius * self.radius
+    }
+}
+
+impl Shape for Circle {
+    fn area(&self) -> f64 {
+        3.14159 * self.radius * self.radius
+    }
+}
+```
+
+<!--
+
+here is the missing part of the circle impl
+
+-->
+---
+
 # Traits: In Vector
 
 ```rust {all|5}
@@ -412,7 +434,7 @@ fn main() {
 
 # Traits: In Vector
 
-```
+```shell
 $ cargo check
     Checking tmp v0.1.0 (/tmp/tmp)
 error[E0308]: mismatched types
@@ -453,34 +475,6 @@ fn main() {
 - dyn Shape $\Rightarrow$ means that we are using a dynamic object of type Shape
 
 </v-clicks>
-
----
-
-# Traits: Definition #2
-
-```rust
-struct Circle {
-    radius: f64,
-}
-
-impl Circle {
-    fn circumference(&self) -> f64 {
-        self.radius * self.radius
-    }
-}
-
-impl Shape for Circle {
-    fn area(&self) -> f64 {
-        3.14159 * self.radius * self.radius
-    }
-}
-```
-
-<!--
-
-here is the missing part of the circle impl
-
--->
 
 ---
 
@@ -567,7 +561,7 @@ Arguably at that point you might have to overthink your design.
 
 Usefull for simple behaviour
 
-- Comparison traits: <Orange>Eq, PartialEq, Ord, PartialOrd</Orange>.
+- <Orange>Eq, PartialEq, Ord, PartialOrd</Orange>: to compare data types.
 - <Orange>Clone</Orange>, to create T from &T via a copy.
 - <Orange>Copy</Orange>, to give a type 'copy semantics' instead of 'move semantics'.
 - <Orange>Hash</Orange>, to compute a hash from &T.
@@ -690,7 +684,7 @@ fn main() {
 
 # Lifetimes: Error
 
-```
+```shell
     Checking tmp v0.1.0 (/tmp/tmp)
 error[E0597]: `x` does not live long enough
  --> src/main.rs:6:13
@@ -761,17 +755,18 @@ fn longest(x: &str, y: &str) -> &str {
 
 <v-clicks>
 
-```
+```shell
 error[E0106]: missing lifetime specifier
  --> src/main.rs:1:33
   |
 1 | fn longest(x: &str, y: &str) -> &str {
   |               ----     ----     ^ expected named lifetime parameter
   |
-  = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `x` or `y`
+  = help: this function's return type contains a borrowed value, but the
+          signature does not say whether it is borrowed from `x` or `y`
 ```
 
-```
+```shell
 help: consider introducing a named lifetime parameter
   |
 1 | fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -1010,7 +1005,7 @@ There is some syntax sugger, but only to an extend.
 Say we want to sum up all the even numbers pow them to six from 1 until and
 including 100.
 
-$\sum^{100}_{i=1} i^3$
+$\sum^{100}_{i=1} i^6$
 
 <v-clicks>
 
