@@ -110,15 +110,6 @@ layout: center
 transition: slide-up
 ```
 
-# `rust-workshop/day_1/index.md`
-
----
-
-```yaml
-layout: center
-transition: slide-up
-```
-
 # Visual Studio Code Extensions
 
 recommendations cover:
@@ -134,7 +125,7 @@ recommendations cover:
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
+transition: slide-up
 ```
 
 <img
@@ -151,3 +142,15 @@ transition: slide-left
     style="border-color: red"
     class="border-4 absolute top-106 left-68 w-72 h-24"
 ></div>
+
+---
+
+```yaml
+layout: cover
+class: text-center
+transition: slide-left
+```
+
+# 🧑‍💻
+
+## `rust-workshop/day_1/index.md`
