@@ -239,6 +239,67 @@ use leptos::prelude::*;
 
 ```yaml
 layout: center
+class: text-center
+transition: slide-up
+clicks: 3
+```
+
+# Re-Exporting with `pub use`
+
+```rust {1-7|1-7,9|1-7,10-11|1-7,12-13}
+mod garden {
+    mod fruits {
+        pub struct Melon;
+        pub struct Orange;
+    }
+    pub use Melon;
+}
+fn main() {
+    let m: garden::Melon;
+    // doesn't work, because garden doesn't re-export Orange
+    let o: garden::Orange;
+    // doesn't work, because fruits is private
+    let o: garden::fruits::Orange;
+}
+```
+
+<div
+    style="background-color: red"
+    class="h-0.5 absolute top-70 left-73 w-15"
+    v-click="[0,1]"
+></div>
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-up
+```
+
+# Renaming Imports with `as`
+
+```rust
+mod german {
+    pub struct Kartoffel;
+}
+mod swiss_german {
+    pub use super::german::Kartoffel as Herdoepfel;
+}
+fn main() {
+    let same_thing: german::Kartoffel = swiss_german::Herdoepfel;
+}
+```
+
+<div
+    style="background-color: red"
+    class="h-0.5 absolute top-78 left-137 w-27"
+></div>
+
+---
+
+```yaml
+layout: center
 ```
 
 # Summary
@@ -252,3 +313,5 @@ layout: center
 - Items are private unless made `pub`-lic.
 
 - Verbose module path specifiers are avoided with `use`.
+
+- Re-exporting allows fine-grained control over visibility.

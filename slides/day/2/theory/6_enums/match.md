@@ -179,11 +179,49 @@ match 0_i32 {
 }
 ```
 
-<!--
-    if-let syntax is intentionally omitted,
-    because clippy will mention it when a single-match pattern is used.
--->
-<!--  -->
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-up
+```
+
+# Matching on a Single Pattern
+
+```rust
+let maybe_num: Option<i32> = Some(10);
+if let Some(num) = maybe_num {
+    println!("number detected: {}", num);
+}
+```
+
+<div
+    style="background-color: red"
+    class="h-0.5 absolute top-75 left-77 w-33"
+></div>
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-up
+```
+
+# Looping `while` a Pattern Matches
+
+```rust
+let mut numbers = vec![1,2,3];
+while let Some(n) = numbers.pop() {
+    println!("removed from vec: {}", n);
+}
+```
+
+<div
+    style="background-color: red"
+    class="h-0.5 absolute top-75 left-65 w-36"
+></div>
 
 ---
 
