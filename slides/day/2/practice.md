@@ -1,9 +1,9 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
+transition: slide-left
 ```
 
-# Practice
+# Practice 🧑‍💻
 
-TODO
+## `rust-workshop/day_2/index.md`

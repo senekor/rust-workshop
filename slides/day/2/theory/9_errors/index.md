@@ -62,7 +62,7 @@ enum Option<T> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
+transition: slide-left
 ```
 
 # Error Handling
