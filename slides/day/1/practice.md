@@ -153,4 +153,4 @@ transition: slide-left
 
 # 🧑‍💻
 
-## `rust-workshop/day_1/index.md`
+## `rust-workshop/day_1/README.md`

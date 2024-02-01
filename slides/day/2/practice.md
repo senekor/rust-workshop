@@ -6,4 +6,4 @@ transition: slide-left
 
 # Practice 🧑‍💻
 
-## `rust-workshop/day_2/index.md`
+## `rust-workshop/day_2/README.md`
