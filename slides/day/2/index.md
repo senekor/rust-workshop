@@ -1,4 +1,5 @@
 ```yaml
+favicon: rust-logo-64x64-blk.png
 transition: slide-left
 titleTemplate: '%s'
 lineNumbers: true
