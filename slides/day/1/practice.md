@@ -151,6 +151,6 @@ class: text-center
 transition: slide-left
 ```
 
-# 🧑‍💻
+# Practice 🧑‍💻
 
 ## `rust-workshop/day_1/README.md`

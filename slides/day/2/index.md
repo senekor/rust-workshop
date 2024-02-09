@@ -17,8 +17,16 @@ src: ./theory/index.md
 ---
 
 ---
-src: ./practice.md
----
+
+```yaml
+layout: cover
+class: text-center
+transition: slide-left
+```
+
+# Practice 🧑‍💻
+
+## `rust-workshop/day_2/README.md`
 
 ---
 
