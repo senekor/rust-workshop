@@ -78,7 +78,7 @@ transition: slide-up
 ```
 
 <img
-    src="void_star.png"
+    src="/void_star.png"
     style="height: 360px"
 />
 

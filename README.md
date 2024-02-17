@@ -46,9 +46,9 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [x] 10: lifetimes (only overview)
     - [x] 13: closures
     - [x] 13: iterators
-  - [ ] practice
-    - [ ] write custom iterator
-  - [ ] homework
+  - [x] practice
+    - [x] write custom iterator
+  - [x] homework
 - [ ] beyond the book: navigating the ecosystem
   - [ ] theory
     - [ ] how to use libraries
