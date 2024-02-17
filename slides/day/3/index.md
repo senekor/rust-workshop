@@ -36,6 +36,26 @@ You should still read the book at your own pace if you're serious about learning
 ---
 
 ```yaml
+layout: center
+class: text-center
+transition: slide-left
+```
+
+# Hint for Practice Session
+
+```rust {all|3|6|all}
+// a test that ensures an expected panic occurs
+#[test]
+#[should_panic]
+fn expected_panic_occurs() {
+    let v = vec![1, 2, 3];
+    let _ = v[10];
+}
+```
+
+---
+
+```yaml
 layout: cover
 class: text-center
 transition: slide-left

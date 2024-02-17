@@ -187,6 +187,36 @@ fn main() {
 layout: center
 class: text-center
 transition: slide-up
+```
+
+# Many Ways to Iterate
+
+```rust {1|3-5|7-11|13-17|all}
+let nums = vec![1, 2, 3];
+
+// take ownership of items, destroy collection.
+let iter = nums.into_iter();
+for elem in nums {}
+
+// iterate over immutable references, leave collection intact.
+let iter = nums.iter();
+let iter = (&nums).into_iter();
+for elem in nums.iter() {}
+for elem in &nums {}
+
+// iterate over mutable references, modify collection.
+let iter = nums.iter_mut();
+let iter = (&mut nums).into_iter();
+for elem in nums.iter_mut() {}
+for elem in &mut nums {}
+```
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-up
 clicks: 2
 ```
 
