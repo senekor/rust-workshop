@@ -6,7 +6,6 @@ lineNumbers: true
 fonts:
   mono: 'Fira Mono'
 class: text-center
-monaco: true
 ```
 
 # Rust Workshop
