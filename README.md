@@ -31,26 +31,21 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [x] homework:
     - [x] standard library reading
     - [x] suggested bonus exercises
-- [ ] language basics 2
-  - [ ] theory
+- [x] language basics 2
+  - [x] theory
     - [x] 5: structs
     - [x] 6: enums & match
     - [x] 7: crates & modules
     - [x] 8: `std` collections
-    - [ ] 9: error handling
-  - [ ] practice
-    - [ ] navigate `std` documentation
-  - [ ] homework
-    - [ ] Read list of modules in the standard libraries.
-          Pick a couple of them and read the module-level documentation.
+    - [x] 9: error handling
+  - [x] practice
 - [ ] advanced language features
-  - [ ] theory
-    - [ ] 10: generics
-    - [ ] 10: traits
-    - [ ] 10: lifetimes (only overview)
-    - [ ] 13: closures
-    - [ ] 13: iterators
-    - [ ] conclusion of language part. quick note about async.
+  - [x] theory
+    - [x] 10: generics
+    - [x] 10: traits
+    - [x] 10: lifetimes (only overview)
+    - [x] 13: closures
+    - [x] 13: iterators
   - [ ] practice
     - [ ] write custom iterator
   - [ ] homework
@@ -77,6 +72,10 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [ ] This Week in Rust
     - [ ] how to setup a CI/CD pipeline
     - [ ] quick note about the state of embedded
+    - [ ] design patterns: (?)
+      - [ ] strategy
+      - [ ] builder
+      - [ ] type state
   - [ ] practice
   - [ ] homework
     - [ ] Skim blessed.rs from top to bottom.
@@ -88,7 +87,7 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [ ] CLI tools
     - [ ] communicate via stdin/-out, can be composed using pipes
   - [ ] python extension module (PyO3 & maturin)
-  - [ ] ...
+  - [ ] client-only webassembly browser app
 - [ ] finish project, wrap up, discussion, feedback etc.
 
 [rust-workshop-repo]: https://github.com/senekor/rust-workshop
