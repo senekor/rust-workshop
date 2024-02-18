@@ -8,7 +8,7 @@ layout {
 	tab name="diffstep" {
 		pane name="diff" {
 			command "just"
-			args "diff"
+			args "watch-diff"
 		}
 		pane split_direction="vertical" {
 			size "1"

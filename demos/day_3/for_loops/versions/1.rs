@@ -1,14 +1,23 @@
 // manually calling next
 
 fn main() {
-    let v = vec![1, 2, 3];
+    let v = vec!['a', 'b', 'c'];
 
     let mut iter = v.into_iter();
 
-    println!("next item: {}", iter.next().unwrap());
-    println!("next item: {}", iter.next().unwrap());
-    println!("next item: {}", iter.next().unwrap());
+    // a
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
 
-    // crashes:
-    println!("next item: {}", iter.next().unwrap());
+    // b
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
+
+    // c
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
+
+    // crash
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
 }

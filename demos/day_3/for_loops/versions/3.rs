@@ -1,16 +1,16 @@
-// manual loop
+// handling the None-case
 
 fn main() {
-    let v = vec![1, 2, 3];
+    let v = vec!['a', 'b', 'c'];
 
     let mut iter = v.into_iter();
 
     loop {
-        let maybe_item = iter.next();
-        if maybe_item.is_none() {
+        let item: Option<char> = iter.next();
+        if item.is_none() {
             break;
         }
-        let item = maybe_item.unwrap();
+        let item: char = item.unwrap();
         println!("next item: {}", item);
     }
 }

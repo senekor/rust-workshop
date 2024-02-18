@@ -1,26 +1,13 @@
-// handling the None-case
+// looping until crash
 
 fn main() {
-    let v = vec![1, 2, 3];
+    let v = vec!['a', 'b', 'c'];
 
     let mut iter = v.into_iter();
 
-    let maybe_item = iter.next();
-    if maybe_item.is_some() {
-        println!("next item: {}", maybe_item.unwrap());
+    loop {
+        let item = iter.next().unwrap();
+        println!("next item: {}", item);
     }
-    let maybe_item = iter.next();
-    if maybe_item.is_some() {
-        println!("next item: {}", maybe_item.unwrap());
-    }
-    let maybe_item = iter.next();
-    if maybe_item.is_some() {
-        println!("next item: {}", maybe_item.unwrap());
-    }
-
-    // noop:
-    let maybe_item = iter.next();
-    if maybe_item.is_some() {
-        println!("next item: {}", maybe_item.unwrap());
-    }
+    // still crashes at forth iteration
 }

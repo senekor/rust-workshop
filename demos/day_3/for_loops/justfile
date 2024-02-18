@@ -26,8 +26,16 @@ next:
 
 diff:
     #!/bin/bash
-    diff_cmd="printf '\n\n'; (difft --color=always --syntax-highlight=off prev.rs src/main.rs | tail -n +2)"
-    watchexec --project-origin . --watch prev.rs --clear --quiet "$diff_cmd"
+    printf '\n\n' # top padding for TUI
+    if [ "$(cat prev.rs)" = "" ]
+    then
+        bat --style=plain --paging=never src/main.rs
+    else
+        difft --color=always --syntax-highlight=off prev.rs src/main.rs | tail -n +2
+    fi
+
+watch-diff:
+    watchexec --project-origin . --watch prev.rs --clear --quiet just diff
 
 zellij:
     zellij --layout zellij.kdl
