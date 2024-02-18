@@ -10,3 +10,7 @@ size = 24
 
 [window]
 padding = { x = 96, y = 0 }
+
+[colors.bright]
+green = "#85d067"
+red = "#ff724e"

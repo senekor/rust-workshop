@@ -26,7 +26,7 @@ next:
 
 diff:
     #!/bin/bash
-    diff_cmd="printf '\n\n'; (difft --color=always prev.rs src/main.rs | tail -n +2)"
+    diff_cmd="printf '\n\n'; (difft --color=always --syntax-highlight=off prev.rs src/main.rs | tail -n +2)"
     watchexec --project-origin . --watch prev.rs --clear --quiet "$diff_cmd"
 
 zellij:
