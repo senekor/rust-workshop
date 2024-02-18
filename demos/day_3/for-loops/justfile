@@ -2,7 +2,7 @@
     just --list --unsorted
 
 @reset:
-    echo -n reset # mark zellij frame
+    echo -n "  reset" # mark zellij frame
     # make sure reset is run after next when starting zellij
     sleep 0.2
     echo -n "" > prev.rs
@@ -10,7 +10,7 @@
 
 next:
     #!/bin/bash
-    echo -n next # mark zellij frame
+    echo -n "  next" # mark zellij frame
     num_versions="$(ls -q1 versions | wc -l)"
     let "upper_bound = num_versions - 1"
     for idx in $(seq 1 $upper_bound)
@@ -25,10 +25,12 @@ next:
     done
 
 diff:
-    watch --interval 0.2 --no-title --color difft --color=always prev.rs src/main.rs
+    #!/bin/bash
+    diff_cmd="printf '\n\n'; (difft --color=always prev.rs src/main.rs | tail -n +2)"
+    watchexec --project-origin . --watch prev.rs --clear --quiet "$diff_cmd"
 
 zellij:
     zellij --layout zellij.kdl
 
 zellij-window:
-    alacritty --option 'font.size=24' --command just zellij &
+    alacritty --config-file alacritty_config.toml --command just zellij &

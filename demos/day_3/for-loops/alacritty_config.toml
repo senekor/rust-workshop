@@ -1,0 +1,12 @@
+# default
+import = [
+    "~/.config/alacritty/themes/vscode.toml",
+    "~/.config/alacritty/config.toml",
+]
+
+# overrides
+[font]
+size = 24
+
+[window]
+padding = { x = 96, y = 0 }
