@@ -15,6 +15,28 @@ class: text-center
 ---
 
 ```yaml
+layout: center
+class: text-center
+```
+
+# Why do people use Rust <Orange>at Work</Orange>?
+
+according to the [Rust Annual Survey 2023](https://blog.rust-lang.org/2024/02/19/2023-Rust-Annual-Survey-2023-results.html)
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>(85%) Rust allows us to build relatively correct and bug free software</li>
+    <li>(83%) For Rust's performance (speed, memory footprint) characteristics</li>
+    <li>(70%) Its security and safety properties are important to us</li>
+    <li>(70%) We find it enjoyable or fun to program in Rust</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+---
+
+```yaml
 layout: cover
 class: text-center
 ```
