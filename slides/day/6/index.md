@@ -26,6 +26,29 @@ class: text-center
 ---
 
 ```yaml
+layout: center
+class: text-center
+```
+
+# I hope you are now <Orange>confident</Orange>
+# to start new projects in Rust!
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Please suggest improvements
+# for the next workshop!
+# 🦀
+
+Check the readme of your repository for the form link.
+
+---
+
+```yaml
 layout: cover
 class: text-center
 ```
@@ -58,16 +81,3 @@ class: text-center
   src="/viking.png"
   style="width: 180px; position: absolute; left: 740px; top: 320px"
 />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Please suggest improvements
-# for the next workshop!
-# 🦀
-
-Check the readme of your repository for the form link.
