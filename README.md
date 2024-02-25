@@ -39,7 +39,7 @@ The following agenda serves as a progress tracker for the workshop preparation.
     - [x] 8: `std` collections
     - [x] 9: error handling
   - [x] practice
-- [ ] advanced language features
+- [x] advanced language features
   - [x] theory
     - [x] 10: generics
     - [x] 10: traits
@@ -49,37 +49,33 @@ The following agenda serves as a progress tracker for the workshop preparation.
   - [x] practice
     - [x] write custom iterator
   - [x] homework
-- [ ] beyond the book: navigating the ecosystem
-  - [ ] theory
-    - [ ] how to use libraries
-    - [ ] how to find libraries
-      - [ ] not in `std`:
-        - [ ] `rand`
-        - [ ] `regex`
-        - [ ] `log`
-        - [ ] `time`
-        - [ ] `hyper` (http)
-      - [ ] blessed.rs (shortlist)
-        - [ ] container-based cross-compilation
-        - [ ] FFI glue-code generators (C, C++, WASM, Python! and many more)
-        - [ ] release automation
-      - [ ] lib.rs (extensive category-based index)
-    - [ ] library information (crates.io)
-    - [ ] library documentation (docs.rs)
-    - [ ] demo of two crates showcasing the power of the language:
-      - [ ] `itertools`
-      - [ ] `serde`
-    - [ ] This Week in Rust
+- [x] beyond the book: navigating the ecosystem
+  - [x] theory
+    - [x] how to use libraries
+    - [x] how to find libraries
+      - [x] not in `std`:
+        - `rand`
+        - `regex`
+        - `log`
+        - `time`
+        - `hyper` (http)
+      - [x] blessed.rs (shortlist)
+      - [x] lib.rs (extensive category-based index)
+    - [x] library information (crates.io)
+    - [x] library documentation (docs.rs)
+    - [x] demo of two crates showcasing the power of the language:
+      - [x] `itertools`
+      - [x] `serde`
+    - [x] This Week in Rust
     - [ ] how to setup a CI/CD pipeline
     - [ ] quick note about the state of embedded
-    - [ ] design patterns: (?)
-      - [ ] strategy
-      - [ ] builder
-      - [ ] type state
   - [ ] practice
+    - [ ] setting up CI for a sample library
   - [ ] homework
-    - [ ] Skim blessed.rs from top to bottom.
+    - [x] Skim blessed.rs from top to bottom.
           "Holy shit, you can do that?"-moments are guaranteed.
+  - [ ] optional exercises ?
+    - [ ] practice design patterns (? should be very hand-holdy. danger: "what am I supposed to do?")
 - [ ] start project
   - [ ] network services
     - [ ] several services communicate via HTTP, data types are in a shared crate

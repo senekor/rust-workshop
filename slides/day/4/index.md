@@ -17,6 +17,71 @@ class: text-center
 ```yaml
 layout: cover
 class: text-center
+transition: slide-left
 ```
 
-# TODO
+# The Rust Ecosystem
+
+<div></div>
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>Libraries & Documentation</li>
+    <li>Idiomatic APIs</li>
+    <li>News</li>
+    <li>Developer Tools</li>
+    <li>Testing</li>
+    <li>Continuous Integration & Delivery</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+---
+src: 1_libs_docs.md
+---
+
+---
+src: 2_rusty_apis.md
+---
+
+---
+src: 3_news.md
+---
+
+---
+src: 4_dev_tools.md
+---
+
+---
+src: 5_testing.md
+---
+
+---
+src: 6_ci_cd.md
+---
+
+---
+
+```yaml
+layout: cover
+class: text-center
+transition: slide-left
+```
+
+# Practice 🧑‍💻
+
+## `rust-workshop/day_4/README.md`
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Please suggest improvements
+# for next week!
+# 🦀
+
+Check the readme of your repository for the form link.

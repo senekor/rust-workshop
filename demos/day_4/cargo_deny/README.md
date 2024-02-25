@@ -1,0 +1,8 @@
+- install `cargo-deny`
+- run `cargo deny check licenses`
+- add `license = "Unlicense"` to `Cargo.toml`
+- run `cargo deny check licenses`
+- run `cargo add winnow`
+- run `cargo deny check licenses`
+- add `"MIT"` to allow-list in `deny.toml`
+- run `cargo deny check licenses`

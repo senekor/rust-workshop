@@ -27,8 +27,14 @@ trait Iterator {
 
 For a type to be an iterator, it needs to...
 
-- define the type of the items it iterates over.
-- provide a method to get the next item in the series.
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>define the type of the items it iterates over.</li>
+    <li>provide a method to get the next item in the series.</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 ---
 
