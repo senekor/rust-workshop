@@ -33,26 +33,26 @@ class: text-center
 <div></div>
 
 <img
-  src="cook.png"
+  src="/cook.png"
   style="width: 180px; position: absolute; top: 100px"
 />
 <img
-  src="surfer.png"
+  src="/surfer.png"
   style="width: 180px; position: absolute; top: 340px"
 />
 <img
-  src="pirate.png"
+  src="/pirate.png"
   style="width: 180px; position: absolute; left: 400px; top: 60px"
 />
 <img
-  src="student.png"
+  src="/student.png"
   style="width: 180px; position: absolute; left: 400px; top: 400px"
 />
 <img
-  src="builder.png"
+  src="/builder.png"
   style="width: 180px; position: absolute; left: 740px; top: 120px"
 />
 <img
-  src="viking.png"
+  src="/viking.png"
   style="width: 180px; position: absolute; left: 740px; top: 320px"
 />
