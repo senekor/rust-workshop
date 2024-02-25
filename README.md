@@ -2,7 +2,7 @@
 
 Slides and other material primarily intended for the workshop organizer.
 
-The template for the participants is [here][rust-workshop-repo].
+The repository for the participants is [here][rust-workshop-repo].
 (or in the submodule `rust-workshop`)
 
 ## Invitation

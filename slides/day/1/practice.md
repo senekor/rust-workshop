@@ -90,18 +90,18 @@ layout: center
 transition: slide-up
 ```
 
-![](/repo-template.png)
+![](/fork.png)
 
 <div
     style="border-color: red"
-    class="border-4 absolute top-39 left-70 w-57 h-9"
+    class="border-4 absolute top-36.5 left-81 w-62 h-9"
 ></div>
 
 <div
     style="border-color: red"
-    class="border-4 absolute top-72 left-194 w-34.4 h-10"
+    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
 ></div>
-<Arrow color="red" x1="780" y1="420" x2="810" y2="350" />
+<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
 
 ---
 
