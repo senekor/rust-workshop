@@ -19,7 +19,9 @@ layout: cover
 class: text-center
 ```
 
-# TODO
+# Work on Project 🧑‍💻
+
+## `rust-workshop/final_project/README.md`
 
 ---
 
@@ -56,3 +58,16 @@ class: text-center
   src="/viking.png"
   style="width: 180px; position: absolute; left: 740px; top: 320px"
 />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Please suggest improvements
+# for the next workshop!
+# 🦀
+
+Check the readme of your repository for the form link.

@@ -17,7 +17,6 @@ class: text-center
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Final Project 🚀
@@ -35,7 +34,6 @@ and more about getting your Rust-based software into production.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # What does production look like?
@@ -57,7 +55,6 @@ Our final project is to create and ship one or a combination of these.
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Simulating a Postal Service
@@ -84,7 +81,6 @@ arrives in the web app, pushed via websocket 🤯
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Work on Project 🧑‍💻
