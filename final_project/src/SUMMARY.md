@@ -1,0 +1,16 @@
+# Summary
+
+- [Introduction](./introduction.md)
+- [Clients](clients.md)
+  - [CLI](clients/cli.md)
+  - [Python module](clients/py_module.md)
+- [GUI-Clients](guis.md)
+  - [Web App](guis/web.md)
+  - [TUI](guis/tui.md)
+  - [Native GUI](guis/native_gui.md)
+- [Servers](servers.md)
+  - [HTTP/REST-API](servers/http.md)
+  - [WebSocket](servers/websocket.md)
+  - [gRPC](servers/grpc.md)
+- [Integrations](integrations.md)
+  - [CLI and HTTP](integrations/cli_http.md)

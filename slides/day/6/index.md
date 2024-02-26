@@ -21,7 +21,7 @@ class: text-center
 
 # Work on Project 🧑‍💻
 
-## `rust-workshop/final_project/README.md`
+## [senekor.github.io/rust-workshop-extra](https://senekor.github.io/rust-workshop-extra)
 
 ---
 

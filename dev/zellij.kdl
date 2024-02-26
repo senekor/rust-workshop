@@ -1,0 +1,51 @@
+layout {
+	default_tab_template {
+		pane size=1 borderless=true {
+			plugin location="zellij:compact-bar"
+		}
+		children
+	}
+
+	tab name="slides" split_direction="vertical" {
+		pane split_direction="horizontal" {
+			pane {
+				command "just"
+				args "slides" "1"
+			}
+			pane {
+				command "just"
+				args "slides" "2"
+			}
+			pane {
+				command "just"
+				args "slides" "3"
+			}
+		}
+		pane split_direction="horizontal" {
+			pane {
+				command "just"
+				args "slides" "4"
+			}
+			pane {
+				command "just"
+				args "slides" "5"
+			}
+			pane {
+				command "just"
+				args "slides" "6"
+			}
+		}
+	}
+	tab name="mdbook" {
+		pane {
+			command "mdbook"
+			args "serve" "final_project"
+		}
+	}
+	tab name="hx" {
+		pane {
+			command "hx"
+			args "."
+		}
+	}
+}

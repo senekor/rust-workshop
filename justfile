@@ -7,4 +7,10 @@ _default:
 
 # render slides on a dev server
 slides day: _setup-slides
-    cd slides && npm run slidev -- day/{{day}}/index.md
+    cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md
+
+zellij:
+    zellij --layout dev/zellij.kdl
+
+deploy-gh-pages:
+    ./dev/scripts/deploy_gh_pages.sh
