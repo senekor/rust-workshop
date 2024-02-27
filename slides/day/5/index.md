@@ -85,7 +85,7 @@ class: text-center
 
 # Work on Project 🧑‍💻
 
-## [senekor.github.io/rust-workshop-extra](https://senekor.github.io/rust-workshop-extra)
+## [rw-fp.buenzli.dev](https://rw-fp.buenzli.dev)
 
 ---
 

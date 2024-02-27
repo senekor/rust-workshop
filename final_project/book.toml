@@ -17,7 +17,6 @@ assets_version = "2.1.0" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
 [output]
 
 [output.html]
-site-url = "/rust-workshop-extra/"
 additional-css = ["./mdbook-admonish.css", "./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 default-theme = "latte"
 preferred-dark-theme = "macchiato"
