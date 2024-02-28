@@ -8,9 +8,29 @@ transition: slide-up
 
 Ready your laptops!
 
-This first session will start slow, as we make sure everyone has a functioning setup.
+I will quickly explain all the setup steps.
 
-The following practice sessions will allow a more individual learning pace.
+You'll receive step-by-step instructions in writing as well.
+
+---
+
+```yaml
+layout: center
+transition: slide-up
+```
+
+![](/fork.png)
+
+<div
+    style="border-color: red"
+    class="border-4 absolute top-36.5 left-81 w-62 h-9"
+></div>
+
+<div
+    style="border-color: red"
+    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
+></div>
+<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
 
 ---
 
@@ -90,26 +110,6 @@ layout: center
 transition: slide-up
 ```
 
-![](/fork.png)
-
-<div
-    style="border-color: red"
-    class="border-4 absolute top-36.5 left-81 w-62 h-9"
-></div>
-
-<div
-    style="border-color: red"
-    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
-></div>
-<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
-
----
-
-```yaml
-layout: center
-transition: slide-up
-```
-
 # Visual Studio Code Extensions
 
 recommendations cover:
@@ -142,6 +142,43 @@ transition: slide-up
     style="border-color: red"
     class="border-4 absolute top-106 left-68 w-72 h-24"
 ></div>
+
+---
+
+```yaml
+layout: cover
+class: text-center
+transition: slide-up
+```
+
+# Exercise Organization
+
+|                  |                                        |
+| ---------------: | :------------------------------------- |
+| custom exercises | in the repo you forked                 |
+|        rustlings | download a folder, e.g. inside fork    |
+|         Exercism | online editor or need to configure CLI |
+|   Advent of Code | locally wherever you want              |
+
+---
+
+```yaml
+layout: center
+transition: slide-up
+```
+
+![](/fork.png)
+
+<div
+    style="border-color: red"
+    class="border-4 absolute top-36.5 left-81 w-62 h-9"
+></div>
+
+<div
+    style="border-color: red"
+    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
+></div>
+<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
 
 ---
 
