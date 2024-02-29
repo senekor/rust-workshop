@@ -163,26 +163,6 @@ transition: slide-up
 ---
 
 ```yaml
-layout: center
-transition: slide-up
-```
-
-![](/fork.png)
-
-<div
-    style="border-color: red"
-    class="border-4 absolute top-36.5 left-81 w-62 h-9"
-></div>
-
-<div
-    style="border-color: red"
-    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
-></div>
-<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
-
----
-
-```yaml
 layout: cover
 class: text-center
 transition: slide-left
