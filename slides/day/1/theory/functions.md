@@ -51,13 +51,13 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-126 w-20"
+    class="h-0.8 rounded absolute top-60 left-125 w-25"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-87.5 left-127 w-14"
+    class="h-0.8 rounded absolute top-90 left-127 w-15"
     v-click="[1,2]"
 ></div>
 
@@ -108,6 +108,6 @@ fn plus_one(x: i32) -> i32 {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-91.5 left-121 w-13.5"
+    class="h-0.8 rounded absolute top-94 left-120 w-15"
     v-click="[0,1]"
 ></div>

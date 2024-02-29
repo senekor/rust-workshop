@@ -113,7 +113,7 @@ let heart_eyed_cat = '😻';
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-63 left-137 w-12.5"
+    class="h-0.8 rounded absolute top-61 left-137 w-12.5"
 ></div>
 
 ---
@@ -136,7 +136,7 @@ let a: i32 = tup.0;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-84.5 left-119.5 w-4.5"
+    class="h-0.8 rounded absolute top-87 left-118 w-5"
     v-click="[2,3]"
 ></div>
 
@@ -158,7 +158,7 @@ let rusty_void: () = println!("printing doesn't return anything");
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81.5 left-88 w-8"
+    class="h-0.8 rounded absolute top-82.5 left-81 w-9"
 ></div>
 
 ---
@@ -166,6 +166,7 @@ let rusty_void: () = println!("printing doesn't return anything");
 ```yaml
 layout: center
 class: text-center
+transition: slide-left
 clicks: 3
 ```
 
@@ -181,6 +182,6 @@ let x = a[0];
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-76.5 left-105 w-14"
+    class="h-0.8 rounded absolute top-76 left-101 w-16"
     v-click="[0,1]"
 ></div>

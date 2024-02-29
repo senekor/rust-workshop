@@ -17,6 +17,7 @@ class: text-center
 ```yaml
 layout: center
 class: text-center
+transition: slide-left
 ```
 
 # Why do people use Rust <Orange>at Work</Orange>?
@@ -39,6 +40,7 @@ according to the [Rust Annual Survey 2023](https://blog.rust-lang.org/2024/02/19
 ```yaml
 layout: cover
 class: text-center
+transition: slide-left
 ```
 
 # Goal
@@ -49,8 +51,9 @@ class: text-center
 ---
 
 ```yaml
-layout: cover
+layout: center
 class: text-center
+transition: slide-left
 ```
 
 # Program
@@ -67,6 +70,10 @@ class: text-center
 | Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback, self-congratulation |
 
 ---
+
+```yaml
+transition: slide-left
+```
 
 # Speedrunning the Book
 
@@ -106,6 +113,7 @@ src: ./practice.md
 ```yaml
 layout: center
 class: text-center
+transition: slide-left
 ```
 
 # Please suggest improvements

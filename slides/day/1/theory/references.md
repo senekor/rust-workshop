@@ -39,15 +39,15 @@ let y: i32 = *r;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77 left-124 w-9"
+    class="h-0.8 rounded absolute top-77.5 left-124 w-10"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77 left-139 w-5"
+    class="h-0.8 rounded absolute top-77.5 left-141 w-5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82 left-137.5 w-4"
+    class="h-0.8 rounded absolute top-83.5 left-138 w-4"
 ></div>
 
 ---
@@ -75,12 +75,12 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-57 left-114.5 w-3"
+    class="h-0.8 rounded absolute top-54 left-112 w-3"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-87 left-131.5 w-3"
+    class="h-0.8 rounded absolute top-90 left-132 w-3"
     v-click="[0,1]"
 ></div>
 
@@ -102,7 +102,7 @@ let r = &mut x;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77.5 left-111 w-9"
+    class="h-0.8 rounded absolute top-78 left-114 w-11"
 ></div>
 
 ---
@@ -194,28 +194,6 @@ class: text-center
 transition: slide-up
 ```
 
-# Non-Lexical Lifetimes
-
-```rust {4,7-8}
-fn main() {
-    let mut s = String::from("hello");
-
-    let r1 = &s;
-    println!("{}", r1);
-
-    let r2 = &mut s;
-    println!("{}", r2);
-}
-```
-
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
-
 # Dangling References
 
 ```rust
@@ -277,16 +255,16 @@ println!("{}", r1.borrow()); // -> Hello Venus, Mars and Jupiter!
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-76.7 left-59 w-5"
+    class="h-0.8 rounded absolute top-77 left-47 w-5"
     v-click="[3,4]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-81.8 left-59 w-5"
+    class="h-0.8 rounded absolute top-83 left-47 w-5"
     v-click="[3,4]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-86.7 left-59 w-5"
+    class="h-0.8 rounded absolute top-89 left-47 w-5"
     v-click="[3,4]"
 ></div>

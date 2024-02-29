@@ -45,28 +45,28 @@ fn my_unwrap_i64(maybe_int: Option<i64>) -> i64 {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-103 w-7"
+    class="h-0.8 rounded absolute top-62.5 left-103 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-149 w-7"
+    class="h-0.8 rounded absolute top-62.5 left-149 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-168 w-7"
+    class="h-0.8 rounded absolute top-62.5 left-168 w-7"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82.4 left-103 w-7"
+    class="h-0.8 rounded absolute top-82.4 left-103 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82.4 left-149 w-7"
+    class="h-0.8 rounded absolute top-82.4 left-149 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82.4 left-168 w-7"
+    class="h-0.8 rounded absolute top-82.4 left-168 w-7"
 ></div>
 
 ---
@@ -105,28 +105,28 @@ my_unwrap(Some(42_i64));
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-106 w-7"
+    class="h-0.8 rounded absolute top-62.5 left-106 w-7"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-152.2 w-3"
+    class="h-0.8 rounded absolute top-62.5 left-152.2 w-3"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-62.5 left-167 w-3"
+    class="h-0.8 rounded absolute top-62.5 left-167 w-3"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-87 left-119.5 w-6"
+    class="h-0.8 rounded absolute top-87 left-119.5 w-6"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-92 left-119.5 w-6"
+    class="h-0.8 rounded absolute top-92 left-119.5 w-6"
     v-click="[1,2]"
 ></div>
 
@@ -158,28 +158,28 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-50 left-110 w-5.5"
+    class="h-0.8 rounded absolute top-50 left-110 w-5.5"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-54.5 left-98.8 w-3"
+    class="h-0.8 rounded absolute top-54.5 left-98.8 w-3"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-59.5 left-98.8 w-3"
+    class="h-0.8 rounded absolute top-59.5 left-98.8 w-3"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-79.5 left-145 w-3"
+    class="h-0.8 rounded absolute top-79.5 left-145 w-3"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-84.5 left-141 w-7"
+    class="h-0.8 rounded absolute top-84.5 left-141 w-7"
     v-click="[1,2]"
 ></div>
 
@@ -247,15 +247,15 @@ impl<T> Point<T> {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-79.5 left-101.8 w-6.5"
+    class="h-0.8 rounded absolute top-79.5 left-101.8 w-6.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-79.5 left-120.8 w-6.5"
+    class="h-0.8 rounded absolute top-79.5 left-120.8 w-6.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-84.5 left-133.5 w-5"
+    class="h-0.8 rounded absolute top-84.5 left-133.5 w-5"
 ></div>
 
 ---

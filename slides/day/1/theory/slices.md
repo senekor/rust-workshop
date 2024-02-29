@@ -64,11 +64,11 @@ The full length of a slice is guaranteed valid memory.\
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-43 left-110 w-12"
+    class="h-0.8 rounded absolute top-39 left-106.5 w-15"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-83 left-99 w-31"
+    class="h-0.8 rounded absolute top-87 left-94 w-36.5"
 ></div>
 
 ---

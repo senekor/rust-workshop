@@ -53,7 +53,7 @@ compiler says:
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-75 left-103.5 w-6.5"
+    class="h-0.8 rounded absolute top-75 left-103.5 w-6.5"
 ></div>
 
 ---
@@ -87,11 +87,11 @@ compiler says:
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-80 left-90 w-4"
+    class="h-0.8 rounded absolute top-80 left-90 w-4"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-85 left-102.5 w-6"
+    class="h-0.8 rounded absolute top-85 left-102.5 w-6"
 ></div>
 
 ---
@@ -127,12 +127,12 @@ mod garden {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-92 left-102.5 w-10.5"
+    class="h-0.8 rounded absolute top-92 left-102.5 w-10.5"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-102 left-102.5 w-10.5"
+    class="h-0.8 rounded absolute top-102 left-102.5 w-10.5"
     v-click="[2,3]"
 ></div>
 
@@ -231,7 +231,7 @@ use leptos::prelude::*;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-60 left-121 w-6"
+    class="h-0.8 rounded absolute top-60 left-121 w-6"
     v-click="[0,1]"
 ></div>
 
@@ -265,7 +265,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-70 left-73 w-15"
+    class="h-0.8 rounded absolute top-70 left-73 w-15"
     v-click="[0,1]"
 ></div>
 
@@ -293,7 +293,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-78 left-137 w-27"
+    class="h-0.8 rounded absolute top-78 left-137 w-27"
 ></div>
 
 ---

@@ -32,7 +32,7 @@ class: text-center
 transition: slide-up
 ```
 
-# C/C++
+# C and C++
 
 a short history of manual memory management
 
@@ -76,33 +76,23 @@ class: text-center
 transition: slide-up
 ```
 
-# Whatever this is
-
-```c
-int *silly_foot_bazooka() {
-    int i;
-    return &i;
-}
-```
-
----
-
-```yaml
-layout: center
-transition: slide-up
-```
-
 # Implicit ownership in C
 
 ```c
 some_t *foo(some_t *p);
 ```
 
-- Is the function going to free the pointer, or do I have to?
-- Does the function only read from the pointer or does it write to it?
-- Can the return value alias the argument?
-- Where is the documentation?
-- Please let there be documentation.
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>Is the function going to free the pointer, or do I have to?</li>
+    <li>Does the function only read from the pointer or does it write to it?</li>
+    <li>Can the return value alias the argument?</li>
+    <li>Where is the documentation?</li>
+    <li>Please let there be documentation.</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 ---
 
@@ -188,11 +178,18 @@ println!("{}, world!", s1); // error
 ---
 
 ```yaml
+layout: center
 class: text-center
 transition: slide-up
 ```
 
 # Reading the error message
+
+<style>
+.slidev-code {
+  --slidev-code-font-size: 14px;
+}
+</style>
 
 ```txt {all|1,5,13}
 error[E0382]: borrow of moved value: `s1`
@@ -206,7 +203,7 @@ error[E0382]: borrow of moved value: `s1`
 5 |     println!("{}, world!", s1);
   |                            ^^ value borrowed here after move
   |
-  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from ...
 help: consider cloning the value if the performance cost is acceptable
   |
 3 |     let s2 = s1.clone();
@@ -305,12 +302,12 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-64.5 left-67 w-29"
+    class="h-0.8 rounded absolute top-61 left-55 w-35"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-64.5 left-151 w-47"
+    class="h-0.8 rounded absolute top-61 left-155 w-57"
     v-click="[2,3]"
 ></div>
 
@@ -339,6 +336,6 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-57.5 left-132 w-29"
+    class="h-0.8 rounded absolute top-54.5 left-133 w-34"
     v-click="[0,1]"
 ></div>

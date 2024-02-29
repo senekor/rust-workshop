@@ -103,13 +103,13 @@ for element in a {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-71.8 left-102 w-22"
+    class="h-0.8 rounded absolute top-70 left-97 w-26"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77 left-121.5 w-8"
+    class="h-0.8 rounded absolute top-76 left-120 w-10"
     v-click="[1,2]"
 ></div>
 
@@ -155,22 +155,22 @@ let x: u32 = 42_i64.try_into().unwrap();
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-76.5 left-89 w-5.5"
+    class="h-0.8 rounded absolute top-76 left-91 w-7.5"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-76.5 left-108 w-5.5"
+    class="h-0.8 rounded absolute top-76 left-114 w-7.5"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-91.3 left-89 w-5.5"
+    class="h-0.8 rounded absolute top-94 left-91 w-7.5"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-91.3 left-108 w-5.5"
+    class="h-0.8 rounded absolute top-94 left-114 w-7.5"
     v-click="[1,2]"
 ></div>

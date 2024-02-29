@@ -33,7 +33,10 @@ demo-2-exhaustiveness:
 demo-3-adaptors:
     @just _demo "3" adaptors
 demo-3-for_loops:
-    @just _demo "3" for_loops
+    #!/bin/bash
+    set -euo pipefail
+    cd demos/day_3/for_loops
+    just zellij-window
 
 demo-4-cargo_deny:
     @just _demo "4" cargo_deny

@@ -26,7 +26,7 @@ let x: i32 = 5;
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82 left-105 w-10"
+    class="h-0.8 rounded absolute top-84 left-106.5 w-12"
     v-click="[1,2]"
 ></div>
 
@@ -51,7 +51,7 @@ x = 6; // ✅
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-82 left-70.5 w-6.5"
+    class="h-0.8 rounded absolute top-84 left-60 w-8"
     v-click="1"
 ></div>
 
@@ -76,13 +76,13 @@ static EMBEDDED_TEXT_FILE: &str = include_str!("path/to/some/file.txt");
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-72.5 left-52 w-10.5"
+    class="h-0.8 rounded absolute top-72 left-38 w-13"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-87.3 left-52 w-12.5"
+    class="h-0.8 rounded absolute top-90 left-38 w-15"
     v-click="[1,2]"
 ></div>
 
@@ -110,6 +110,7 @@ let x = 5;
 ```yaml
 layout: center
 class: text-center
+transition: slide-left
 clicks: 1
 ```
 
@@ -128,22 +129,22 @@ let x: &str = "five";
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-59.5 left-113.5 w-3"
+    class="h-0.8 rounded absolute top-57 left-111 w-3.5"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-69.5 left-122 w-3"
+    class="h-0.8 rounded absolute top-69 left-120.8 w-3.5"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-59.5 left-113.5 w-13"
+    class="h-0.8 rounded absolute top-57 left-111 w-15"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-94.5 left-113.5 w-15"
+    class="h-0.8 rounded absolute top-99 left-111 w-18"
     v-click="[1,2]"
 ></div>

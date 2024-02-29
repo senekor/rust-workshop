@@ -112,12 +112,12 @@ impl str {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-69 left-126 w-14"
+    class="h-0.8 rounded absolute top-69 left-126 w-14"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-83.5 left-126 w-10"
+    class="h-0.8 rounded absolute top-83.5 left-126 w-10"
     v-click="[2,3]"
 ></div>
 

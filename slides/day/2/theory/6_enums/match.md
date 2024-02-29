@@ -198,7 +198,7 @@ if let Some(num) = maybe_num {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-75 left-77 w-33"
+    class="h-0.8 rounded absolute top-75 left-77 w-33"
 ></div>
 
 ---
@@ -220,7 +220,7 @@ while let Some(n) = numbers.pop() {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-75 left-65 w-36"
+    class="h-0.8 rounded absolute top-75 left-65 w-36"
 ></div>
 
 ---

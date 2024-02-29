@@ -72,11 +72,11 @@ trait Comparable {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-72 left-73 w-10.5"
+    class="h-0.8 rounded absolute top-72 left-73 w-10.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-77.5 left-179.5 w-3"
+    class="h-0.8 rounded absolute top-77.5 left-179.5 w-3"
 ></div>
 
 ---
@@ -104,11 +104,11 @@ impl Comparable for i64 {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-54.5 left-98 w-14.5"
+    class="h-0.8 rounded absolute top-54.5 left-98 w-14.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-79.5 left-98 w-14.5"
+    class="h-0.8 rounded absolute top-79.5 left-98 w-14.5"
 ></div>
 
 ---
@@ -137,7 +137,7 @@ fn find_largest<T: Comparable>(list: &[T]) -> &T {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-52.5 left-97.5 w-27"
+    class="h-0.8 rounded absolute top-52.5 left-97.5 w-27"
 ></div>
 
 ---
@@ -180,7 +180,7 @@ fn find_largest<T: Comparable + Debug>(list: &[T]) -> &T {
 
 <div
     style="background-color: red"
-    class="h-0.5 absolute top-68 left-107 w-37"
+    class="h-0.8 rounded absolute top-68 left-107 w-37"
 ></div>
 
 ---
