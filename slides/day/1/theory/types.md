@@ -71,20 +71,6 @@ class: text-center
 transition: slide-up
 ```
 
-# Arithmetic Operators
-
-```rust
-let x = 1 + 2 - 3 * 4 / 5 % 6;
-```
-
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
-
 # Booleans
 
 ```rust
