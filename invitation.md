@@ -27,7 +27,7 @@ Expect to spend an additional two hours per week on homework.
 
 ## What to expect
 
-- You will get an overview of what the language has to offer and how to find all the information you need.
+- You will get an overview of what the language has to offer and how to find all the information you need to be productive in it.
 - You will get hands-on experience with all of the core language features solving purpose-built exercises.
 - You will spend enough time with Rust's standout features to understand and experience how they uniquely empower you to write great software.
 - You will learn how to find, evaluate and use libraries to get things done quickly.
@@ -45,4 +45,4 @@ But don't sweat it, there's time planned during the first workshop to get everyo
 
 ---
 
-I hope I'll see you at the workshop! 😃
+I hope to see you at the workshop! 😃
