@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 4.1
 
+<Nr />
+
 ---
 
 ```yaml
@@ -24,6 +26,8 @@ transition: slide-up
 | garbage-collection | slow & unpredictable, but safe                          | ❌✅   |
 | ownership          | fast, predictable, safe and <Orange>expressive</Orange> | ✅✅✅ |
 
+<Nr />
+
 ---
 
 ```yaml
@@ -36,21 +40,7 @@ transition: slide-up
 
 a short history of manual memory management
 
----
-
-```yaml
-layout: center
-class: text-center
-transition: none
-```
-
-# Double free
-
-```c
-int *p = malloc(sizeof(int));
-free(p);
-free(p);
-```
+<Nr />
 
 ---
 
@@ -60,13 +50,25 @@ class: text-center
 transition: slide-up
 ```
 
-# Use after free
+## Double free
 
 ```c
 int *p = malloc(sizeof(int));
 free(p);
-*p = 12;
+free(p); // ⚠️
 ```
+
+<div class="h-8"></div>
+
+## Use after free
+
+```c
+int *p = malloc(sizeof(int));
+free(p);
+*p = 12; // ⚠️
+```
+
+<Nr />
 
 ---
 
@@ -94,6 +96,8 @@ some_t *foo(some_t *p);
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -114,6 +118,8 @@ and destructors!
 
 ...but no compiler guarantees.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -126,17 +132,30 @@ transition: slide-up
 
 codify and enforce the rules of ownership
 
+<Nr />
+
 ---
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # Ownership Rules
 
-1. Every value has exactly one owner.
-1. When the owner goes out of scope, the destructor is run.
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <ol>
+      <li>Every value has exactly one owner.</li>
+      <li>When the owner goes out of scope, the destructor is run.</li>
+    </ol>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+<Nr />
 
 ---
 
@@ -158,6 +177,8 @@ let embedded_in_binary: &str = "hello"; // immutable
 } // drop(heap_allocated)
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -174,6 +195,8 @@ let s2 = s1;
 
 println!("{}, world!", s1); // error
 ```
+
+<Nr />
 
 ---
 
@@ -213,6 +236,8 @@ For more information about this error, try `rustc --explain E0382`.
 error: could not compile `ownership` due to previous error
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -237,6 +262,8 @@ println!("{}, world!", s1); // error
 - help: consider cloning the value\
   if the performance cost is acceptable
 
+<Nr />
+
 ---
 
 ```yaml
@@ -248,6 +275,8 @@ transition: slide-up
 # Scope and Destructors
 
 demo
+
+<Nr />
 
 ---
 
@@ -273,6 +302,8 @@ fn take_foo(arg: Foo) {
 ```
 
 What's the output of this program?
+
+<Nr />
 
 ---
 
@@ -311,6 +342,8 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
     v-click="[2,3]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -339,3 +372,5 @@ fn main() {
     class="h-0.8 rounded absolute top-54.5 left-133 w-34"
     v-click="[0,1]"
 ></div>
+
+<Nr />

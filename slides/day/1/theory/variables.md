@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 3.1
 
+<Nr />
+
 ---
 
 ```yaml
@@ -29,6 +31,8 @@ let x: i32 = 5;
     class="h-0.8 rounded absolute top-84 left-106.5 w-12"
     v-click="[1,2]"
 ></div>
+
+<Nr />
 
 ---
 
@@ -54,6 +58,8 @@ x = 6; // ✅
     class="h-0.8 rounded absolute top-84 left-60 w-8"
     v-click="1"
 ></div>
+
+<Nr />
 
 ---
 
@@ -86,12 +92,14 @@ static EMBEDDED_TEXT_FILE: &str = include_str!("path/to/some/file.txt");
     v-click="[1,2]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
+transition: slide-left
 ```
 
 # Scope
@@ -105,46 +113,4 @@ let x = 5;
 // only x available
 ```
 
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-left
-clicks: 1
-```
-
-# Shadowing
-
-```rust {1-6|1,8}
-let x: i32 = 5;
-{
-    let x = 6;
-    // x == 6
-}
-// x == 5
-
-let x: &str = "five";
-```
-
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-57 left-111 w-3.5"
-    v-click="[0,1]"
-></div>
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-69 left-120.8 w-3.5"
-    v-click="[0,1]"
-></div>
-
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-57 left-111 w-15"
-    v-click="[1,2]"
-></div>
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-99 left-111 w-18"
-    v-click="[1,2]"
-></div>
+<Nr />

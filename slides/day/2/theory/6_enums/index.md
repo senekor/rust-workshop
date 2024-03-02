@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 6
 
+<Nr />
+
 ---
 
 ```yaml
@@ -25,6 +27,8 @@ enum IpAddrKind {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -39,6 +43,8 @@ transition: slide-up
 let four = IpAddrKind::V4;
 let six = IpAddrKind::V6;
 ```
+
+<Nr />
 
 ---
 
@@ -81,6 +87,8 @@ fn main() {
     class="h-0.8 rounded absolute top-107.5 left-90 w-6"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -103,6 +111,8 @@ fn main() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -122,6 +132,8 @@ enum Message {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -138,6 +150,8 @@ transition: slide-up
     src="/option_meme.png"
     style="height: 30vh"
 />
+
+<Nr />
 
 ---
 
@@ -161,6 +175,8 @@ main() {
     let absent_number: Option<i32> = None;
 }
 ```
+
+<Nr />
 
 ---
 

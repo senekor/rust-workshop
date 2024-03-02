@@ -35,6 +35,8 @@ according to the [Rust Annual Survey 2023](https://blog.rust-lang.org/2024/02/19
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -47,6 +49,8 @@ transition: slide-left
 
 ## You are <Orange>confident</Orange> to start new projects in Rust
 ## where it is the best technical fit.
+
+<Nr />
 
 ---
 
@@ -68,6 +72,8 @@ transition: slide-left
 | Day 4 | The Rust Ecosystem 📦 | libraries, tools, news, CI/CD                             |
 | Day 5 | Shippable Projects 🚀 | CLI tools, web APIs, python modules, WASM apps            |
 | Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback, self-congratulation |
+
+<Nr />
 
 ---
 
@@ -99,6 +105,8 @@ transition: slide-left
 <div
     class="border-2 border-fuchsia-400 absolute top-421px left-275px w-217px h-72px"
 ></div>
+
+<Nr />
 
 ---
 src: ./theory/index.md

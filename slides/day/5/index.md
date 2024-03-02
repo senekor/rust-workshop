@@ -29,6 +29,8 @@ and you had a healthy dose of practice.
 Now, the final project is less about how to write Rust code\
 and more about getting your Rust-based software into production.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -49,6 +51,8 @@ class: text-center
 <div style="height: 16px"></div>
 
 Our final project is to create and ship one or a combination of these.
+
+<Nr />
 
 ---
 
@@ -76,6 +80,8 @@ $ my-paeckli-cli receive
 Now imagine you send a paeckli via CLI and it automatically\
 arrives in the web app, pushed via websocket 🤯
 
+<Nr />
+
 ---
 
 ```yaml
@@ -86,6 +92,8 @@ class: text-center
 # Work on Project 🧑‍💻
 
 ## [rw-fp.buenzli.dev](https://rw-fp.buenzli.dev)
+
+<Nr />
 
 ---
 

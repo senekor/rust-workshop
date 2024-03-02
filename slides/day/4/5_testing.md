@@ -6,6 +6,8 @@ transition: slide-up
 
 # Testing
 
+<Nr />
+
 ---
 
 ```yaml
@@ -24,6 +26,8 @@ fn program_is_correct() {
 ```
 
 It will be executed by `cargo test`.
+
+<Nr />
 
 ---
 
@@ -55,6 +59,8 @@ It is good practice to have a `tests` module.
 The module is only compiled during testing,\
 due to the `#[cfg(test)]` attribute.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -77,6 +83,8 @@ fn it_works() -> Result<(), String> {
 ```
 
 As expected, `Ok` means the test passed, `Err` means it failed.
+
+<Nr />
 
 ---
 
@@ -105,6 +113,8 @@ Integration tests only work for libraries ( `lib.rs` ) !
 
 ➔ It is common even for binaries to be split into `main.rs` and `lib.rs`,\
 with `main.rs` being small and simple.
+
+<Nr />
 
 ---
 

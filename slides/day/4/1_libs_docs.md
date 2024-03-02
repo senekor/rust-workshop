@@ -17,6 +17,8 @@ transition: slide-up
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -42,6 +44,8 @@ transition: slide-up
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -64,6 +68,8 @@ transition: slide-up
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -75,6 +81,8 @@ transition: slide-up
 # Using Libraries
 
 demo
+
+<Nr />
 
 ---
 

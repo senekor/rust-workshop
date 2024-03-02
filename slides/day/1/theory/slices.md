@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 4.3
 
+<Nr />
+
 ---
 
 ```yaml
@@ -27,13 +29,15 @@ void print_slice(int *start, size_t len) {
 void main() {
     int numbers[5] = {1, 2, 3, 4, 5};
     print_slice(numbers + 1, 3);  // 2 3 4
-    print_slice(numbers + 3, 10); // 👻👻👻
+    print_slice(numbers + 3, 10); // ⚠️
 }
 ```
 
 Start pointer and length are disconnected,\
 the compiler cannot reason about memory safety.\
 ➔ buffer overflow
+
+<Nr />
 
 ---
 
@@ -71,6 +75,8 @@ The full length of a slice is guaranteed valid memory.\
     class="h-0.8 rounded absolute top-87 left-94 w-36.5"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -93,6 +99,8 @@ computer says:
 
 > byte index 1 is not a char boundary; it is inside '😱' (bytes 0..4) of `😱`
 
+<Nr />
+
 ---
 
 ```yaml
@@ -110,6 +118,8 @@ owned.pop(); // error: cannot borrow as mutable
 println!("{}", s);
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -123,6 +133,8 @@ transition: slide-up
 ```rust
 let greeting: &str = "Hello, world!";
 ```
+
+<Nr />
 
 ---
 

@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 10.3
 
+<Nr />
+
 ---
 
 ```yaml
@@ -31,6 +33,8 @@ fn main() {
     println!("r: {}", r); //          |
 }                         // ---------+
 ```
+
+<Nr />
 
 ---
 
@@ -57,6 +61,8 @@ compiler says:
 > missing lifetime specifier:\
 > this function's return type contains a borrowed value,\
 > but the signature does not say whether it is borrowed from `x` or `y`
+
+<Nr />
 
 ---
 
@@ -95,6 +101,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     class="h-0.8 rounded absolute top-62.5 left-164.5 w-4"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -121,6 +129,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     style="background-color: red"
     class="h-0.8 rounded absolute top-58 left-95 w-8"
 ></div>
+
+<Nr />
 
 ---
 
@@ -149,6 +159,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     class="h-0.8 rounded absolute top-58 left-114 w-4"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -175,6 +187,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     style="background-color: red"
     class="h-0.8 rounded absolute top-58 left-139.5 w-4"
 ></div>
+
+<Nr />
 
 ---
 
@@ -203,6 +217,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     class="h-0.8 rounded absolute top-58 left-164.5 w-4"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -226,6 +242,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 In essence:\
 The lifetime of the returned reference\
 is the shorter one of `x` and `y`'s lifetimes.
+
+<Nr />
 
 ---
 
@@ -257,6 +275,8 @@ compiler says:
 
 ...but we know this would be OK at runtime.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -280,6 +300,8 @@ The lifetime of `y` has no relation to the lifetime of the return value.
     class="h-0.8 rounded absolute top-66 left-152 w-4"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -296,6 +318,8 @@ struct StoringBorrowedData<'number, 'text> {
     s: &'text str,
 }
 ```
+
+<Nr />
 
 ---
 
@@ -326,6 +350,8 @@ impl Whatever {
     fn foo<'a>(&'a self, second_arg: &str) -> &'a str {}
 }
 ```
+
+<Nr />
 
 ---
 

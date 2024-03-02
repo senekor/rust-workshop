@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 3.3
 
+<Nr />
+
 ---
 
 ```yaml
@@ -27,6 +29,8 @@ fn another_function() {
     println!("Hello from another function!");
 }
 ```
+
+<Nr />
 
 ---
 
@@ -61,6 +65,8 @@ fn main() {
     v-click="[1,2]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -81,6 +87,8 @@ let y = {
 };
 // y == 4
 ```
+
+<Nr />
 
 ---
 
@@ -111,3 +119,5 @@ fn plus_one(x: i32) -> i32 {
     class="h-0.8 rounded absolute top-94 left-120 w-15"
     v-click="[0,1]"
 ></div>
+
+<Nr />

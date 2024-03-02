@@ -8,9 +8,11 @@ transition: slide-left
 
 book chapters 3 & 4
 
-variables, basic types, functions, control flow
+common programming concepts
 
 ownership
+
+<Nr />
 
 ---
 
@@ -25,6 +27,8 @@ fn main() {
     println!("Hello, world!");
 }
 ```
+
+<Nr />
 
 ---
 src: ./variables.md

@@ -23,6 +23,8 @@ class: text-center
 
 ## [rw-fp.buenzli.dev](https://rw-fp.buenzli.dev)
 
+<Nr />
+
 ---
 
 ```yaml
@@ -32,6 +34,8 @@ class: text-center
 
 # I hope you are now <Orange>confident</Orange>
 # to start new projects in Rust!
+
+<Nr />
 
 ---
 
@@ -45,6 +49,8 @@ class: text-center
 # 🦀
 
 Check the readme of your repository for the form link.
+
+<Nr />
 
 ---
 

@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 13.1
 
+<Nr />
+
 ---
 
 ```yaml
@@ -25,6 +27,8 @@ at runtime and passed around as argumets to and return values from other functio
 They are sometimes called _lambdas_ by other languages.
 
 Unlike functions, closures can capture values from the scope in which they’re defined.
+
+<Nr />
 
 ---
 
@@ -48,6 +52,8 @@ fn main() {
     let multiply = |x, y| x * y;
 }
 ```
+
+<Nr />
 
 ---
 
@@ -80,6 +86,8 @@ fn main() {
     class="h-0.8 rounded absolute top-82 left-132 w-3.5"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -103,6 +111,8 @@ fn main() {
     println!("nums: {:?}", nums);
 }
 ```
+
+<Nr />
 
 ---
 
@@ -133,6 +143,8 @@ fn main() {
     class="h-0.8 rounded absolute top-86 left-104 w-9"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -151,6 +163,8 @@ but you might see them in documentation and error messages.
 | `FnOnce` | can be called only once                      | moves captured value out of closure |
 |  `FnMut` | can be called many times but not shared      | mutates captured value              |
 |     `Fn` | can be called and shared without restriction | captures only immutable references  |
+
+<Nr />
 
 ---
 

@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 6.2
 
+<Nr />
+
 ---
 
 ```yaml
@@ -34,6 +36,8 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 ```
+
+<Nr />
 
 ---
 
@@ -66,6 +70,8 @@ fn receive(msg: Message) {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -90,6 +96,8 @@ fn main() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -113,6 +121,8 @@ compiler says:
 
 > non-exhaustive patterns: `None` not covered
 
+<Nr />
+
 ---
 
 ```yaml
@@ -124,6 +134,8 @@ transition: slide-up
 # Exhaustive Matching
 
 demo
+
+<Nr />
 
 ---
 
@@ -143,6 +155,8 @@ match 0_i32 {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -161,6 +175,8 @@ match 0_i32 {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -178,6 +194,8 @@ match 0_i32 {
     _  => {}
 }
 ```
+
+<Nr />
 
 ---
 
@@ -201,6 +219,8 @@ if let Some(num) = maybe_num {
     class="h-0.8 rounded absolute top-75 left-77 w-33"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -222,6 +242,8 @@ while let Some(n) = numbers.pop() {
     style="background-color: red"
     class="h-0.8 rounded absolute top-75 left-65 w-36"
 ></div>
+
+<Nr />
 
 ---
 

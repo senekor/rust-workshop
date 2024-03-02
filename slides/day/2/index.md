@@ -32,6 +32,8 @@ transition: slide-left
 
 Is everyone's LSP working and configured with clippy?
 
+<Nr />
+
 ---
 
 ```yaml

@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 3.5
 
+<Nr />
+
 ---
 
 ```yaml
@@ -34,6 +36,8 @@ let size = if number < 5 {
 
 What is the type of `size` ?
 
+<Nr />
+
 ---
 
 ```yaml
@@ -51,6 +55,8 @@ loop {
     println!("computer go brrr");
 }
 ```
+
+<Nr />
 
 ---
 
@@ -74,12 +80,14 @@ while number != 0 {
 println!("LIFTOFF!!!");
 ```
 
+<Nr />
+
 ---
 
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
+transition: slide-left
 clicks: 3
 ```
 
@@ -113,15 +121,17 @@ for element in a {
     v-click="[1,2]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
+transition: slide-left
 ```
 
-# Off-Topic: Operators
+# Some Operators
 
 some assignment variants exist ( `+=` )
 
@@ -132,6 +142,8 @@ some assignment variants exist ( `+=` )
 | Bitwise    | `&` `\|` `^` `!` (no tilde!)     |
 | Range      | `..` `..=` (integers and `char`) |
 
+<Nr />
+
 ---
 
 ```yaml
@@ -141,7 +153,7 @@ transition: slide-left
 clicks: 1
 ```
 
-# Off-Topic: Integer Conversions
+# Integer Conversions
 
 `as` exists, it but has some footguns
 
@@ -155,22 +167,24 @@ let x: u32 = 42_i64.try_into().unwrap();
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-76 left-91 w-7.5"
+    class="h-0.8 rounded absolute top-76 left-95 w-7.5"
     v-click="[0,1]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-76 left-114 w-7.5"
+    class="h-0.8 rounded absolute top-76 left-118 w-7.5"
     v-click="[0,1]"
 ></div>
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-94 left-91 w-7.5"
+    class="h-0.8 rounded absolute top-94 left-95 w-7.5"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-94 left-114 w-7.5"
+    class="h-0.8 rounded absolute top-94 left-118 w-7.5"
     v-click="[1,2]"
 ></div>
+
+<Nr />

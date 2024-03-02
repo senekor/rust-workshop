@@ -33,6 +33,8 @@ transition: slide-left
 
 You should still read the book at your own pace if you're serious about learning Rust!
 
+<Nr />
+
 ---
 
 ```yaml
@@ -53,6 +55,8 @@ fn expected_panic_occurs() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -64,6 +68,8 @@ transition: slide-left
 # Practice 🧑‍💻
 
 ## `rust-workshop/day_3/README.md`
+
+<Nr />
 
 ---
 

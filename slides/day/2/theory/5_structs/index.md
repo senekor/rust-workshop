@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 5
 
+<Nr />
+
 ---
 
 ```yaml
@@ -24,6 +26,8 @@ struct Rectangle {
     height: u32,
 }
 ```
+
+<Nr />
 
 ---
 
@@ -42,6 +46,8 @@ let rect = Rectangle {
 };
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -56,6 +62,8 @@ transition: slide-up
 rect.width = 120;
 let area = rect.width * rect.height;
 ```
+
+<Nr />
 
 ---
 
@@ -75,6 +83,8 @@ fn main() {
     let green = color.1;
 }
 ```
+
+<Nr />
 
 ---
 
@@ -97,6 +107,8 @@ fn into_non_zero_byte(raw: u8) -> NonZeroByte {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -118,6 +130,8 @@ fn main() {
 Extremely useful with traits!
 
 Sit tight for day 3.
+
+<Nr />
 
 ---
 
@@ -143,6 +157,8 @@ Sit tight for day 3.
     style="background-color: red"
     class="h-0.8 rounded absolute top-66 left-104 w-9"
 ></div>
+
+<Nr />
 
 ---
 

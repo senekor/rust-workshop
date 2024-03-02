@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 10.1
 
+<Nr />
+
 ---
 
 ```yaml
@@ -22,6 +24,8 @@ let s: &str = Some("hello").unwrap();
 ```
 
 Can we write `unwrap` ourselves?
+
+<Nr />
 
 ---
 
@@ -69,6 +73,8 @@ fn my_unwrap_i64(maybe_int: Option<i64>) -> i64 {
     class="h-0.8 rounded absolute top-82.4 left-168 w-7"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -81,6 +87,8 @@ transition: slide-up
     src="/void_star.png"
     style="height: 360px"
 />
+
+<Nr />
 
 ---
 
@@ -129,6 +137,8 @@ my_unwrap(Some(42_i64));
     class="h-0.8 rounded absolute top-92 left-119.5 w-6"
     v-click="[1,2]"
 ></div>
+
+<Nr />
 
 ---
 
@@ -183,6 +193,8 @@ fn main() {
     v-click="[1,2]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -205,6 +217,8 @@ fn main() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -221,6 +235,8 @@ enum Result<T, E> {
     Err(E),
 }
 ```
+
+<Nr />
 
 ---
 
@@ -257,6 +273,8 @@ impl<T> Point<T> {
     style="background-color: red"
     class="h-0.8 rounded absolute top-84.5 left-133.5 w-5"
 ></div>
+
+<Nr />
 
 ---
 

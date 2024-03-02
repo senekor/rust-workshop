@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 8
 
+<Nr />
+
 ---
 
 ```yaml
@@ -31,6 +33,8 @@ fn main() {
     }
 }
 ```
+
+<Nr />
 
 ---
 
@@ -57,6 +61,8 @@ fn main() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -80,6 +86,8 @@ fn main() {
     let germany_score = scores.get(&team_name).unwrap_or_default();
 }
 ```
+
+<Nr />
 
 ---
 

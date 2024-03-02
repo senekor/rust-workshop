@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 3.2
 
+<Nr />
+
 ---
 
 ```yaml
@@ -26,6 +28,8 @@ transition: slide-up
 | 64-bit  | `i64`   | `u64`    |
 | 128-bit | `i128`  | `u128`   |
 | arch    | `isize` | `usize`  |
+
+<Nr />
 
 ---
 
@@ -46,6 +50,8 @@ transition: slide-up
 |       ASCII Byte | `b'A'`        |
 | with type suffix | `57_i64`      |
 
+<Nr />
+
 ---
 
 ```yaml
@@ -63,6 +69,8 @@ let x = 2.0; // default: 64-bit
 let y: f32 = 3.0; // 32-bit
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -77,6 +85,8 @@ transition: slide-up
 let x = true;
 let y: bool = false;
 ```
+
+<Nr />
 
 ---
 
@@ -102,13 +112,15 @@ let heart_eyed_cat = '😻';
     class="h-0.8 rounded absolute top-61 left-137 w-12.5"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
 layout: center
 class: text-center
 transition: slide-up
-clicks: 2
+clicks: 3
 ```
 
 # Tuples
@@ -125,6 +137,8 @@ let a: i32 = tup.0;
     class="h-0.8 rounded absolute top-87 left-118 w-5"
     v-click="[2,3]"
 ></div>
+
+<Nr />
 
 ---
 
@@ -146,6 +160,8 @@ let rusty_void: () = println!("printing doesn't return anything");
     style="background-color: red"
     class="h-0.8 rounded absolute top-82.5 left-81 w-9"
 ></div>
+
+<Nr />
 
 ---
 
@@ -171,3 +187,5 @@ let x = a[0];
     class="h-0.8 rounded absolute top-76 left-101 w-16"
     v-click="[0,1]"
 ></div>
+
+<Nr />

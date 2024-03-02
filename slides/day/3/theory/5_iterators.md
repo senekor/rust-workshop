@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 13.2
 
+<Nr />
+
 ---
 
 ```yaml
@@ -36,6 +38,8 @@ For a type to be an iterator, it needs to...
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -47,6 +51,8 @@ transition: slide-up
 # Using an Iterator
 
 demo
+
+<Nr />
 
 ---
 
@@ -77,6 +83,8 @@ let iter = (&mut nums).into_iter();
 for elem in nums.iter_mut() {}
 for elem in &mut nums {}
 ```
+
+<Nr />
 
 ---
 
@@ -121,6 +129,8 @@ impl str {
     v-click="[2,3]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -132,6 +142,8 @@ transition: slide-up
 # Iterator Adaptors
 
 demo
+
+<Nr />
 
 ---
 

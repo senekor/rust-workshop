@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 10.2
 
+<Nr />
+
 ---
 
 ```yaml
@@ -25,6 +27,8 @@ Traits fulfill the same purpose as interfaces in other languages.
 They enable polymorphism by specifying shared behavior.
 
 (Rust does not have OOP-style class inheritance.)
+
+<Nr />
 
 ---
 
@@ -54,6 +58,8 @@ compiler says:
 
 > binary operation `>` cannot be applied to type `&T`
 
+<Nr />
+
 ---
 
 ```yaml
@@ -78,6 +84,8 @@ trait Comparable {
     style="background-color: red"
     class="h-0.8 rounded absolute top-77.5 left-179.5 w-3"
 ></div>
+
+<Nr />
 
 ---
 
@@ -111,6 +119,8 @@ impl Comparable for i64 {
     class="h-0.8 rounded absolute top-79.5 left-98 w-14.5"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -140,6 +150,8 @@ fn find_largest<T: Comparable>(list: &[T]) -> &T {
     class="h-0.8 rounded absolute top-52.5 left-97.5 w-27"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -159,6 +171,8 @@ trait Comparable {
     }
 }
 ```
+
+<Nr />
 
 ---
 
@@ -183,6 +197,8 @@ fn find_largest<T: Comparable + Debug>(list: &[T]) -> &T {
     class="h-0.8 rounded absolute top-68 left-107 w-37"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -205,6 +221,8 @@ where
 {
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -226,6 +244,8 @@ impl<T: ToString> ToAngryString for T {
     }
 }
 ```
+
+<Nr />
 
 ---
 

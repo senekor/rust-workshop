@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 7
 
+<Nr />
+
 ---
 
 ```yaml
@@ -20,6 +22,8 @@ transition: slide-up
     src="/proj_org.png"
     style="transform: scale(0.5,0.5)"
 />
+
+<Nr />
 
 ---
 
@@ -37,6 +41,8 @@ transition: slide-up
 
 ## Simplification: `main.rs` is the crate!
 
+<Nr />
+
 ---
 
 ```yaml
@@ -53,6 +59,8 @@ transition: slide-up
 
 ## Simplification: `Cargo.toml` is the package!
 
+<Nr />
+
 ---
 
 ```yaml
@@ -66,6 +74,8 @@ transition: slide-up
 - Visibility & Encapsulation
 - What we'll focus on next!
 
+<Nr />
+
 ---
 
 ```yaml
@@ -78,6 +88,8 @@ transition: slide-up
     src="/proj_org.png"
     style="transform: scale(0.5,0.5)"
 />
+
+<Nr />
 
 ---
 

@@ -73,6 +73,8 @@ transition: slide-left
 
 ## `rust-workshop/day_4/README.md`
 
+<Nr />
+
 ---
 
 ```yaml

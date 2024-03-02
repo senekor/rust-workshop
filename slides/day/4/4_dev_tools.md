@@ -6,6 +6,8 @@ transition: slide-up
 
 # Development Tools
 
+<Nr />
+
 ---
 
 ```yaml
@@ -30,6 +32,8 @@ transition: slide-up
   <div style="flex-grow: 1"></div>
 </div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -44,6 +48,8 @@ transition: slide-up
 
 ### ...just read [blessed.rs](https://blessed.rs) ¯\\\_(ツ)\_/¯
 
+<Nr />
+
 ---
 
 ```yaml
@@ -57,6 +63,8 @@ transition: slide-up
 <div style="height: 32px"></div>
 
 # [docs.rs/cargo-deny](https://docs.rs/cargo-deny/)
+
+<Nr />
 
 ---
 

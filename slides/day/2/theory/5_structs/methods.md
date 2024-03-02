@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 5.3
 
+<Nr />
+
 ---
 
 ```yaml
@@ -45,6 +47,8 @@ fn main() {
     class="h-0.8 rounded absolute top-67.3 left-97 w-11"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -68,6 +72,8 @@ fn main() {
     println!("{}", rect.area()); // ok we get it
 }
 ```
+
+<Nr />
 
 ---
 
@@ -103,6 +109,8 @@ fn main() {
     class="h-0.8 rounded absolute top-90 left-110 w-3"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -132,6 +140,8 @@ fn main() {
     class="h-0.8 rounded absolute top-57.5 left-145 w-14"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -157,6 +167,8 @@ impl Rectangle {
     }
 }
 ```
+
+<Nr />
 
 ---
 

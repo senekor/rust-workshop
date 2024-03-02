@@ -10,6 +10,8 @@ Why talk about APIs?
 
 A Rust-API can look _very_ different than a C-API.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -23,6 +25,8 @@ transition: slide-up
 <div style="height: 32px"></div>
 
 # [docs.rs/itertools](https://docs.rs/itertools/)
+
+<Nr />
 
 ---
 

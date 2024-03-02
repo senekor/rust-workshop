@@ -12,6 +12,8 @@ I will quickly explain all the setup steps.
 
 You'll receive step-by-step instructions in writing as well.
 
+<Nr />
+
 ---
 
 ```yaml
@@ -31,6 +33,8 @@ transition: slide-up
     class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
 ></div>
 <Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
+
+<Nr />
 
 ---
 
@@ -55,6 +59,8 @@ transition: slide-up
 <Arrow color="red" x1="400" y1="120" x2="460" y2="105" />
 
 <Arrow color="red" x1="100" y1="456" x2="180" y2="456" />
+
+<Nr />
 
 ---
 
@@ -83,6 +89,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 fish_add_path ~/.cargo/bin
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -103,6 +111,8 @@ transition: slide-up
 |        clippy | linter                  | `cargo clippy`              |
 | rust-analyzer | LSP implementation      | N/A                         |
 
+<Nr />
+
 ---
 
 ```yaml
@@ -119,6 +129,8 @@ recommendations cover:
 - diagnostics
 - debugging
 - `toml` syntax-highlighting
+
+<Nr />
 
 ---
 
@@ -143,6 +155,8 @@ transition: slide-up
     class="border-4 absolute top-106 left-68 w-72 h-24"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -160,6 +174,8 @@ transition: slide-up
 |         Exercism | online editor or need to configure CLI |
 |   Advent of Code | locally wherever you want              |
 
+<Nr />
+
 ---
 
 ```yaml
@@ -175,3 +191,5 @@ transition: slide-left
 <div class="h-8"></div>
 
 ## `rust-workshop/day_1/README.md`
+
+<Nr />

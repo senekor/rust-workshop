@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 4.2
 
+<Nr />
+
 ---
 
 ```yaml
@@ -20,6 +22,8 @@ transition: slide-up
 - basically, pointers with seat belts
 - cannot be null
 - guaranteed to point to valid memory
+
+<Nr />
 
 ---
 
@@ -49,6 +53,8 @@ let y: i32 = *r;
     style="background-color: red"
     class="h-0.8 rounded absolute top-83.5 left-138 w-4"
 ></div>
+
+<Nr />
 
 ---
 
@@ -84,6 +90,8 @@ fn main() {
     v-click="[0,1]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -105,6 +113,8 @@ let r = &mut x;
     class="h-0.8 rounded absolute top-78 left-114 w-11"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -116,6 +126,8 @@ transition: slide-up
 # Mutable References
 
 demo
+
+<Nr />
 
 ---
 
@@ -139,6 +151,8 @@ let r2 = &mut x; // error
 compiler says:
 
 > cannot borrow `x` as mutable more than once at a time
+
+<Nr />
 
 ---
 
@@ -162,6 +176,8 @@ let r2 = &mut x; // error
 compiler says:
 
 > cannot borrow `x` as mutable more than once at a time
+
+<Nr />
 
 ---
 
@@ -186,6 +202,8 @@ compiler says:
 
 > cannot borrow `x` as immutable because it is also borrowed as mutable
 
+<Nr />
+
 ---
 
 ```yaml
@@ -209,6 +227,8 @@ compiler says:
 
 > `s` does not live long enough
 
+<Nr />
+
 ---
 
 ```yaml
@@ -222,6 +242,8 @@ transition: slide-up
   or any number of immutable references.
 
 - References must always be valid.
+
+<Nr />
 
 ---
 

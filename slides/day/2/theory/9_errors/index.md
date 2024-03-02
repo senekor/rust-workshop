@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 9
 
+<Nr />
+
 ---
 
 ```yaml
@@ -30,6 +32,8 @@ fn main() {
     todo!("shush compiler, I'm not done");
 }
 ```
+
+<Nr />
 
 ---
 
@@ -56,6 +60,8 @@ enum Option<T> {
     None,
 }
 ```
+
+<Nr />
 
 ---
 

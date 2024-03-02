@@ -8,6 +8,8 @@ transition: slide-up
 
 book chapter 7
 
+<Nr />
+
 ---
 
 ```yaml
@@ -25,6 +27,8 @@ demo
     They are not necessary to achieve anything in Rust.
     (except visibility boundaries)
 -->
+
+<Nr />
 
 ---
 
@@ -55,6 +59,8 @@ compiler says:
     style="background-color: red"
     class="h-0.8 rounded absolute top-75 left-103.5 w-6.5"
 ></div>
+
+<Nr />
 
 ---
 
@@ -93,6 +99,8 @@ compiler says:
     style="background-color: red"
     class="h-0.8 rounded absolute top-85 left-102.5 w-6"
 ></div>
+
+<Nr />
 
 ---
 
@@ -136,6 +144,8 @@ mod garden {
     v-click="[2,3]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -161,6 +171,8 @@ fn main() {
 }
 ```
 
+<Nr />
+
 ---
 
 ```yaml
@@ -182,6 +194,8 @@ fn main() {
     let m: Melon;
 }
 ```
+
+<Nr />
 
 ---
 
@@ -206,6 +220,8 @@ fn main() {
     println!("your lucky number: {}", rand_num);
 }
 ```
+
+<Nr />
 
 ---
 
@@ -234,6 +250,8 @@ use leptos::prelude::*;
     class="h-0.8 rounded absolute top-60 left-121 w-6"
     v-click="[0,1]"
 ></div>
+
+<Nr />
 
 ---
 
@@ -269,6 +287,8 @@ fn main() {
     v-click="[0,1]"
 ></div>
 
+<Nr />
+
 ---
 
 ```yaml
@@ -295,6 +315,8 @@ fn main() {
     style="background-color: red"
     class="h-0.8 rounded absolute top-78 left-137 w-27"
 ></div>
+
+<Nr />
 
 ---
 
