@@ -40,11 +40,11 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62 left-70 w-8"
+    class="h-0.8 rounded absolute top-60 left-62 w-9.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-67 left-96 w-11"
+    class="h-0.8 rounded absolute top-66 left-91 w-14"
 ></div>
 
 <Nr />
@@ -102,11 +102,11 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-54 left-93 w-52"
+    class="h-0.8 rounded absolute top-51 left-88 w-59.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-90.5 left-110 w-3"
+    class="h-0.8 rounded absolute top-93 left-107 w-3.5"
 ></div>
 
 <Nr />
@@ -137,7 +137,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-56.5 left-145 w-15"
+    class="h-0.8 rounded absolute top-54 left-148 w-16"
 ></div>
 
 <Nr />

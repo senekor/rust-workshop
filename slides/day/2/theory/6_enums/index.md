@@ -76,15 +76,15 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-73 left-82.5 w-16"
+    class="h-0.8 rounded absolute top-72 left-77 w-17"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-99 left-92.5 w-26.5"
+    class="h-0.8 rounded absolute top-102 left-87 w-31"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-109.5 left-88.7 w-6"
+    class="h-0.8 rounded absolute top-114 left-83.5 w-6"
 ></div>
 
 <Nr />

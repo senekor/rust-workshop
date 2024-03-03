@@ -157,7 +157,7 @@ Sit tight for day 3.
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-66 left-105 w-9"
+    class="h-0.8 rounded absolute top-66 left-108 w-10"
 ></div>
 
 <Nr />
