@@ -1,16 +1,39 @@
-# default
-import = [
-    "~/.config/alacritty/themes/vscode.toml",
-    "~/.config/alacritty/config.toml",
-]
+# Default colors
+[colors.primary]
+background = "#181818"
+foreground = "#ffffff"
+
+# Normal colors
+[colors.bright]
+black = "#666666"
+blue = "#3b8eea"
+cyan = "#29b8db"
+green = "#85d067"   # changed
+magenta = "#d670d6"
+red = "#ff724e"     # changed
+white = "#e5e5e5"
+yellow = "#f5f543"
+
+[colors.normal]
+black = "#000000"
+blue = "#2472c8"
+cyan = "#11a8cd"
+green = "#0dbc79"
+magenta = "#bc3fbc"
+red = "#cd3131"
+white = "#e5e5e5"
+yellow = "#e5e510"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font.normal]
+family = "RobotoMono Nerd Font"
+
+[window]
+decorations = "none"
+padding = { x = 96, y = 0 }
 
 # overrides
 [font]
 size = 24
-
-[window]
-padding = { x = 96, y = 0 }
-
-[colors.bright]
-green = "#85d067"
-red = "#ff724e"
