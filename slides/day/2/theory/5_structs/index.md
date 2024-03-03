@@ -96,6 +96,8 @@ transition: slide-up
 
 # Tuple Structs: Encapsulation
 
+a.k.a. the newtype pattern
+
 ```rust
 struct NonZeroByte(u8);
 
@@ -155,7 +157,7 @@ Sit tight for day 3.
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-66 left-104 w-9"
+    class="h-0.8 rounded absolute top-66 left-105 w-9"
 ></div>
 
 <Nr />
@@ -187,6 +189,8 @@ fn main() {
 ```
 
 Sit tight for traits on day 3! 😄
+
+<Nr />
 
 ---
 src: ./methods.md

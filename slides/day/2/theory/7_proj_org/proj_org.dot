@@ -2,9 +2,9 @@ digraph proj_structure {
     // high-res
     graph [dpi = 300;];
     // transparent
-    bgcolor = "#00000000";
+    bgcolor = "#ffffff40";
     node [color = "#00000000";];
-    edge [color = white;];
+    edge [color = black;];
     
     workspace [style = filled;fillcolor = "mediumaquamarine";];
     

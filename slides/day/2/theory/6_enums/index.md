@@ -70,21 +70,21 @@ fn main() {
         kind: IpAddrKind::V4,
         address: [127, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     };
-    home.address[8]; // ??
+    home.address[8]; // ???
 }
 ```
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-72.5 left-84 w-16"
+    class="h-0.8 rounded absolute top-73 left-82.5 w-16"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-97.5 left-93 w-26.5"
+    class="h-0.8 rounded absolute top-99 left-92.5 w-26.5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-107.5 left-90 w-6"
+    class="h-0.8 rounded absolute top-109.5 left-88.7 w-6"
 ></div>
 
 <Nr />
@@ -146,35 +146,43 @@ transition: slide-up
 
 <div></div>
 
-<img
-    src="/option_meme.png"
-    style="height: 30vh"
-/>
 
-<Nr />
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    The C pointer mixes two unrelated concepts:
+    <li>Indirection</li>
+    <li>Optionality (something or nothing)</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
----
+<div class="h-4"></div>
 
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
+> I call it my billion-dollar mistake.
+> It was the invention of the null reference in 1965.
+>
+> _Tony Hoare_
 
-# The `Option` Type
+<div class="h-4"></div>
 
-```rust {1-4,6,7,9}
-enum Option<T> {
-    None,
-    Some(T),
-}
-main() {
-    let some_number = Some(5);
-    let some_char = Some('e');
-
-    let absent_number: Option<i32> = None;
-}
-```
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: center">
+    Rust:
+    <table>
+      <tr>
+        <td>Indirection:</td>
+        <td>Reference <code>&</code></td>
+      </tr>
+      <tr>
+        <td>Optionality:</td>
+        <td>❓</td>
+      </tr>
+    </table>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 <Nr />
 
@@ -186,17 +194,22 @@ class: text-center
 transition: slide-left
 ```
 
-# Preventing Bugs
+# The `Option` Type
 
-```rust
-let x: i8 = 5;
-let y: Option<i8> = Some(5);
-let sum = x + y; // error
+```rust {1-4,6,7,9}
+enum Option<T> {
+    None,
+    Some(T),
+}
+main() {
+    let some_number = Option::Some(5);
+    let some_char = Some('e');
+
+    let absent_number: Option<i32> = None;
+}
 ```
 
-compiler says:
-
-> cannot add `Option<i8>` to `i8`
+<Nr />
 
 ---
 src: ./match.md

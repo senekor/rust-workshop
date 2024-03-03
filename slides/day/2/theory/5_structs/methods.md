@@ -40,11 +40,11 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62.5 left-72.2 w-7.5"
+    class="h-0.8 rounded absolute top-62 left-70 w-8"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-67.3 left-97 w-11"
+    class="h-0.8 rounded absolute top-67 left-96 w-11"
 ></div>
 
 <Nr />
@@ -102,11 +102,11 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-55 left-94 w-50"
+    class="h-0.8 rounded absolute top-54 left-93 w-52"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-90 left-110 w-3"
+    class="h-0.8 rounded absolute top-90.5 left-110 w-3"
 ></div>
 
 <Nr />
@@ -137,7 +137,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-57.5 left-145 w-14"
+    class="h-0.8 rounded absolute top-56.5 left-145 w-15"
 ></div>
 
 <Nr />
@@ -174,12 +174,21 @@ impl Rectangle {
 
 ```yaml
 layout: center
+class: text-center
+transition: slide-left
 ```
 
 # Summary
 
 structs and methods
 
-- group data meaningfully
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>group data meaningfully</li>
+    <li>combine data with related behavior</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
-- combine data with related behavior
+<Nr />

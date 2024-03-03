@@ -28,10 +28,6 @@ transition: slide-left
 
 ## `rust-workshop/day_2/README.md`
 
-⚠️ vibe check ⚠️
-
-Is everyone's LSP working and configured with clippy?
-
 <Nr />
 
 ---

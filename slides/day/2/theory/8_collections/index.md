@@ -24,7 +24,7 @@ transition: slide-up
 fn main() {
     let v = vec![1, 2, 3, 4, 5];
 
-    v.get[10]; // panics immediately! 😱
+    v[10]; // panics immediately! 😱
 
     let tenth: Option<&i32> = v.get(10); // safety: 💯
     match tenth {
@@ -46,70 +46,46 @@ transition: slide-up
 
 # `HashMap`
 
-a.k.a. `dict`, `map`, hash table
+a.k.a. `dict`, `map`, hash table, associative array
 
-A collection of key-value pairs.
-
-```rust
+```rust {1,4|6-7|9|11-13|all}
 use std::collections::HashMap;
 
 fn main() {
     let mut scores = HashMap::new();
 
-    scores.insert(String::from("Brazil"), 1);
-    scores.insert(String::from("Germany"), 7);
-}
-```
+    scores.insert("Brazil", 1);
+    scores.insert("Germany", 7);
 
-<Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
-
-# Reading from a Hash Map
-
-```rust {9-10}
-use std::collections::HashMap;
-
-fn main() {
-    let mut scores = HashMap::new();
-
-    scores.insert(String::from("Brazil"), 1);
-    scores.insert(String::from("Germany"), 7);
-
-    let team_name = String::from("Germany");
-    let germany_score = scores.get(&team_name).unwrap_or_default();
-}
-```
-
-<Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-transition: slide-up
-```
-
-# Iterating over a Hash Map
-
-```rust {9-11}
-use std::collections::HashMap;
-
-fn main() {
-    let mut scores = HashMap::new();
-
-    scores.insert(String::from("Brazil"), 1);
-    scores.insert(String::from("Germany"), 7);
-
+    let germany_score: Option<&i32> = scores.get(&"Germany");
+    
     for (key, value) in scores {
         println!("{} scored {} points!", key, value);
     }
 }
 ```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-left
+```
+
+# `std::collections::*`
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>Queue</li>
+    <li>Linked-List</li>
+    <li>Set</li>
+    <li>Heap</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+<Nr />

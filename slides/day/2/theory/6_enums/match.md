@@ -49,7 +49,7 @@ transition: slide-up
 
 # Patterns that Bind to Values
 
-```rust {1-6|8,9,17|8,10,17|8,11,17|8,12-16,17}
+```rust {1-6|2,8,9,17|3,8,10,17|4,8,11,17|5,8,12-16,17|all}
 enum Message {
     Quit,
     Move { x: i32, y: i32 },
@@ -216,7 +216,7 @@ if let Some(num) = maybe_num {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-75 left-77 w-33"
+    class="h-0.8 rounded absolute top-75 left-77 w-39"
 ></div>
 
 <Nr />
@@ -240,7 +240,7 @@ while let Some(n) = numbers.pop() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-75 left-65 w-36"
+    class="h-0.8 rounded absolute top-75 left-66 w-42"
 ></div>
 
 <Nr />
@@ -249,6 +249,7 @@ while let Some(n) = numbers.pop() {
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-left
 ```
 
@@ -256,8 +257,14 @@ transition: slide-left
 
 enums and pattern matching
 
-- model alternatives in your data
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>model alternatives in your data</li>
+    <li>prevent invalid data access bugs</li>
+    <li>branch over data structures with <code>match</code></li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
-- prevent invalid data access bugs
-
-- branch over data structures with `match`
+<Nr />

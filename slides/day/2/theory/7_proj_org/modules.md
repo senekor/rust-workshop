@@ -57,7 +57,7 @@ compiler says:
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-75 left-103.5 w-6.5"
+    class="h-0.8 rounded absolute top-76.5 left-99.5 w-6.5"
 ></div>
 
 <Nr />
@@ -74,7 +74,7 @@ transition: slide-up
 
 ```rust {2,3,5-12}
 fn main() {
-    garden::fruits::orange();
+    garden::fruits::orange();   // ✅
     garden::veggies::lettuce(); // error
 }
 mod garden {
@@ -93,11 +93,11 @@ compiler says:
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-80 left-90 w-4"
+    class="h-0.8 rounded absolute top-82 left-85 w-5"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-85 left-102.5 w-6"
+    class="h-0.8 rounded absolute top-88.5 left-98 w-7"
 ></div>
 
 <Nr />
@@ -135,12 +135,12 @@ mod garden {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-92 left-102.5 w-10.5"
+    class="h-0.8 rounded absolute top-96 left-98 w-12"
     v-click="[1,2]"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-102 left-102.5 w-10.5"
+    class="h-0.8 rounded absolute top-108 left-98 w-12"
     v-click="[2,3]"
 ></div>
 
@@ -214,6 +214,8 @@ transition: slide-up
 rand = "0.8.5"
 ```
 
+<div class="h-2"></div>
+
 ```rust
 fn main() {
     let rand_num: i32 = rand::random();
@@ -247,7 +249,7 @@ use leptos::prelude::*;
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-60 left-121 w-6"
+    class="h-0.8 rounded absolute top-58 left-122 w-6"
     v-click="[0,1]"
 ></div>
 
@@ -283,7 +285,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-70 left-73 w-15"
+    class="h-0.8 rounded absolute top-69 left-64 w-16"
     v-click="[0,1]"
 ></div>
 
@@ -313,7 +315,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-78 left-137 w-27"
+    class="h-0.8 rounded absolute top-78 left-139 w-31"
 ></div>
 
 <Nr />
@@ -322,18 +324,25 @@ fn main() {
 
 ```yaml
 layout: center
+class: text-center
+transition: slide-left
 ```
 
 # Summary
 
-- `main.rs` is the root of the crate
+modules and visibility
 
-- Modules can be defined inline or in separate files.
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li><code>main.rs</code> is the root of the crate.</li>
+    <li>Modules can be defined inline or in separate files.</li>
+    <li>The module tree is traversed with <code>::</code>, <code>super</code> and <code>crate</code>.</li>
+    <li>Items are private unless made <code>pub</code>-lic.</li>
+    <li>Verbose module path specifiers are avoided with <code>use</code>.</li>
+    <li>Re-exporting allows fine-grained control over visibility.</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
-- The module tree is traversed with `::`, `super` and `crate`.
-
-- Items are private unless made `pub`-lic.
-
-- Verbose module path specifiers are avoided with `use`.
-
-- Re-exporting allows fine-grained control over visibility.
+<Nr />

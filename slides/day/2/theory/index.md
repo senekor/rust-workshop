@@ -9,6 +9,8 @@ book chapters 5 -- 9
 
 structs, enums, modules, collections, error handling
 
+<Nr />
+
 ---
 src: ./5_structs/index.md
 ---

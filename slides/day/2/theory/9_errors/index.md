@@ -29,7 +29,7 @@ fn main() {
     let x: Option<i32> = None;
     let x: i32 = x.unwrap(); // <- panic
     panic!("custom panic message");
-    todo!("shush compiler, I'm not done");
+    todo!(); // shush compiler, I'm not done
 }
 ```
 
@@ -74,6 +74,8 @@ transition: slide-left
 # Error Handling
 
 demo
+
+<Nr />
 
 <!--
     - unwrap -> expect
