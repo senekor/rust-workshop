@@ -10,13 +10,13 @@ slides day: _setup-slides
     cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md
 
 zellij:
-    zellij --layout dev/zellij.kdl
+    zellij --layout dev/zellij/default.kdl
 
 _demo day name:
     #!/bin/bash
     set -euo pipefail
     cd demos/day_{{ day }}/{{ name }}
-    alacritty --option 'font.size=18' --command zellij --layout ../../../dev/demo.zellij.kdl
+    alacritty --option 'font.size=18' --command zellij --layout ../../../dev/zellij/demo.kdl
 
 demo-1-mutable_references:
     @just _demo "1" mutable_references

@@ -1,0 +1,11 @@
+layout {
+	tab name="FP book" {
+		pane size=1 borderless=true {
+			plugin location="zellij:compact-bar"
+		}
+		pane {
+			command "mdbook"
+			args "serve" "final_project"
+		}
+	}
+}
