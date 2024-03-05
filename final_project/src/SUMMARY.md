@@ -10,6 +10,8 @@
   - [HTTP](components/http.md)
   - [WebSocket]()
   - [gRPC]()
+  - [Unix Socket]()
+  - [Filesystem Storage]()
   - [SQL]()
 - [Integrations](integrations.md)
   - [CLI and HTTP](integrations/cli_http.md)
