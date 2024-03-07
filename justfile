@@ -30,8 +30,8 @@ demo-2-error_handling:
 demo-2-exhaustiveness:
     @just _demo "2" exhaustiveness
 
-demo-3-adaptors:
-    @just _demo "3" adaptors
+demo-3-adapters:
+    @just _demo "3" adapters
 demo-3-for_loops:
     #!/bin/bash
     set -euo pipefail

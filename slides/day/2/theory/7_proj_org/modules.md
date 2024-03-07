@@ -272,7 +272,7 @@ mod garden {
         pub struct Melon;
         pub struct Orange;
     }
-    pub use Melon;
+    pub use fruits::Melon;
 }
 fn main() {
     let m: garden::Melon;

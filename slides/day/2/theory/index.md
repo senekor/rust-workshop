@@ -1,3 +1,9 @@
+---
+src: ./recap.md
+---
+
+---
+
 ```yaml
 layout: cover
 class: text-center
@@ -7,7 +13,19 @@ class: text-center
 
 book chapters 5 -- 9
 
-structs, enums, modules, collections, error handling
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <ul>
+      <li>structs & methods</li>
+      <li>enums & pattern matching</li>
+      <li>modules</li>
+      <li>collections</li>
+      <li>error handling</li>
+    </ul>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 <Nr />
 

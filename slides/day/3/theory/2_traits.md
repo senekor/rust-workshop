@@ -257,11 +257,15 @@ transition: slide-left
 
 # Useful Traits
 
-| | |
-| ---: | :--- |
-| `Debug` & `Display` | can be (debug-)printed |
-| `Clone` & `Copy` | can be copied (cheaply) |
-| `Default` | has default value (zero, empty string) |
-| `PartialEq` & `Eq` | can check for equality (`==`, `!=`) |
-| `PartialOrd` & `Ord` | can be ordered (`<`, `>` etc.) |
-| `From` & `TryFrom` | can be converted from another type |
+|                      |                                        |
+| -------------------: | :------------------------------------- |
+|              `Debug` | string-representation for debugging    |
+|     `Clone` & `Copy` | can be copied (cheaply)                |
+|            `Default` | has default value (zero, empty string) |
+|   `PartialEq` & `Eq` | can check for equality (`==`, `!=`)    |
+| `PartialOrd` & `Ord` | can be ordered (`<`, `>` etc.)         |
+|               `Hash` | can compute hash (for `HashMap` etc.)  |
+
+**not derivable**: `Display`, `From` & `TryFrom`
+
+<Nr />

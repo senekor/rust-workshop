@@ -1,0 +1,6 @@
+- unwrap -> expect
+- panic -> Option + ?
+- Option -> Result<_, String>
+- Err(String) -> Err(AreaError)
+- replace ',' with 'x' in main
+- strip '-' in main

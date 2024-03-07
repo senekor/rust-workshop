@@ -233,15 +233,23 @@ compiler says:
 
 ```yaml
 layout: center
+class: text-center
 transition: slide-up
 ```
 
 # Borrrowing Rules
 
-- At any given time, you can have either one mutable reference\
-  or any number of immutable references.
-
-- References must always be valid.
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <ol>
+      <li>At any given time, you can have either one mutable reference<br/>
+          or any number of immutable references.</li>
+      <li>References must always be valid.</li>
+    </ol>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 <Nr />
 

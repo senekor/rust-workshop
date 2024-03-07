@@ -205,6 +205,27 @@ class: text-center
 transition: slide-up
 ```
 
+# Boilerplate...
+
+```rust
+match option_num {
+    Some(num) => {
+        println!("So much typing 🤧");
+    }
+    _ => {}
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-up
+```
+
 # Matching on a Single Pattern
 
 ```rust
@@ -232,7 +253,7 @@ transition: slide-up
 # Looping `while` a Pattern Matches
 
 ```rust
-let mut numbers = vec![1,2,3];
+let mut numbers = vec![1, 2, 3];
 while let Some(n) = numbers.pop() {
     println!("removed from vec: {}", n);
 }

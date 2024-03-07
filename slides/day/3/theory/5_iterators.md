@@ -139,7 +139,7 @@ class: text-center
 transition: slide-up
 ```
 
-# Iterator Adaptors
+# Iterator Adapters
 
 demo
 
@@ -157,7 +157,7 @@ transition: slide-left
 
 <div></div>
 
-Iterators and their adaptors are heavily optimized.\
+Iterators and their adapters are heavily optimized.\
 Sometimes, they are even faster than hand-coded loops.
 
 Rule of Thumb:

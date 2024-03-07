@@ -20,7 +20,7 @@ transition: slide-up
 
 <img
     src="/proj_org.png"
-    style="transform: scale(0.5,0.5)"
+    style="transform: scale(0.7,0.7)"
 />
 
 <Nr />
@@ -85,7 +85,7 @@ transition: slide-up
 
 <img
     src="/proj_org.png"
-    style="transform: scale(0.5,0.5)"
+    style="transform: scale(0.7,0.7)"
 />
 
 <Nr />

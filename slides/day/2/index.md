@@ -26,7 +26,7 @@ transition: slide-left
 
 # Practice 🧑‍💻
 
-## `rust-workshop/day_2/README.md`
+## [`rust-workshop/day_2/README.md`](https://github.com/senekor/rust-workshop/blob/main/day_2/README.md#day-2)
 
 <Nr />
 
