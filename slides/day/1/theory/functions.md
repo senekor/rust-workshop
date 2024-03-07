@@ -100,23 +100,18 @@ clicks: 2
 
 # Return Values
 
-The `return` keyword is only needed for early return.
-
-```rust {7|8|all}
-fn main() {
-    let x = plus_one(5);
-
-    println!("The value of x is: {}", x); // 6
-}
-
+```rust {1,6|1,5,6|2-4}
 fn plus_one(x: i32) -> i32 {
+    if x == i32::MAX {
+        return i32::MAX; // no overflow
+    }
     x + 1  // <- last expression of block
 }
 ```
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-94 left-120 w-15"
+    class="h-0.8 rounded absolute top-63 left-126 w-15"
     v-click="[0,1]"
 ></div>
 
