@@ -8,6 +8,12 @@ The file system storage backend should be easy to do, because most code can be c
 If you're not the type to finish what you've started, you can always do something new instead!
 Here's the guide on [where to go next](where_next.md).
 
+There's one more thing to consider when implementing these additional features for the HTTP server.
+If you implement them in a way that they are _required_, then that means all you client components will have to implement the feature before being compatible with your HTTP server.
+For example, your server might _require_ that a client provide a receiver when sending a paekli.
+If you want to ensure that other clients can integrate as quickly as possible, even without the full feature set, make sure to keep these features _optional_.
+In the case of the receiver, your HTTP server could default to some shared inbox where everyone can send and receive paekli without identification.
+
 ## Expanding our storage space
 
 Requirements:
