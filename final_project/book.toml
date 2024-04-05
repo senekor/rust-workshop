@@ -22,3 +22,7 @@ edit-url-template = "https://github.com/senekor/rust-workshop-extra/edit/main/fi
 additional-css = ["./mdbook-admonish.css", "./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 default-theme = "latte"
 preferred-dark-theme = "macchiato"
+
+[output.html.fold]
+enable = true
+level = 1
