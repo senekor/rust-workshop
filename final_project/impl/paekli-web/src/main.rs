@@ -1,5 +1,6 @@
 use gloo::{dialogs::alert, net::http::Request};
 use leptos::*;
+use leptos_use::UseWebsocketReturn;
 use paekli_core::http_api::{ReceiveResponse, SendRequest};
 
 fn main() {
@@ -40,6 +41,9 @@ fn main() {
         });
     };
 
+    let (get_should_render, set_should_render) = create_signal(false);
+    let toggle_should_render = move |_| set_should_render.update(|prev| *prev = !*prev);
+
     mount_to_body(move || {
         view! {
             <h1>Hello WebAssembly!</h1>
@@ -54,6 +58,28 @@ fn main() {
             <button on:click=receive_paekli>
                 Receive
             </button>
+            <button on:click=toggle_should_render>
+                toggle rendering
+            </button>
+            <Show when=move || get_should_render.get()>
+                <NotificationListener recipient=String::from("alice") />
+            </Show>
         }
     })
+}
+
+#[component]
+fn NotificationListener(recipient: String) -> impl IntoView {
+    let url = format!("ws://localhost:4200/notifications/{recipient}");
+    let UseWebsocketReturn { message, .. } = leptos_use::use_websocket(&url);
+
+    create_effect(move |_| {
+        if let Some(message) = message.get() {
+            gloo::dialogs::alert(&message);
+        }
+    });
+
+    view! {
+        "Listening to notifications...!"
+    }
 }

@@ -9,4 +9,5 @@ edition = "2021"
 console_error_panic_hook = "0.1.7"
 gloo = "0.11.0"
 leptos = { version = "0.6.9", features = ["csr"] }
+leptos-use = "0.10.5"
 paekli-core = { version = "0.1.0", path = "../paekli-core" }

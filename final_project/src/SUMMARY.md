@@ -54,3 +54,4 @@
 - [Shared Library](shared_lib.md)
 - [Storage Backend](storage_backend.md)
 - [Web App and HTTP](web_app_http.md)
+- [Web App and WebSocket](web_app_websocket.md)
