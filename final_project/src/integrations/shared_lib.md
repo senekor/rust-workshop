@@ -1,4 +1,4 @@
-# Shared Library
+# Creating a Shared Library
 
 For multiple reasons, our different components may need to share some code.
 Luckily this is very simple.
