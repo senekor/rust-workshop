@@ -1,3 +1,7 @@
 [workspace]
 resolver = "2"
 members = ["demos/*/*", "final_project/impl/*"]
+exclude = [
+    "demos/day_4/serde",      # needs its own serde to learn about missing features
+    "demos/day_4/cargo_deny", # don't check workspace licenses
+]
