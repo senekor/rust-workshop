@@ -25,6 +25,7 @@
     - [Content and Storage](components/http/content_storage.md)
     - [Additional Features](components/http/additional_features.md)
     - [Where to Go Next](components/http/where_next.md)
+    - [Making it Pretty]()
   - [WebSocket]()
   - [gRPC]()
   - [Unix Socket]()
