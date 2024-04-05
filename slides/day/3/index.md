@@ -51,7 +51,7 @@ transition: slide-left
 #[should_panic]
 fn expected_panic_occurs() {
     let v = vec![1, 2, 3];
-    let _ = v[10];
+    v[10];
 }
 ```
 

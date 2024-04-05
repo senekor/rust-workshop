@@ -79,11 +79,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62 left-86 w-3.5"
-></div>
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-82 left-132 w-3.5"
+    class="h-0.8 rounded absolute top-84 left-133 w-3.5"
 ></div>
 
 <Nr />
@@ -140,7 +136,7 @@ fn main() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-86 left-104 w-9"
+    class="h-0.8 rounded absolute top-88 left-100 w-10"
 ></div>
 
 <Nr />
@@ -189,3 +185,5 @@ where
 Therefore, the trait bound `FnOnce` would _not_ be enough.\
 There is no reason to restrict mutation in `f`, so `FnMut` is the best choice.\
 `Fn` would be unnecessarily restrictive.
+
+<Nr />

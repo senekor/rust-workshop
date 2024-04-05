@@ -7,7 +7,21 @@ class: text-center
 
 book chapters 10 & 13
 
-generics, traits, lifetimes, closures, iterators
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <ul>
+      <li>generics</li>
+      <li>traits</li>
+      <li>lifetimes</li>
+      <li>closures</li>
+      <li>iterators</li>
+    </ul>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+<Nr />
 
 ---
 src: ./1_generics.md

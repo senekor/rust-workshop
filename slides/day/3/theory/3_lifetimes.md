@@ -86,19 +86,19 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62.5 left-95 w-8"
+    class="h-0.8 rounded absolute top-60 left-89 w-10"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62.5 left-114 w-4"
+    class="h-0.8 rounded absolute top-60 left-109 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62.5 left-139.5 w-4"
+    class="h-0.8 rounded absolute top-60 left-138.5 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-62.5 left-164.5 w-4"
+    class="h-0.8 rounded absolute top-60 left-168.5 w-7"
 ></div>
 
 <Nr />
@@ -127,7 +127,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-58 left-95 w-8"
+    class="h-0.8 rounded absolute top-56 left-89 w-10"
 ></div>
 
 <Nr />
@@ -156,7 +156,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-58 left-114 w-4"
+    class="h-0.8 rounded absolute top-56 left-109 w-7"
 ></div>
 
 <Nr />
@@ -185,7 +185,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-58 left-139.5 w-4"
+    class="h-0.8 rounded absolute top-56 left-138.5 w-7"
 ></div>
 
 <Nr />
@@ -214,7 +214,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-58 left-164.5 w-4"
+    class="h-0.8 rounded absolute top-56 left-168.5 w-7"
 ></div>
 
 <Nr />
@@ -297,7 +297,7 @@ The lifetime of `y` has no relation to the lifetime of the return value.
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-66 left-152 w-4"
+    class="h-0.8 rounded absolute top-65.5 left-155.5 w-4"
 ></div>
 
 <Nr />
@@ -377,3 +377,5 @@ fn main() {
     println!("answer: {}", answer);
 }
 ```
+
+<Nr />
