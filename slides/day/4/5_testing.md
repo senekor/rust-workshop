@@ -146,3 +146,5 @@ pub fn inc(x: i32) -> i32 {
 />
 
 `cargo test` will run this example as a test!
+
+<Nr />

@@ -79,3 +79,5 @@ transition: slide-left
 <div style="height: 32px"></div>
 
 # [docs.rs/divan](https://docs.rs/divan/)
+
+<Nr />

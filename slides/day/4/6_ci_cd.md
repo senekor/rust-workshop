@@ -10,3 +10,5 @@ transition: slide-left
 <div></div>
 
 Talk is cheap, let's get our hands dirty!
+
+<Nr />

@@ -9,3 +9,5 @@ transition: slide-left
 <div></div>
 
 The community-driven newsletter for Rustaceans
+
+<Nr />
