@@ -16,19 +16,19 @@ fn strategy_from_str(strategy: Option<String>) -> PyResult<DistributionStrategy>
 
 /// Send a paekli
 #[pyfunction]
-fn send(receiver: String, content: String, strategy: Option<String>) -> PyResult<()> {
+fn send(recipient: String, content: String, strategy: Option<String>) -> PyResult<()> {
     let strategy = strategy_from_str(strategy)?;
     let dist_center = paekli_core::store::new_distribution_center(strategy);
-    dist_center.store(receiver, content, false);
+    dist_center.store(recipient, content, false);
     Ok(())
 }
 
 /// Receive a paekli
 #[pyfunction]
-fn receive(receiver: String, strategy: Option<String>) -> PyResult<Option<String>> {
+fn receive(recipient: String, strategy: Option<String>) -> PyResult<Option<String>> {
     let strategy = strategy_from_str(strategy)?;
     let dist_center = paekli_core::store::new_distribution_center(strategy);
-    Ok(dist_center.retrieve(receiver))
+    Ok(dist_center.retrieve(recipient))
 }
 
 /// A Python module implemented in Rust.

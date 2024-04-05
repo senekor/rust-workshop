@@ -28,7 +28,7 @@ impl SqlDatabase {
             CREATE TABLE IF NOT EXISTS paekli (
                 content TEXT,
                 -- optional:
-                receiver TEXT,
+                recipient TEXT,
                 express BOOLEAN
             )
             ",
@@ -41,16 +41,16 @@ impl SqlDatabase {
 }
 
 impl DistributionCenter for SqlDatabase {
-    fn store(&self, receiver: String, content: String, express: bool) {
+    fn store(&self, recipient: String, content: String, express: bool) {
         let insert_task = sqlx::query("INSERT INTO paekli VALUES (?, ?, ?)")
             .bind(content)
-            .bind(receiver)
+            .bind(recipient)
             .bind(express)
             .execute(&self.pool);
         self.rt.block_on(insert_task).unwrap();
     }
 
-    fn retrieve(&self, receiver: String) -> Option<String> {
+    fn retrieve(&self, recipient: String) -> Option<String> {
         #[derive(sqlx::FromRow)]
         struct PaekliRow {
             rowid: i64,
@@ -60,11 +60,11 @@ impl DistributionCenter for SqlDatabase {
         let select_task = sqlx::query_as(
             "
             SELECT rowid, content FROM paekli
-            WHERE receiver = ?
+            WHERE recipient = ?
             LIMIT 1
             ",
         )
-        .bind(receiver)
+        .bind(recipient)
         .fetch_one(&self.pool);
         let PaekliRow { rowid, content } = self.rt.block_on(select_task).ok()?;
 

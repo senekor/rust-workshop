@@ -37,7 +37,7 @@ use gloo::net::http::Request;
 let request = Request::post("https://paekli.buenzli.dev/paekli")
     .json(&SendRequest {
         content: todo!(),
-        receiver: None,
+        recipient: None,
         express: false,
     })
     .unwrap();

@@ -3,8 +3,8 @@ mod http_client;
 mod sql_database;
 
 pub trait DistributionCenter {
-    fn store(&self, receiver: String, content: String, express: bool);
-    fn retrieve(&self, receiver: String) -> Option<String>;
+    fn store(&self, recipient: String, content: String, express: bool);
+    fn retrieve(&self, recipient: String) -> Option<String>;
 }
 
 pub enum DistributionStrategy {

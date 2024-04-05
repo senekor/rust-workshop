@@ -19,7 +19,7 @@ Requirements:
 
 Requirements:
 - Paekli can be sent to a specific recipient
-- Receivers of a paekli can identify themselves and only receive paekli intended for them.
+- Recipients of a paekli can identify themselves and only receive paekli intended for them.
 
 ## Express delivery
 

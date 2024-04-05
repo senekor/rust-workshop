@@ -12,7 +12,7 @@ fn main() {
         let request = Request::post("https://paekli.buenzli.dev/paekli")
             .json(&SendRequest {
                 content,
-                receiver: None,
+                recipient: None,
                 express: false,
             })
             .unwrap();

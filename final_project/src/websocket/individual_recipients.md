@@ -3,13 +3,13 @@
 We can now send and receive notifications anytime a paekli is sent.
 However, our users probably only want to be notified if there is a paekli for a specific recipient, i.e. themselves.
 
-Let's broadcast information about the receiver of the paekli in our `send_paekli` handler.
+Let's broadcast information about the recipient of the paekli in our `send_paekli` handler.
 We'll need to change the type of our channel from `Sender<()>` to `Sender<String>`.
-Then we just... `sender.send(receiver)` in the body.
-You should already have access to this `receiver` if you implemented the additional feature of individual recipients for the HTTP server component.
+Then we just... `sender.send(recipient)` in the body.
+You should already have access to this `recipient` if you implemented the additional feature of individual recipients for the HTTP server component.
 We receive the notifications in the `subscribe_to_notifications` handler function, so we'll need to update the `Sender` type there as well to fix any compilation errors.
 
-Now we could just pass along the name of the receiver from the internal channel to the websocket.
+Now we could just pass along the name of the recipient from the internal channel to the websocket.
 That would be simple and serve the purpose.
 But it's a little nicer if the user can specify a recipient up front and only receive those notifications.
 

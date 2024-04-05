@@ -6,7 +6,7 @@ pub struct SendRequest {
     #[schema(example = "A pair of socks")]
     pub content: String,
     #[schema(example = "Sophia")]
-    pub receiver: Option<String>,
+    pub recipient: Option<String>,
     #[serde(default)]
     pub express: bool,
 }
@@ -14,7 +14,7 @@ pub struct SendRequest {
 #[derive(Debug, Serialize, Deserialize, ToSchema)]
 pub struct ReceiveRequest {
     #[schema(example = "Sophia")]
-    pub receiver: String,
+    pub recipient: String,
 }
 
 #[derive(Serialize, Deserialize, ToSchema)]

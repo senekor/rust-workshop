@@ -22,7 +22,7 @@ Here's an example of what the product might look like:
 ```
 
 The curl commands are a little verbose, but this is not the primary intended use case.
-The point is that the sender and the receiver could be completely different devices and clients on the network!
+The point is that the sender and the recipient could be completely different devices and clients on the network!
 
 This guide assumes that you already created [the CLI component](cli.md).
 You can totally follow it if you haven't, but there will be fewer explanations of the basic steps.

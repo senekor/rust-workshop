@@ -31,14 +31,14 @@ However, it should also be simple enough to implement this yourself.
 
 When people send paekli, they usually have a specific recipient in mind.
 In order to assign each paekli to a specific recipient, we need additional CLI arguments.
-The sender of a paekli needs to say who should receive it and the receiver must identify themself.
+The sender of a paekli needs to say who should receive it and the recipient must identify themself.
 
-For the sender, we could just extend the `Send` subcommand to also accept a receiver, like so:
+For the sender, we could just extend the `Send` subcommand to also accept a recipient, like so:
 
 ```rust
 Send {
     content: String,
-    receiver: String,
+    recipient: String,
 }
 ```
 
@@ -55,11 +55,11 @@ Using `clap` we can turn an argument into a flag by giving it a _short_ and a _l
 Send {
     content: String,
     #[arg(short, long)]
-    receiver: String,
+    recipient: String,
 }
 ```
 
-The receiver can now be specified with `-r NAME`, `--receiver NAME` or `--receiver=NAME`.
+The recipient can now be specified with `-r NAME`, `--recipient NAME` or `--recipient=NAME`.
 It seems reasonable to keep the `content` as a positional argument, as it is the most important part of a paekli.
 However, you can turn that into a flag as well if you like.
 
@@ -75,11 +75,11 @@ Renaming can be accomplished in the macro annotation as well:
 Send {
     content: String,
     #[arg(short('t'), long("to"))]
-    receiver: String,
+    recipient: String,
 }
 ```
 
-To complete the feature, you will need to add a receiver argument or flag to the `Receive` subcommand as well.
+To complete the feature, you will need to add a recipient argument or flag to the `Receive` subcommand as well.
 Lastly, you'll need to change how you store and retrieve paekli so you can determine the intended recipient.
 
 I will leave that up to you!

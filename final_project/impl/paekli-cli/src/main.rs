@@ -6,13 +6,13 @@ enum Command {
     Send {
         content: String,
         #[arg(long("to"))]
-        receiver: String,
+        recipient: String,
         #[arg(long)]
         express: bool,
     },
     Receive {
         #[arg(long("for"))]
-        receiver: String,
+        recipient: String,
     },
 }
 
@@ -45,14 +45,14 @@ fn main() -> anyhow::Result<()> {
     match args.command {
         Command::Send {
             content,
-            receiver,
+            recipient,
             express,
         } => {
-            store.store(receiver, content, express);
+            store.store(recipient, content, express);
             println!("{SEND_MESSAGE}");
         }
-        Command::Receive { receiver } => {
-            if let Some(content) = store.retrieve(receiver) {
+        Command::Receive { recipient } => {
+            if let Some(content) = store.retrieve(recipient) {
                 println!("Here is your paekli:\n{content}");
             } else {
                 println!("There is no paekli for you.");

@@ -23,8 +23,8 @@ static PAEKLI_STORE: Lazy<Mutex<HashMap<String, Inbox>>> =
 
 /// The purpose of this anonymous user is to allow interoperability with
 /// client components which haven't yet implemented the additional feature
-/// of individual receivers.
-static ANON: &str = "anon_anyone_can_send_and_receive";
+/// of individual recipients.
+static ANON: &str = "anon";
 
 fn get_anon() -> String {
     ANON.into()
@@ -32,7 +32,7 @@ fn get_anon() -> String {
 
 /// Send a paekli
 ///
-/// An individual `receiver` may optionally be specified. If no receiver is
+/// An individual `recipient` may optionally be specified. If no recipient is
 /// specified, the paekli goes to a "shared inbox" where anyone who doesn't
 /// identify themself can receive it.
 ///
@@ -49,7 +49,7 @@ fn get_anon() -> String {
 #[axum::debug_handler]
 async fn send_paekli(State(sender): State<Sender<String>>, Json(request): Json<SendRequest>) {
     let mut guard = PAEKLI_STORE.lock().unwrap();
-    let recipient = request.receiver.unwrap_or_else(get_anon);
+    let recipient = request.recipient.unwrap_or_else(get_anon);
     let inbox = guard.entry(recipient.clone()).or_default();
     if request.express {
         inbox.express.push_back(request.content);
@@ -73,7 +73,7 @@ async fn send_paekli(State(sender): State<Sender<String>>, Json(request): Json<S
 
 /// Receive a paekli
 ///
-/// An optional JSON body with a `receiver` may be used for identification, in
+/// An optional JSON body with a `recipient` may be used for identification, in
 /// order to receive paekli intended for oneself. Without identification, a
 /// paekli from a "shared inbox" can be received.
 ///
@@ -92,7 +92,7 @@ async fn receive_paekli(
 ) -> Result<Json<ReceiveResponse>, StatusCode> {
     let mut guard = PAEKLI_STORE.lock().unwrap();
     let inbox = guard
-        .entry(request.map(|Json(r)| r.receiver).unwrap_or_else(get_anon))
+        .entry(request.map(|Json(r)| r.recipient).unwrap_or_else(get_anon))
         .or_default();
 
     if let Some(content) = inbox.express.pop_front() {
@@ -180,7 +180,7 @@ use utoipa_rapidoc::RapiDoc;
 ## ⚠️ WARNING ⚠️
 
 The reference implementation has limited in-memory storage to prevent excessive server resource usage.
-If there are too many different receivers or outstanding paekli, if will delete stuff indiscriminately.
+If there are too many different recipients or outstanding paekli, if will delete stuff indiscriminately.
 **Reliability is not guaranteed.**
 
 Also note there is a global rate-limit of five requests per second.
