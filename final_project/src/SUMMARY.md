@@ -25,4 +25,5 @@
   - [Filesystem Storage]()
   - [SQL]()
 - [Integrations](integrations.md)
+  - [Shared Library](integrations/paekli_core.md)
   - [CLI and HTTP](integrations/cli_http.md)
