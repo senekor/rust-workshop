@@ -34,3 +34,4 @@
 - [Integrations](integrations.md)
   - [Shared Library](integrations/shared_lib.md)
   - [CLI and HTTP](integrations/cli_http.md)
+  - [Web App and HTTP](integrations/web_app_http.md)

@@ -6,7 +6,7 @@ The guide for whatever you pick can be found in the sidebar.
 
 ## Components
 
-- If the CLI was your first component, the recommended next one is the [HTTP-server](components/http.md).
+- If the CLI was your first component, the recommended next one is the [HTTP server](components/http.md).
   It is the simplest server component and unlocks (indirect) integration with any other client component.
 - The other server components (WebSocket, gRPC) are more advanced / niche technologies, so you should only choose them if you have a particular interest in them.
 - The other client components cannot integrate directly with the CLI.

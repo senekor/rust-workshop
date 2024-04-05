@@ -55,7 +55,9 @@ Needless to say, this is beyond the scope of this guide.
 So for now, I can only tell you to "trust me bro" and `move` all the closures!
 
 Alright, I still owe you an explanation of the code snippet above.
-First we create a signal, `leptos` special variable type that's separated into a getter and setter function.
+First we create a "signal", `leptos` special variable type that's separated into a getter and setter function.
+The reason we need a signal instead of a regular variable is because leptos automatically updates all the places in the UI where the signal is used when it changes.
+That's not something we would be able to do with regular variables.
 We control the current content of the input field with the `prop:value` attribute.
 It's value is a function that returns the current content of the signal.
 That way, the input field and the signal are always in sync.

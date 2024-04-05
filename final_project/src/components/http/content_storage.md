@@ -24,7 +24,7 @@ struct SendRequest {
 
 Now we're about to see the fun part of `axum`.
 We can simply add a `Json<SendRequest>` to the parameters of our handler.
-The `Json` type is from the `axum` library and instructs it to take the body of an incoming HTTP-request, deserialize it into the specified type (`SendRequest`) and pass it into the handler function.
+The `Json` type is from the `axum` library and instructs it to take the body of an incoming HTTP request, deserialize it into the specified type (`SendRequest`) and pass it into the handler function.
 
 ```rust
 async fn send_paekli(Json(request): Json<SendRequest>) {
@@ -82,7 +82,7 @@ We will deliver your paekli in mint condition.
 
 The `curl` commands are getting quite verbose at this point.
 You might want to keep a file or even a script with a bunch of them.
-The HTTP-server component is not primarily intended for direct user interaction, but rather to connect other, local components with each other.
+The HTTP server component is not primarily intended for direct user interaction, but rather to connect other, local components with each other.
 However, that will be part of the integrations.
 
 ## Storing paekli for delivery

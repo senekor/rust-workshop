@@ -1,4 +1,4 @@
-# The Hello World of HTTP-Servers
+# The Hello World of HTTP Servers
 
 ## Initializing a new package
 
@@ -56,7 +56,7 @@ async fn main() {
 
 Now, if you `cargo run` your project, it should still print "Hello, world!".
 
-## Spinning up a useless HTTP-server
+## Spinning up a useless HTTP server
 
 We're not quite done with the boilerplte yet:
 
@@ -101,7 +101,7 @@ However, you can already send requests and receive responses:
 * Connection #0 to host 0.0.0.0 left intact
 ```
 
-This is using `curl` to send an empty HTTP-request to our server.
+This is using `curl` to send an empty HTTP request to our server.
 Among all this HTTP-gobbledygook, the most interesting piece is `404 Not Found`.
 I'm sure you've already seen this response in the browser!
 
@@ -117,7 +117,7 @@ async fn hello_world() -> &'static str {
 }
 ```
 
-All HTTP-handlers need the `async` keyword before `fn`.
+All HTTP handlers need the `async` keyword before `fn`.
 Don't worry about it 🙂
 
 Now we can tell the _router_ to let some requests be handled by this function:
@@ -135,10 +135,10 @@ The router needs two pieces of information to decide which handler is responsibl
   It corresponds to the part of a URL after the _domain_.
   For example, if you go to [docs.rs/axum/latest/axum/struct.Router.html](https://docs.rs/axum/latest/axum/struct.Router.html) in your browser, the request you're sending has the path `/axum/latest/axum/struct.Router.html`.
 - `get(hello_world)` tells axum that only requests with the method `GET` should be handled.
-  The **method** is a part of the HTTP-protocol and `GET` is the default one.
+  The **method** is a part of the HTTP protocol and `GET` is the default one.
   We'll see more methods later on.
 
-We will learn about bits and pieces of the HTTP-protocol as we need them.
+We will learn about bits and pieces of the HTTP protocol as we need them.
 
 If we take a second look at the output of the `curl` command from above, we might notice this line:
 
@@ -174,6 +174,6 @@ version = "0.1.10"
 With those changes: git commit, push, tag and push the tag!
 
 ```admonish check title="Release"
-You've now shipped a functioning HTTP-server ready to download for your users.
+You've now shipped a functioning HTTP server ready to download for your users.
 You're awesome! 😎
 ```

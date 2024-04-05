@@ -26,9 +26,9 @@ It is a macro that provides better error messages in case there's something wron
 I recommend you add it to **every** new handler you're going to write.
 I also recommend not making any mistakes in the first place, but... you know.
 
-## Picking the right HTTP-method
+## Picking the right HTTP method
 
-We have already seen the HTTP-method `GET`, which is the default one.
+We have already seen the HTTP method `GET`, which is the default one.
 It is used to ask a server for some information.
 There are other methods with specific meanings, the most common ones are:
 - `GET` for reading data
@@ -44,7 +44,7 @@ Recall that the router also needs a _path_ to register a handler, but we won't h
 We just use the empty or "root" path.
 The _path_ is conventionally used to specify a resource.
 Since we only have one resource (paekli), the path doesn't matter.
-Here's how we can register these new handlers with different HTTP-methods:
+Here's how we can register these new handlers with different HTTP methods:
 
 ```rust
 let router = axum::Router::new()
