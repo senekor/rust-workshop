@@ -28,7 +28,7 @@ Since this `DistributionCenter` will be used by most of the components, it needs
 Read the instructions for [creating a shared library](shared_lib.md) if you haven't already.
 
 ```admonish title="The first implementation"
-Since you probably already implemented file system storage for the CLI component, it makes sense to turn that into your [first implementation of the trait](/components/file_system.md).
+Since you probably already implemented file system storage for the CLI component, it makes sense to turn that into your [first implementation of the trait](file_system.md).
 
 For the next section to make sense, make sure you have at least one implementation.
 ```

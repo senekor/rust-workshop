@@ -2,7 +2,7 @@
 
 Many of the available components can use the file system to store paekli.
 In order to avoid code duplication, we'll implement the `DistributionCenter` trait.
-If you haven't created this trait yet, do the [Storage Backend](../integrations/storage_backend.md) guide first and then come back here.
+If you haven't created this trait yet, do the [Storage Backend](storage_backend.md) guide first and then come back here.
 
 ## Shortcut if you have the CLI
 
@@ -24,7 +24,7 @@ When copy-pasting from the CLI, remember to add any libraries the code uses to `
 (check `paekli-cli/Cargo.toml`)
 
 Already done?
-Read up on [how to use the storage backend](../integrations/storage_backend.md#using-the-trait) next.
+Read up on [how to use the storage backend](storage_backend.md#using-the-trait) next.
 
 ## Storing paekli
 
@@ -67,5 +67,5 @@ Whatever you choose to do, it may impact the function signatures in your `Distri
 That's totally fine, the compiler will help you with any necessary refactoring.
 
 ```admonish check title="Done"
-Jump over [here](../integrations/storage_backend.md#using-the-trait) to find out how to use the `DistributionCenter`.
+Jump over [here](storage_backend.md#using-the-trait) to find out how to use the `DistributionCenter`.
 ```

@@ -16,7 +16,7 @@ That means with websocket, your web app can instantaneously update its GUI when 
 
 The way to get there involves a couple steps though.
 You probably want to have an HTTP server already, otherwise stuff just gets more complicated (even though it's possible).
-Then you'll need to implement the websocket server, shared message types in the [shared library](integrations/shared_lib.md) and then integrate an ongoing websocket connection into your web app.
+Then you'll need to implement the websocket server, shared message types in the [shared library](/shared_lib.md) and then integrate an ongoing websocket connection into your web app.
 For the exciting Aha!-moment, you'll also need another component to be integrated with the HTTP server, for example the CLI.
 
 You get the point, it's a decent chunk of work.
