@@ -124,16 +124,31 @@ async fn receive_paekli(
 
 #[tokio::main]
 async fn main() {
+    let governor_conf = Box::new(
+        GovernorConfigBuilder::default()
+            .per_millisecond(200)
+            .burst_size(5)
+            .key_extractor(GlobalKeyExtractor)
+            .finish()
+            .unwrap(),
+    );
+
     let router = axum::Router::new()
         .route("/paekli", post(send_paekli))
         .route("/paekli", delete(receive_paekli))
-        .merge(RapiDoc::with_openapi("/api-docs/openapi2.json", ApiDoc::openapi()).path("/"));
+        .merge(RapiDoc::with_openapi("/api-docs/openapi2.json", ApiDoc::openapi()).path("/"))
+        .layer(GovernorLayer {
+            config: Box::leak(governor_conf),
+        });
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:4200").await.unwrap();
 
     axum::serve(listener, router).await.unwrap();
 }
 
+use tower_governor::{
+    governor::GovernorConfigBuilder, key_extractor::GlobalKeyExtractor, GovernorLayer,
+};
 use utoipa::{OpenApi, ToSchema};
 use utoipa_rapidoc::RapiDoc;
 
@@ -147,7 +162,10 @@ use utoipa_rapidoc::RapiDoc;
 
 The reference implementation has limited in-memory storage to prevent excessive server resource usage.
 If there are too many different receivers or outstanding paekli, if will delete stuff indiscriminately.
-**Reliability is not guaranteed**.",
+**Reliability is not guaranteed**.
+
+Also note there is a global rate-limit of five requests per second.
+Please don't launch a DoS attack against my Raspberry Pi...",
         version = "",
     ),
     servers(
