@@ -18,11 +18,12 @@ cargo add --path ../paekli-core
 ```
 
 Lastly, you can confirm it works by trying to import the generated `add` function.
-Note how the dash in `paekli-cli` changes to an underscore in Rust code.
+Note how the dash in `paekli-core` changes to an underscore in Rust code.
+This is automatic, because Rust identifiers cannot contain dashes.
 
 ```rust
 // paekli-cli/src/main.rs
-use paekli_cli::add;
+use paekli_core::add;
 ```
 
 Now you can add some functionality to `paekli-core` and use it in your other packages.
