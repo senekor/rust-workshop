@@ -358,7 +358,7 @@ impl Whatever {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
+transition: slide-up
 ```
 
 # The `'static` Lifetime
@@ -377,5 +377,31 @@ fn main() {
     println!("answer: {}", answer);
 }
 ```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: slide-left
+```
+
+# Rust Easy Mode<sup>TM</sup>
+
+premature optimization is the root of all evil
+
+```rust
+fn longest(x: &String, y: &String) -> String {
+    if x.len() > y.len() {
+        x.clone()
+    } else {
+        y.clone()
+    }
+}
+```
+
+`Clone` is your friend!
 
 <Nr />
