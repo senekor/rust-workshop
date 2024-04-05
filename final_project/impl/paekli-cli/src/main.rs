@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use paekli_core::store::{FileSystemStore, PaekliStore};
+use paekli_core::store::new_distribution_center;
 
 #[derive(Subcommand)]
 enum Command {
@@ -31,7 +31,7 @@ We will deliver your paekli in mint condition.";
 fn main() -> anyhow::Result<()> {
     let args = Cli::parse();
 
-    let store = FileSystemStore;
+    let store = new_distribution_center();
 
     match args.command {
         Command::Send {
