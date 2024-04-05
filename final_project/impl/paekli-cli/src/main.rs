@@ -21,7 +21,9 @@ enum Command {
 #[clap(version)]
 struct Cli {
     #[arg(long)]
-    cloud: bool,
+    http: bool,
+    #[arg(long)]
+    sql: bool,
     #[command(subcommand)]
     command: Command,
 }
@@ -33,9 +35,10 @@ We will deliver your paekli in mint condition.";
 fn main() -> anyhow::Result<()> {
     let args = Cli::parse();
 
-    let strategy = match args.cloud {
-        true => DistributionStrategy::Cloud,
-        false => DistributionStrategy::Local,
+    let strategy = match () {
+        _ if args.http => DistributionStrategy::Http,
+        _ if args.sql => DistributionStrategy::Sql,
+        _ => DistributionStrategy::Fs,
     };
     let store = new_distribution_center(strategy);
 

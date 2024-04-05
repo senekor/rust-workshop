@@ -42,7 +42,7 @@
 # Storage Backends
 
 - [File System Storage](file_system.md)
-- [SQL Database]()
+- [SQL Database](sql_database.md)
 - [HTTP Client](http_client.md)
 - [gRPC Client]()
 

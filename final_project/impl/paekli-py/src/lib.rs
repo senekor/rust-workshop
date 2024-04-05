@@ -3,8 +3,10 @@ use pyo3::{exceptions::PyValueError, prelude::*};
 
 fn strategy_from_str(strategy: Option<String>) -> PyResult<DistributionStrategy> {
     match strategy.as_deref() {
-        None | Some("local") => Ok(DistributionStrategy::Local),
-        Some("cloud") => Ok(DistributionStrategy::Cloud),
+        None => Ok(DistributionStrategy::Fs),
+        Some("http") => Ok(DistributionStrategy::Http),
+        Some("sql") => Ok(DistributionStrategy::Sql),
+        Some("fs") => Ok(DistributionStrategy::Fs),
         Some(s) => Err(PyValueError::new_err(format!(
             "unknown distribution strategy: '{}'",
             s

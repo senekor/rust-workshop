@@ -1,5 +1,6 @@
 mod file_system;
 mod http_client;
+mod sql_database;
 
 pub trait DistributionCenter {
     fn store(&self, receiver: String, content: String, express: bool);
@@ -7,13 +8,15 @@ pub trait DistributionCenter {
 }
 
 pub enum DistributionStrategy {
-    Local,
-    Cloud,
+    Fs,
+    Sql,
+    Http,
 }
 
 pub fn new_distribution_center(strategy: DistributionStrategy) -> Box<dyn DistributionCenter> {
     match strategy {
-        DistributionStrategy::Local => Box::new(file_system::FileSystemStorage),
-        DistributionStrategy::Cloud => Box::new(http_client::HttpClient),
+        DistributionStrategy::Fs => Box::new(file_system::FileSystemStorage),
+        DistributionStrategy::Sql => Box::new(sql_database::SqlDatabase::new()),
+        DistributionStrategy::Http => Box::new(http_client::HttpClient),
     }
 }
