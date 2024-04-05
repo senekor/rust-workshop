@@ -69,7 +69,7 @@ transition: slide-left
 | Day 1 |  Language Basics 1 🤔 | common programming concepts & ownership                   |
 | Day 2 |  Language Basics 2 🤓 | structs, enums, modules, collections, error handling      |
 | Day 3 |  Advanced Features 🤯 | generics, traits, lifetimes, closures, iterators          |
-| Day 4 | The Rust Ecosystem 📦 | libraries, tools, news, CI/CD                             |
+| Day 4 | The Rust Ecosystem 📦 | libraries, documentation, tools, news, CI/CD              |
 | Day 5 | Shippable Projects 🚀 | CLI tools, web APIs, python modules, WASM apps            |
 | Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback, self-congratulation |
 
