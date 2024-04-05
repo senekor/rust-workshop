@@ -9,7 +9,7 @@ use axum::{
     Json,
 };
 use once_cell::sync::Lazy;
-use serde::{Deserialize, Serialize};
+use paekli_core::http_api::{ReceiveRequest, ReceiveResponse, SendRequest};
 
 #[derive(Default)]
 struct Inbox {
@@ -19,16 +19,6 @@ struct Inbox {
 
 static PAEKLI_STORE: Lazy<Mutex<HashMap<String, Inbox>>> =
     Lazy::new(|| Mutex::new(HashMap::default()));
-
-#[derive(Deserialize, ToSchema)]
-struct SendRequest {
-    #[schema(example = "A pair of socks")]
-    content: String,
-    #[schema(example = "Sophia")]
-    receiver: Option<String>,
-    #[serde(default)]
-    express: bool,
-}
 
 /// The purpose of this anonymous user is to allow interoperability with
 /// client components which haven't yet implemented the additional feature
@@ -77,17 +67,6 @@ async fn send_paekli(Json(request): Json<SendRequest>) {
         // prevent DoS attack at the cost of reliability
         guard.drain();
     }
-}
-
-#[derive(Debug, Deserialize, ToSchema)]
-struct ReceiveRequest {
-    #[schema(example = "Sophia")]
-    receiver: String,
-}
-
-#[derive(Serialize, ToSchema)]
-struct ReceiveResponse {
-    content: String,
 }
 
 /// Receive a paekli
