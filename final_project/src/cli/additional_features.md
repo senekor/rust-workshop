@@ -6,7 +6,7 @@ You will be mostly on your own, but guidance will be given where new concepts / 
 
 You can choose to skip this section for now and explore the other commponents and integrations.
 Just remember to come back here if some integration requires you to have these features implemented.
-Jump to the [next section](where_next.md) to explore other components and integrations or keep reading to implement more CLI features.
+Jump to the [next section](./where_next.md) to explore other components and integrations or keep reading to implement more CLI features.
 
 Once you're happy with the feature set of the CLI, don't forget to cut a new release!
 

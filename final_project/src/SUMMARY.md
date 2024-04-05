@@ -38,12 +38,13 @@
   - [Where to Go Next](http/where_next.md)
 - [WebSocket]()
 - [gRPC]()
-- [Unix Socket]()
 
 # Storage Backends
 
 - [File System Storage](file_system.md)
 - [SQL Database]()
+- [HTTP Client](http_client.md)
+- [gRPC Client]()
 
 # Miscellaneous
 

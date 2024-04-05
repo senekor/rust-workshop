@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use paekli_core::store::new_distribution_center;
+use paekli_core::store::{new_distribution_center, DistributionStrategy};
 
 #[derive(Subcommand)]
 enum Command {
@@ -20,6 +20,8 @@ enum Command {
 #[derive(Parser)]
 #[clap(version)]
 struct Cli {
+    #[arg(long)]
+    cloud: bool,
     #[command(subcommand)]
     command: Command,
 }
@@ -31,7 +33,11 @@ We will deliver your paekli in mint condition.";
 fn main() -> anyhow::Result<()> {
     let args = Cli::parse();
 
-    let store = new_distribution_center();
+    let strategy = match args.cloud {
+        true => DistributionStrategy::Cloud,
+        false => DistributionStrategy::Local,
+    };
+    let store = new_distribution_center(strategy);
 
     match args.command {
         Command::Send {

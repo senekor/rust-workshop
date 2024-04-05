@@ -2,5 +2,5 @@
 
 import paekli_py
 
-print(paekli_py.send('hans', 'flammenwerfer'))
-print(paekli_py.receive('hans'))
+print(paekli_py.send('hans', 'flammenwerfer', 'cloud'))
+# print(paekli_py.receive('hans'))

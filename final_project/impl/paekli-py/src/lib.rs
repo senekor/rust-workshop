@@ -1,17 +1,32 @@
-use pyo3::prelude::*;
+use paekli_core::store::DistributionStrategy;
+use pyo3::{exceptions::PyValueError, prelude::*};
+
+fn strategy_from_str(strategy: Option<String>) -> PyResult<DistributionStrategy> {
+    match strategy.as_deref() {
+        None | Some("local") => Ok(DistributionStrategy::Local),
+        Some("cloud") => Ok(DistributionStrategy::Cloud),
+        Some(s) => Err(PyValueError::new_err(format!(
+            "unknown distribution strategy: '{}'",
+            s
+        ))),
+    }
+}
 
 /// Send a paekli
 #[pyfunction]
-fn send(receiver: String, content: String) {
-    let dist_center = paekli_core::store::new_distribution_center();
+fn send(receiver: String, content: String, strategy: Option<String>) -> PyResult<()> {
+    let strategy = strategy_from_str(strategy)?;
+    let dist_center = paekli_core::store::new_distribution_center(strategy);
     dist_center.store(receiver, content, false);
+    Ok(())
 }
 
 /// Receive a paekli
 #[pyfunction]
-fn receive(receiver: String) -> Option<String> {
-    let dist_center = paekli_core::store::new_distribution_center();
-    dist_center.retrieve(receiver)
+fn receive(receiver: String, strategy: Option<String>) -> PyResult<Option<String>> {
+    let strategy = strategy_from_str(strategy)?;
+    let dist_center = paekli_core::store::new_distribution_center(strategy);
+    Ok(dist_center.retrieve(receiver))
 }
 
 /// A Python module implemented in Rust.

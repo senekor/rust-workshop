@@ -10,9 +10,9 @@ Thank you for being gentle to my server! 😊
 
 If you are not the decisive kind, here's a little inspiration to help pick your next component:
 
-- The [HTTP server](/http.md) is fun and quite simple.
+- The [HTTP server](../http.md) is fun and quite simple.
   It has a good contrast to the CLI and it's always great to see through all layers of the stack.
-- I have a web development background, so I am particularly fond of the [web app](/web_app.md).
+- I have a web development background, so I am particularly fond of the [web app](../web_app.md).
   It's portable, easy to deploy and doesn't use a single line of JavaScript 😎
 - Another goal that might be worth working towards:
   Once you have a WebSocket-server and a GUI-client, you can make the GUI live-updating! 🤯

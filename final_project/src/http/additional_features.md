@@ -6,7 +6,7 @@ So I will softly recommend to you to implement a storage backend first.
 The file system storage backend should be easy to do, because most code can be copied from the CLI.
 
 If you're not the type to finish what you've started, you can always do something new instead!
-Here's the guide on [where to go next](where_next.md).
+Here's the guide on [where to go next](./where_next.md).
 
 There's one more thing to consider when implementing these additional features for the HTTP server.
 If you implement them in a way that they are _required_, then that means all you client components will have to implement the feature before being compatible with your HTTP server.
