@@ -131,13 +131,13 @@ impl Rectangle {
     }
 }
 fn main() {
-    let sq = Rectangle::square(3);
+    let square = Rectangle::square(3);
 }
 ```
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-54 left-148 w-16"
+    class="h-0.8 rounded absolute top-54 left-143 w-17"
 ></div>
 
 <Nr />
