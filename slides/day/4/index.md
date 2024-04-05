@@ -13,6 +13,10 @@ class: text-center
 ## Day 4
 
 ---
+src: ./0_recap.md
+---
+
+---
 
 ```yaml
 layout: cover
@@ -36,6 +40,8 @@ transition: slide-left
   </div>
   <div style="flex-grow: 1"></div>
 </div>
+
+<Nr />
 
 ---
 src: 1_libs_docs.md
