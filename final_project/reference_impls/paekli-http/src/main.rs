@@ -137,6 +137,12 @@ async fn main() {
         .route("/paekli", post(send_paekli))
         .route("/paekli", delete(receive_paekli))
         .merge(RapiDoc::with_openapi("/api-docs/openapi2.json", ApiDoc::openapi()).path("/"))
+        .layer(
+            CorsLayer::new()
+                .allow_methods(Any)
+                .allow_origin(Any)
+                .allow_headers(Any),
+        )
         .layer(GovernorLayer {
             config: Box::leak(governor_conf),
         });
@@ -149,6 +155,7 @@ async fn main() {
 use tower_governor::{
     governor::GovernorConfigBuilder, key_extractor::GlobalKeyExtractor, GovernorLayer,
 };
+use tower_http::cors::{Any, CorsLayer};
 use utoipa::{OpenApi, ToSchema};
 use utoipa_rapidoc::RapiDoc;
 
@@ -162,10 +169,13 @@ use utoipa_rapidoc::RapiDoc;
 
 The reference implementation has limited in-memory storage to prevent excessive server resource usage.
 If there are too many different receivers or outstanding paekli, if will delete stuff indiscriminately.
-**Reliability is not guaranteed**.
+**Reliability is not guaranteed.**
 
 Also note there is a global rate-limit of five requests per second.
-Please don't launch a DoS attack against my Raspberry Pi...",
+Please don't launch a DoS attack against my Raspberry Pi...
+
+The necessary CORS headers _should_ be set on the server for you to access the API from a web app on a different domain.
+If you still encounter issues, please notify me so I can reconsider my life choices.",
         version = "",
     ),
     servers(
