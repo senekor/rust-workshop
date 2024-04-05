@@ -135,7 +135,7 @@ use tower_governor::{
     governor::GovernorConfigBuilder, key_extractor::GlobalKeyExtractor, GovernorLayer,
 };
 use tower_http::cors::{Any, CorsLayer};
-use utoipa::{OpenApi, ToSchema};
+use utoipa::OpenApi;
 use utoipa_rapidoc::RapiDoc;
 
 #[derive(OpenApi)]
