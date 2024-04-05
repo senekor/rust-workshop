@@ -1,7 +1,7 @@
 # HTTP Server
 
 HTTP servers are lots of fun!
-The8 are simple and versatile, allowing you to make your application available anywhere with an internet connection.
+They are simple and versatile, allowing you to make your application available anywhere with an internet connection.
 
 This guide does **not** assume any prior knowledge about writing web servers.
 So don't be scared if you've never done this before!

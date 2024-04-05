@@ -4,8 +4,9 @@ use std::{
 };
 
 use axum::{
+    extract::{Path, State, WebSocketUpgrade},
     http::StatusCode,
-    routing::{delete, post},
+    routing::{delete, get, post},
     Json,
 };
 use once_cell::sync::Lazy;
@@ -45,11 +46,11 @@ fn get_anon() -> String {
         (status = 200, description = "Paekli sent successfully")
     )
 )]
-async fn send_paekli(Json(request): Json<SendRequest>) {
+#[axum::debug_handler]
+async fn send_paekli(State(sender): State<Sender<String>>, Json(request): Json<SendRequest>) {
     let mut guard = PAEKLI_STORE.lock().unwrap();
-    let inbox = guard
-        .entry(request.receiver.unwrap_or_else(get_anon))
-        .or_default();
+    let recipient = request.receiver.unwrap_or_else(get_anon);
+    let inbox = guard.entry(recipient.clone()).or_default();
     if request.express {
         inbox.express.push_back(request.content);
         if inbox.express.len() > 20 {
@@ -67,6 +68,7 @@ async fn send_paekli(Json(request): Json<SendRequest>) {
         // prevent DoS attack at the cost of reliability
         guard.drain();
     }
+    sender.send(recipient).unwrap();
 }
 
 /// Receive a paekli
@@ -84,6 +86,7 @@ async fn send_paekli(Json(request): Json<SendRequest>) {
         (status = 404, description = "No paekli for you 😢"),
     )
 )]
+#[axum::debug_handler]
 async fn receive_paekli(
     request: Option<Json<ReceiveRequest>>,
 ) -> Result<Json<ReceiveResponse>, StatusCode> {
@@ -101,6 +104,31 @@ async fn receive_paekli(
     Err(StatusCode::NOT_FOUND)
 }
 
+/// Subscribe to notifications
+///
+/// Subscribe to WebSocket notifications.
+///
+#[utoipa::path(get, path = "/notifications/:recipient")]
+#[axum::debug_handler]
+async fn subscribe_to_notifications(
+    ws: WebSocketUpgrade,
+    Path(recipient): Path<String>,
+    State(sender): State<Sender<String>>,
+) -> axum::response::Response {
+    ws.on_upgrade(|mut socket| async move {
+        let mut receiver = sender.subscribe();
+        while let Ok(recipient_2) = receiver.recv().await {
+            if recipient_2 == recipient {
+                socket
+                    .send(axum::extract::ws::Message::Text("Hello, world!".into()))
+                    .await
+                    .unwrap();
+            }
+        }
+        socket.close().await.unwrap();
+    })
+}
+
 #[tokio::main]
 async fn main() {
     let governor_conf = Box::new(
@@ -112,9 +140,13 @@ async fn main() {
             .unwrap(),
     );
 
+    let (notification_sender, _) = tokio::sync::broadcast::channel(16);
+
     let router = axum::Router::new()
         .route("/paekli", post(send_paekli))
         .route("/paekli", delete(receive_paekli))
+        .route("/notifications/:recipient", get(subscribe_to_notifications))
+        .with_state(notification_sender)
         .merge(RapiDoc::with_openapi("/api-docs/openapi2.json", ApiDoc::openapi()).path("/"))
         .layer(
             CorsLayer::new()
@@ -131,6 +163,7 @@ async fn main() {
     axum::serve(listener, router).await.unwrap();
 }
 
+use tokio::sync::broadcast::Sender;
 use tower_governor::{
     governor::GovernorConfigBuilder, key_extractor::GlobalKeyExtractor, GovernorLayer,
 };
@@ -160,7 +193,7 @@ If you still encounter issues, please notify me so I can reconsider my life choi
     servers(
         (url = "https://paekli.buenzli.dev"),
     ),
-    paths(send_paekli, receive_paekli),
+    paths(send_paekli, receive_paekli, subscribe_to_notifications),
     components(schemas(SendRequest, ReceiveRequest, ReceiveResponse))
 )]
 struct ApiDoc;

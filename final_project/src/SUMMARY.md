@@ -36,7 +36,10 @@
   - [Content and Storage](http/content_storage.md)
   - [Additional Features](http/additional_features.md)
   - [Where to Go Next](http/where_next.md)
-- [WebSocket]()
+- [WebSocket](websocket.md)
+  - [Hello World](websocket/hello_world.md)
+  - [Notifications](websocket/notifications.md)
+  - [Individual Recipients](websocket/individual_recipients.md)
 - [gRPC]()
 
 # Storage Backends
