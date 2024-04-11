@@ -57,7 +57,7 @@ cat ~/.local/share/paekli/content
 
 We now have a few calls to `.expect()` in our code.
 This is great for whipping up a quick program that works, but it immediately crashes our program in case of an error.
-There are libraries for more scalable error handling with great usability.
+There are libraries for more scaleable error handling with great usability.
 The most popular one for applications (as opposed to libraries) is [anyhow](https://docs.rs/anyhow), so let's use that.
 
 ```rust
@@ -85,7 +85,7 @@ So, how do we refactor our `.expect()` calls to return `anyhow::Result` instead?
 It's simple, first we import the trait `anyhow::Context`.
 This attaches a new method `.context()` to any `Result` or `Option` to convert them into an `anyhow::Result`.
 Recall that this pattern is sometimes called an "extension trait".
-Lastly, we append the questionmark operator `?` to the call of `.context()` in order to _return early_ in case of an error.
+Lastly, we append the question mark operator `?` to the call of `.context()` in order to _return early_ in case of an error.
 
 visually:
 
@@ -107,7 +107,7 @@ To create an ad-hoc error using anyhow, you can use the macro `anyhow::anyhow!`.
 
 I'll leave it up to you to deliver the paekli.
 Simply read from the file system and print the content to stdout.
-Remeber to remove the file, otherwise a paekli could be delivered twice!
+Remember to remove the file, otherwise a paekli could be delivered twice!
 
 ```admonish check title="Release"
 Contratulations!

@@ -38,7 +38,7 @@ fn main() {
 }
 ```
 
-Remembering the release-worklfow we've already seen during the workshop, all we have to do is commit our changes and push a new version tag.
+Remembering the release-workflow we've already seen during the workshop, all we have to do is commit our changes and push a new version tag.
 You have probably already "used" some version tags in your repository, so just pick the next higher one to release the first version of paekli-cli, for example `v0.1.2`.
 
 ```toml

@@ -4,7 +4,7 @@ As we go along building our application, we will quickly want to add more featur
 How to implement them for the CLI will be described in this section.
 You will be mostly on your own, but guidance will be given where new concepts / libraries etc. are required.
 
-You can choose to skip this section for now and explore the other commponents and integrations.
+You can choose to skip this section for now and explore the other components and integrations.
 Just remember to come back here if some integration requires you to have these features implemented.
 Jump to the [next section](./where_next.md) to explore other components and integrations or keep reading to implement more CLI features.
 
@@ -31,7 +31,7 @@ However, it should also be simple enough to implement this yourself.
 
 When people send paekli, they usually have a specific recipient in mind.
 In order to assign each paekli to a specific recipient, we need additional CLI arguments.
-The sender of a paekli needs to say who should receive it and the recipient must identify themself.
+The sender of a paekli needs to say who should receive it and the recipient must identify themselves.
 
 For the sender, we could just extend the `Send` subcommand to also accept a recipient, like so:
 
@@ -47,7 +47,7 @@ However, CLI arguments defined this way are expected in a specific order.
 (Namely the order in which they were defined in the struct).
 As the number of arguments grows, it can become hard for users to get the order right.
 To alleviate this, we can introduce _flags_, which are basically named arguments.
-Because they are named, their order doesn't matter and it's always clear what's going to happen when typing in the commmand.
+Because they are named, their order doesn't matter and it's always clear what's going to happen when typing in the command.
 Using `clap` we can turn an argument into a flag by giving it a _short_ and a _long_ name.
 (Or only one of the two, if we prefer.)
 
@@ -63,7 +63,7 @@ The recipient can now be specified with `-r NAME`, `--recipient NAME` or `--reci
 It seems reasonable to keep the `content` as a positional argument, as it is the most important part of a paekli.
 However, you can turn that into a flag as well if you like.
 
-You could also name the recipient flag `to`, which would enable a usage very close to natural english:
+You could also name the recipient flag `to`, which would enable a usage very close to natural English:
 
 ```sh
 paekli-cli send "cheddar cheese" --to Elizabeth

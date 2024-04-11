@@ -48,7 +48,7 @@ We also pass the URL we want to send it to as the argument.
 Notice the path `/paekli` at the end, it has to match the router configuration of the server.
 You can replace the domain with `localhost:3000` or whatever port you have, if you want to talk to your own server.
 You can even make the domain configurable in the UI, if you like!
-But I leave that up to you, hardcoding is perfectly fine for our purposes.
+But I leave that up to you, hard coding is perfectly fine for our purposes.
 
 Notice the argument to the `.json()` method.
 It's a reference to our `SendRequest` type!

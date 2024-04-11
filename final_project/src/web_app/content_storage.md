@@ -41,7 +41,7 @@ Okay, that sounds kinda difficult.
 It's related to Rust's lifetime system.
 The fundamental problem here is that user interfaces are long-lived programs where is becomes harder for the borrow checker to make sure you're not using some value after it isn't valid anymore.
 Luckily, the developers of the `leptos` library have a perfect solution for this problem and the Rust compiler _even tells us the correct thing to do_.
-We have to put the `move` keyword infront of the closure passed to `mount_to_body`:
+We have to put the `move` keyword in front of the closure passed to `mount_to_body`:
 
 ```rust
 mount_to_body(move || {

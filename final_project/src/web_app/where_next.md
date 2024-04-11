@@ -1,7 +1,7 @@
 # Where to Go Next
 
 The web app is a bit more limited in the set of integrations it supports, because it runs in the browser.
-For example, a web app cannot talk to a unix socket or sqlite database.
+For example, a web app cannot talk to a Unix socket or SQLite database.
 
 However, there are fantastic integrations with technologies native to the browser.
 
@@ -21,4 +21,4 @@ For the exciting Aha!-moment, you'll also need another component to be integrate
 
 You get the point, it's a decent chunk of work.
 Don't worry though, I'll be there to help at every step!
-Just be prepared to spend some time on this fi you choose to accept the challenge.
+Just be prepared to spend some time on this if you choose to accept the challenge.

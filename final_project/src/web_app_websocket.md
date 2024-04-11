@@ -8,7 +8,7 @@ When users first open the app, we don't want any websocket connection to be open
 Users should then be able to select a recipient (presumably themselves) and open a websocket connection to receive the notifications for that recipient.
 Users should also be able to stop receiving notifications, i.e. close the websocket connection.
 
-The most idiomatic way to achieve such a lifecycle for resources in our UI library `leptos` is to tie it to the lifecycle of a UI component.
+The most idiomatic way to achieve such a life cycle for resources in our UI library `leptos` is to tie it to the life cycle of a UI component.
 To open a websocket connection, we render the component.
 To close the connection, we stop rendering the component.
 Sounds complicated and abstract for now, but we'll get there one step at a time.
@@ -58,8 +58,8 @@ view! {
 }
 ```
 
-Great, now let's render our custom componet only if the boolean signal is `true`.
-We can totally use `if` expressions for this, but it actually get's quite ugly to nest such expressions inside a `view!` macro.
+Great, now let's render our custom component only if the boolean signal is `true`.
+We can totally use `if` expressions for this, but it actually gets quite ugly to nest such expressions inside a `view!` macro.
 It's also easy to accidentally make the UI non-reactive that way.
 (Nested expressions have to be _wrapped in closures_ to stay reactive.)
 `leptos` has a nice `Show` component to make conditional rendering readable and robust.
@@ -85,8 +85,8 @@ cargo add leptos-use
 ```
 
 We can simply call the function `leptos_use::use_websocket` with the URL.
-The return type is `UseWebsocketReturn`, which is a struct that we can _destrucutre_ to only accept what we actually need and discard anything else.
-This struct contains a bunch of things to control the websocket connection at a low level, but we only care about being able to read incominng messages.
+The return type is `UseWebsocketReturn`, which is a struct that we can _destructure_ to only accept what we actually need and discard anything else.
+This struct contains a bunch of things to control the websocket connection at a low level, but we only care about being able to read incoming messages.
 
 ```rust
 let url = "ws://localhost:4200/notifications/alice";
@@ -111,7 +111,7 @@ You should now be able to observe that an alert is triggered in the browser if a
 ## Making the recipient configurable
 
 This I will leave mostly up to you, except for one feature of `leptos` that we haven't seen so far.
-You can pass arguments to custom components, also referred to as "attributes" fromm the HTML perspective.
+You can pass arguments to custom components, also referred to as "attributes" from the HTML perspective.
 When declaring the component, it looks like a regular parameter.
 When you use the component, it works with the `key=value` syntax like a normal HTML element.
 

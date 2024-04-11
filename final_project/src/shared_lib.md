@@ -63,7 +63,7 @@ See also the [`cfg` page of Rust By Example](https://doc.rust-lang.org/rust-by-e
 
 ### Declaring target-specific dependencies
 
-Even if you already excluded your own target-incompatible code as explained above, depencencies declared in `Cargo.toml` will still (fail to) compile.
+Even if you already excluded your own target-incompatible code as explained above, dependencies declared in `Cargo.toml` will still (fail to) compile.
 We need to tell cargo to completely exclude these libraries from the build, based on the target platform.
 
 Take a look at the following example.

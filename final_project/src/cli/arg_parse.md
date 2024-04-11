@@ -27,7 +27,7 @@ We can confirm that it worked by checking that `paekli-cli/Cargo.toml` now conta
 clap = { version = "4.5.1", features = ["derive"] }
 ```
 
-## A barebones `clap`-app
+## A bare bones `clap`-app
 
 Here is the absolute minimum code to use clap:
 
@@ -83,7 +83,7 @@ Change your `Cli` definition like so, to add a version flag:
 struct Cli;
 ```
 
-Now oberseve the output of:
+Now observe the output of:
 
 ```sh
 cargo run --quiet -- --version

@@ -50,7 +50,7 @@ struct HttpClient;
 impl DistributionCenter for HttpClient {}
 ```
 
-Let's try to write a simple funtion for creating a `DistributionCenter`:
+Let's try to write a simple function for creating a `DistributionCenter`:
 
 ```rust
 fn new_distribution_center(local: bool) -> ? {

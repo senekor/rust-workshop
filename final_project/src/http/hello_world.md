@@ -58,7 +58,7 @@ Now, if you `cargo run` your project, it should still print "Hello, world!".
 
 ## Spinning up a useless HTTP server
 
-We're not quite done with the boilerplte yet:
+We're not quite done with the boilerplate yet:
 
 ```rust
 async fn main() {
@@ -79,7 +79,7 @@ Right now, it doesn't do anything.
 
 After that, we create a TCP-listener with the `tokio` library and bind it to the port `3000`.
 
-Lastly, we use the function `axum::serve` to make our previously created router respond to incoming requestion on that TCP-listener.
+Lastly, we use the function `axum::serve` to make our previously created router respond to incoming requests on that TCP-listener.
 
 If you `cargo run` this, there won't be any output in the terminal.
 However, you can already send requests and receive responses:
@@ -161,7 +161,7 @@ You should also see the greeting when you navigate to [http://0.0.0.0:3000](http
 ## Shipping the first version
 
 Let's again make sure we can release our software efficiently.
-Remeber that you should use a version number that is higher than the last one you used for any other component.
+Remember that you should use a version number that is higher than the last one you used for any other component.
 Otherwise, our distribution-tool `cargo-dist` might get confused.
 
 Assuming the last highest version used was `0.1.9`:

@@ -30,7 +30,7 @@ permissions:
   contents: write
 ```
 
-We're gonna have a single job to run in the default ubuntu environment:
+We're gonna have a single job to run in the default Ubuntu environment:
 
 ```yml
 jobs:

@@ -5,7 +5,7 @@ They are simple and versatile, allowing you to make your application available a
 
 This guide does **not** assume any prior knowledge about writing web servers.
 So don't be scared if you've never done this before!
-If you're already a battle-hardened web dev, you can simply skip over the exlanations of the basics.
+If you're already a battle-hardened web dev, you can simply skip over the explanations of the basics.
 
 What we're going to build here is sometimes also referred to as a REST-API.
 We're not gonna be too strict about that term though, we'll just stick to the basic conventions of web development.

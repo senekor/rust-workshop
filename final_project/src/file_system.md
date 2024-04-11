@@ -1,4 +1,4 @@
-# Filesystem Storage
+# File System Storage
 
 Many of the available components can use the file system to store paekli.
 In order to avoid code duplication, we'll implement the `DistributionCenter` trait.
@@ -54,10 +54,10 @@ On Linux, a paekli will be stored at the following location:
 
 ## Retrieving paekli
 
-Retrieving peakli should be easy:
+Retrieving paekli should be easy:
 - Read the same file where the paekli is stored.
 - Handle the case when there's no paekli.
-- Delete any retieved paekli so they don't get delivered twice.
+- Delete any retrieved paekli so they don't get delivered twice.
 
 ## Error handling
 
