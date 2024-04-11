@@ -68,7 +68,8 @@ async fn send_paekli(State(sender): State<Sender<String>>, Json(request): Json<S
         // prevent DoS attack at the cost of reliability
         guard.drain();
     }
-    sender.send(recipient).unwrap();
+    // only fails when there are no receivers, which we don't care about
+    sender.send(recipient).ok();
 }
 
 /// Receive a paekli
