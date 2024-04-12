@@ -42,9 +42,9 @@ class: text-center
 
 <div style="height: 16px"></div>
 
-|        client         |           GUI-client           |                server                |
-| :-------------------: | :----------------------------: | :----------------------------------: |
-| CLI<br/>Python module | web app<br/>TUI<br/>native GUI | HTTP/REST-API<br/>websocket<br/>gRPC |
+|        client         |                server                | storage |
+| :-------------------: | :----------------------------------: | :---: |
+| CLI<br/>Python module<br/>web app | HTTP/REST-API<br/>WebSocket | file system<br/>SQL |
 
 <!-- future idea: add tauri -->
 
@@ -68,13 +68,13 @@ This topic works well for many possible combinations of clients and servers.
 basic, CLI-only example:
 
 ```txt {lines: false}
-$ my-paeckli-cli receive
+$ paeckli-cli receive
 I don't have any paeckli for you! I'm sorry 😢
 
-$ my-paeckli-cli send --express --title "Ferris Plushie 🦀"
+$ paeckli-cli send --express "Ferris Plushie 🦀"
 
-$ my-paeckli-cli receive
-{ "title": "Ferris Plushie 🦀", "express": true }
+$ paeckli-cli receive
+{ "content": "Ferris Plushie 🦀", "express": true }
 ```
 
 Now imagine you send a paeckli via CLI and it automatically\
