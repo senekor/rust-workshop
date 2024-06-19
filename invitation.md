@@ -15,13 +15,14 @@ If the words "stack", "heap", "malloc" and "free" ring a bell, you're golden!
 
 ## Time investment
 
-The workshop consists of a two-hour session every week for six weeks.
+The workshop consists of a four-hour session every week for six weeks.
 The sessions will be a mix of theory and practice, depending on what makes sense for the content.
+It's mostly fifty-fifty.
 
 There will be a flexible amount of homework each week, depending on how much time you can and want to invest.
 1. You are expected to finish any exercises that were part of the session but couldn't be completed in time.
 1. You are highly encouraged to do a small amount of homework to strengthen what was learned.
-1. For those who want to get the most out of the workshop, there will be more time-consuming bonus tasks.
+1. For those who want to get the most out of the workshop, there will be more time-consuming bonus exercises.
 
 Expect to spend an additional two hours per week on homework.
 
@@ -37,11 +38,8 @@ Finally, employing everything you've learned, you will write a production-ready 
 
 ## What to prepare
 
-You don't need to prepare anything.
-But there is one thing you can do to make the start of the workshop a little smoother for you.
-You can follow the [official instructions](https://www.rust-lang.org/tools/install) for installing the Rust toolchain on your laptop.
-(And don't forget to bring that laptop to the workshop! 😉)
-But don't sweat it, there's time planned during the first workshop to get everyone's development environment up and running.
+Just make sure to bring a laptop!
+Any OS should work fine.
 
 ---
 
