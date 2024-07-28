@@ -1,23 +1,11 @@
 _default:
     just --list --unsorted
 
-@_setup-slides:
-    command -v npm > /dev/null || (echo "npm must be installed" && exit 1)
-    cd slides && [ -d node_modules ] || npm install
-
-clone-submodule:
-    #!/bin/bash
-    set -euo pipefail
-    if which jj &> /dev/null ; then
-        jj git clone --colocate git@github.com:senekor/rust-workshop
-        jj git clone --colocate git@github.com:senekor/paekli-rs
-    else
-        git clone git@github.com:senekor/rust-workshop
-        git clone git@github.com:senekor/paekli-rs
-    fi
+setup:
+    ./dev/scripts/setup.sh
 
 # render slides on a dev server
-slides day: _setup-slides
+slides day:
     cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md
 
 zellij:
