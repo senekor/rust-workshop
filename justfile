@@ -5,6 +5,15 @@ _default:
     command -v npm > /dev/null || (echo "npm must be installed" && exit 1)
     cd slides && [ -d node_modules ] || npm install
 
+clone-submodule:
+    #!/bin/bash
+    set -euo pipefail
+    if which jj &> /dev/null ; then
+        jj git clone --colocate git@github.com:senekor/rust-workshop
+    else
+        git clone git@github.com:senekor/rust-workshop
+    fi
+
 # render slides on a dev server
 slides day: _setup-slides
     cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md

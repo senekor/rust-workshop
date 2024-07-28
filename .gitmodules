@@ -1,3 +1,0 @@
-[submodule "rust-workshop"]
-	path = rust-workshop
-	url = git@github.com:senekor/rust-workshop
