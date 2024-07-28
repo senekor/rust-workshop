@@ -8,6 +8,9 @@ setup:
 slides day:
     cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md
 
+serve-paekli-rs:
+    just paekli-rs/serve
+
 zellij:
     zellij --layout dev/zellij/default.kdl
 
