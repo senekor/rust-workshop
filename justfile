@@ -10,8 +10,10 @@ clone-submodule:
     set -euo pipefail
     if which jj &> /dev/null ; then
         jj git clone --colocate git@github.com:senekor/rust-workshop
+        jj git clone --colocate git@github.com:senekor/paekli-rs
     else
         git clone git@github.com:senekor/rust-workshop
+        git clone git@github.com:senekor/paekli-rs
     fi
 
 # render slides on a dev server

@@ -1,4 +1,7 @@
+# rust
 target
 Cargo.lock
 
+# pseudo-submodules
 rust-workshop
+paekli-rs
