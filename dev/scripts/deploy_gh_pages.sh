@@ -13,7 +13,8 @@ cd "$repo_path"
 rm -rf docs
 mkdir docs
 
-cp slides/index.html docs/
+shopt -s dotglob
+cp slides/dist_append/* docs/
 
 cd slides
 npm install
