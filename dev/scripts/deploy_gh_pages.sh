@@ -13,13 +13,15 @@ cd "$repo_path"
 rm -rf docs
 mkdir docs
 
+cp slides/index.html docs/
+
 cd slides
 npm install
 
 for idx in $(seq 1 6)
 do
-    npm run slidev -- build --base "/rust-workshop-extra/$idx/" "day/$idx/index.md"
-    cp -r "day/$idx/dist" "../docs/$idx"
+  npm run slidev -- build --base "/rust-workshop-extra/$idx/" "day/$idx/index.md"
+  cp -r "day/$idx/dist" "../docs/$idx"
 done
 
 git config --global user.email "gh-pages@invalid.local"
