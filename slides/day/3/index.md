@@ -122,7 +122,7 @@ transition: slide-left
 
 # Practice 🧑‍💻
 
-## [`rust-workshop/day_3/README.md`](https://github.com/senekor/rust-workshop/blob/main/day_3/README.md#day-3)
+## [`rust-exerices/day_3/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_3/README.md#day-3)
 
 <Nr />
 

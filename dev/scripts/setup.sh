@@ -8,11 +8,11 @@ fi
 (cd slides ; [ -d node_modules ] || npm install)
   
 if which jj &> /dev/null ; then
-  [ -d rust-workshop ] || jj git clone --colocate git@github.com:senekor/rust-workshop
-  [ -d paekli-rs     ] || jj git clone --colocate git@github.com:senekor/paekli-rs
+  [ -d exercises ] || jj git clone --colocate git@github.com:senekor/rust-exercises exercises
+  [ -d paekli-rs      ] || jj git clone --colocate git@github.com:senekor/paekli-rs
 else
-  [ -d rust-workshop ] || git clone git@github.com:senekor/rust-workshop
-  [ -d paekli-rs     ] || git clone git@github.com:senekor/paekli-rs
+  [ -d exercises ] || git clone git@github.com:senekor/rust-exercises exercises
+  [ -d paekli-rs      ] || git clone git@github.com:senekor/paekli-rs
 fi
 
 just paekli-rs/setup

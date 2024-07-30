@@ -21,7 +21,7 @@ npm install
 
 for idx in $(seq 1 6)
 do
-  npm run slidev -- build --base "/rust-workshop-extra/$idx/" "day/$idx/index.md"
+  npm run slidev -- build --base "/rust-workshop/$idx/" "day/$idx/index.md"
   cp -r "day/$idx/dist" "../docs/$idx"
 done
 

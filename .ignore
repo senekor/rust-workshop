@@ -1,3 +1,5 @@
 # pseudo-submodules
-!rust-workshop
+!exercises
 !paekli-rs
+
+package-lock.json

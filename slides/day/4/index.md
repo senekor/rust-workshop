@@ -77,7 +77,7 @@ transition: slide-left
 
 # Practice 🧑‍💻
 
-## [`rust-workshop/day_4/README.md`](https://github.com/senekor/rust-workshop/blob/main/day_4/README.md#day-4)
+## [`rust-exerices/day_4/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_4/README.md#day-4)
 
 <Nr />
 

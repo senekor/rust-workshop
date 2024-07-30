@@ -186,10 +186,10 @@ transition: slide-left
 
 # Practice 🧑‍💻
 
-## [github.com/senekor/rust-workshop](https://github.com/senekor/rust-workshop)
+## [github.com/senekor/rust-exerices](https://github.com/senekor/rust-exerices)
 
 <div class="h-8"></div>
 
-## [`rust-workshop/day_1/README.md`](https://github.com/senekor/rust-workshop/blob/main/day_1/README.md#day-1)
+## [`rust-exerices/day_1/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_1/README.md#day-1)
 
 <Nr />
