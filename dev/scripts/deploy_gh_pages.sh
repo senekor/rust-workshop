@@ -23,6 +23,8 @@ for idx in $(seq 1 6)
 do
   npm run slidev -- build --base "/rust-workshop/$idx/" "day/$idx/index.md"
   cp -r "day/$idx/dist" "../docs/$idx"
+  npm run slidev -- export "day/$idx/index.md"
+  mv index-export.pdf "../docs/rust-workshop-slides-$idx.pdf"
 done
 
 git config --global user.email "gh-pages@invalid.local"
