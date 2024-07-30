@@ -77,14 +77,14 @@ should be handled by the install script
 Make sure you you can call `cargo`.\
 If you can't, try some of these:
 
-```bash {lineNumbers: false}
+```bash
 # POSIX shell
 source ~/.cargo/env
 # or
 export PATH="$HOME/.cargo/bin:$PATH"
 ```
 
-```sh {lineNumbers: false}
+```sh
 # fish
 fish_add_path ~/.cargo/bin
 ```
