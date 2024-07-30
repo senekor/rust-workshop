@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Collections
@@ -15,7 +14,6 @@ book chapter 8
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Reading from Vectors Safely
@@ -41,7 +39,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # `HashMap`
@@ -72,7 +69,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # `std::collections::*`

@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Continuous

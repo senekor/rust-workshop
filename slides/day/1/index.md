@@ -1,6 +1,6 @@
 ```yaml
 favicon: rust-logo-64x64-blk.png
-transition: slide-left
+transition: slide-up
 titleTemplate: '%s'
 lineNumbers: true
 fonts:
@@ -17,7 +17,6 @@ class: text-center
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Why do people use Rust <Orange>at Work</Orange>?
@@ -42,7 +41,6 @@ according to the [Rust Annual Survey 2023](https://blog.rust-lang.org/2024/02/19
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Goal
@@ -57,7 +55,6 @@ transition: slide-left
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Program
@@ -76,10 +73,6 @@ transition: slide-left
 <Nr />
 
 ---
-
-```yaml
-transition: slide-left
-```
 
 # Speedrunning the Book
 
@@ -121,7 +114,6 @@ src: ./practice.md
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Please suggest improvements

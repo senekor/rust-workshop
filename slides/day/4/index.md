@@ -1,6 +1,6 @@
 ```yaml
 favicon: rust-logo-64x64-blk.png
-transition: slide-left
+transition: slide-up
 titleTemplate: '%s'
 lineNumbers: true
 fonts:
@@ -21,7 +21,6 @@ src: ./0_recap.md
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # The Rust Ecosystem
@@ -72,7 +71,6 @@ src: 6_ci_cd.md
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Practice 🧑‍💻

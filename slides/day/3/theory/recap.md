@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Recap of Day 2
@@ -13,7 +12,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Structs
@@ -41,7 +39,6 @@ struct OnePossibleValue;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Methods
@@ -71,7 +68,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Enums
@@ -96,7 +92,6 @@ enum Option<T> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Pattern Matching
@@ -123,7 +118,6 @@ while let Some(num) = vec_of_nums.pop() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Project Organization
@@ -143,7 +137,6 @@ Inside the crate: Code is structured in a _tree_ of _modules_.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Modules & Visibility
@@ -165,7 +158,6 @@ use std::collections::*;
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Error Handling

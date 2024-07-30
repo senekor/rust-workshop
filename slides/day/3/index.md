@@ -1,6 +1,6 @@
 ```yaml
 favicon: rust-logo-64x64-blk.png
-transition: slide-left
+transition: slide-up
 titleTemplate: '%s'
 lineNumbers: true
 fonts:
@@ -20,7 +20,6 @@ src: ./theory/index.md
 
 ```yaml
 layout: cover
-transition: slide-left
 ```
 
 # What I left out from the book
@@ -40,7 +39,6 @@ You should still read the book at your own pace if you're serious about learning
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Outlook
@@ -58,7 +56,6 @@ transition: slide-left
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Performance Challenge
@@ -95,7 +92,6 @@ transition: slide-left
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Hint for Practice Session
@@ -117,7 +113,6 @@ fn expected_panic_occurs() {
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Practice 🧑‍💻

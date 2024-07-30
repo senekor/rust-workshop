@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Variables
@@ -14,7 +13,6 @@ book chapter 3.1
 
 ```yaml
 layout: center
-transition: slide-up
 clicks: 1
 ```
 
@@ -39,7 +37,6 @@ let x: i32 = 5;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 1
 ```
 
@@ -66,7 +63,6 @@ x = 6; // ✅
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 1
 ```
 
@@ -99,7 +95,6 @@ static EMBEDDED_TEXT_FILE: &str = include_str!("path/to/some/file.txt");
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Scope

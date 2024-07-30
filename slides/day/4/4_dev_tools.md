@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Development Tools
@@ -13,7 +12,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Included with `rustup`
@@ -39,7 +37,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Beyond `rustup`
@@ -55,7 +52,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Case Study #1 -- `cargo-deny`
@@ -71,7 +67,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Case Study #2 -- `divan`

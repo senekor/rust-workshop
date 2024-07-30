@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Structs & Methods
@@ -15,7 +14,6 @@ book chapter 5
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Declaration
@@ -34,7 +32,6 @@ struct Rectangle {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Instantiation
@@ -53,7 +50,6 @@ let rect = Rectangle {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Field Access
@@ -70,7 +66,6 @@ let area = rect.width * rect.height;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Tuple Structs
@@ -91,7 +86,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Tuple Structs: Encapsulation
@@ -116,7 +110,6 @@ fn into_non_zero_byte(raw: u8) -> NonZeroByte {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Unit-Like Structs
@@ -140,7 +133,6 @@ Sit tight for day 3.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Ownership of Struct Data
@@ -167,7 +159,6 @@ Sit tight for day 3.
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Deriving Traits

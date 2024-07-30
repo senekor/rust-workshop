@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Generics
@@ -15,7 +14,6 @@ book chapter 10.1
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 ```rust
@@ -32,7 +30,6 @@ Can we write `unwrap` ourselves?
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The Problem: Duplication
@@ -80,7 +77,6 @@ fn my_unwrap_i64(maybe_int: Option<i64>) -> i64 {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 <img
@@ -95,7 +91,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 2
 ```
 
@@ -145,7 +140,6 @@ my_unwrap(Some(42_i64));
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 3
 ```
 
@@ -200,7 +194,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Multiple Generic Type Parameters
@@ -224,7 +217,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Generics in Enums
@@ -243,7 +235,6 @@ enum Result<T, E> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Generics in Methods
@@ -281,7 +272,6 @@ impl<T> Point<T> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Performance?

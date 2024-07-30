@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Recap of Day 3
@@ -13,7 +12,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Generics
@@ -40,7 +38,6 @@ enum Result<T, E> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Traits + Bounds
@@ -66,7 +63,6 @@ where
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Lifetime Annotations
@@ -86,7 +82,6 @@ fn longest(x: &str, y: &str) -> String {}
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Closures
@@ -107,7 +102,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Iterators

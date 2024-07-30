@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Enums & Pattern Matching
@@ -15,7 +14,6 @@ book chapter 6
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Declaration
@@ -34,7 +32,6 @@ enum IpAddrKind {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Instantiation
@@ -51,7 +48,6 @@ let six = IpAddrKind::V6;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Storing Data ?
@@ -94,7 +90,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Enums are Tagged Unions
@@ -118,7 +113,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Flexible Data Modelling
@@ -139,7 +133,6 @@ enum Message {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Billion-Dollar Mistake
@@ -191,7 +184,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # The `Option` Type

@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Recap of Day 1
@@ -13,7 +12,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Variables
@@ -34,7 +32,6 @@ static FAST_DATA: &str = "Performante Daten"
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Types
@@ -55,7 +52,6 @@ let arr: [i32; 5] = [100; 5];
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Functions
@@ -71,7 +67,6 @@ fn identity(x: i32) -> i32 { x }
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Control Flow
@@ -98,7 +93,6 @@ for elem in [10, 20, 30] {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Ownership Rules
@@ -121,7 +115,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Borrrowing Rules
@@ -151,7 +144,6 @@ let mutable_ref: &mut String = &mut owned_string;
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Slices

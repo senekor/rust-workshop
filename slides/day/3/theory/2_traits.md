@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Traits
@@ -15,7 +14,6 @@ book chapter 10.2
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # What are Traits?
@@ -35,7 +33,6 @@ They enable polymorphism by specifying shared behavior.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Problem: `T` is useless
@@ -65,7 +62,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Define Shared Behavior
@@ -92,7 +88,6 @@ trait Comparable {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Implementation for Concrete Types
@@ -126,7 +121,6 @@ impl Comparable for i64 {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Constrain Generic Type Parameters
@@ -157,7 +151,6 @@ fn find_largest<T: Comparable>(list: &[T]) -> &T {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Default Implementations
@@ -179,7 +172,6 @@ trait Comparable {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Multiple Trait Bounds
@@ -204,7 +196,6 @@ fn find_largest<T: Comparable + Debug>(list: &[T]) -> &T {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Where Clauses
@@ -228,7 +219,6 @@ where
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Blanket Implementations
@@ -252,7 +242,6 @@ impl<T: ToString> ToAngryString for T {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Useful Traits

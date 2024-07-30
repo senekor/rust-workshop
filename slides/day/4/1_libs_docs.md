@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Libraries & Documentation
@@ -24,7 +23,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Finding Libraries
@@ -51,7 +49,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Not in `std`
@@ -75,7 +72,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Using Libraries
@@ -89,7 +85,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Finding Documentation

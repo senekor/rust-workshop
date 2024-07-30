@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Control Flow
@@ -15,7 +14,6 @@ book chapter 3.5
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # `if` Expressions
@@ -43,7 +41,6 @@ What is the type of `size` ?
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # `loop`
@@ -63,7 +60,6 @@ loop {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # `while` Loops
@@ -87,7 +83,6 @@ println!("LIFTOFF!!!");
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 clicks: 3
 ```
 
@@ -128,7 +123,6 @@ for element in a {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Some Operators
@@ -149,7 +143,6 @@ some assignment variants exist ( `+=` )
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 clicks: 1
 ```
 

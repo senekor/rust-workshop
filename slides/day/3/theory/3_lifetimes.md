@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Lifetimes
@@ -15,7 +14,6 @@ book chapter 10.3
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Reminder:
@@ -41,7 +39,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Problem: Returning References
@@ -69,7 +66,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Solution: Lifetime Annotations
@@ -108,7 +104,6 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Lifetime Annotations
@@ -137,7 +132,6 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Lifetime Annotations
@@ -166,7 +160,6 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Lifetime Annotations
@@ -195,7 +188,6 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Lifetime Annotations
@@ -224,7 +216,6 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Lifetime Annotations
@@ -250,7 +241,6 @@ is the shorter one of `x` and `y`'s lifetimes.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Limitations
@@ -282,7 +272,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Alternatively...
@@ -307,7 +296,6 @@ The lifetime of `y` has no relation to the lifetime of the return value.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # LT Annotations in Structs
@@ -326,7 +314,6 @@ struct StoringBorrowedData<'number, 'text> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Lifetime Elision Rules
@@ -358,7 +345,6 @@ impl Whatever {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `'static` Lifetime
@@ -385,7 +371,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Rust Easy Mode<sup>TM</sup>

@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Error Handling
@@ -15,7 +14,6 @@ book chapter 9
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Quick and Dirty
@@ -40,7 +38,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `Result` Enum
@@ -68,7 +65,6 @@ enum Option<T> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Error Handling

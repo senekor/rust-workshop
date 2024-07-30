@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Language Basics 1
@@ -19,7 +18,6 @@ ownership
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 ```rust

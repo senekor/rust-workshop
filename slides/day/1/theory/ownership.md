@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Ownership
@@ -15,7 +14,6 @@ book chapter 4.1
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Memory Management
@@ -33,7 +31,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # C and C++
@@ -47,7 +44,6 @@ a short history of manual memory management
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 ## Double free
@@ -75,7 +71,6 @@ free(p);
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Implicit ownership in C
@@ -103,7 +98,6 @@ some_t *foo(some_t *p);
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # C++
@@ -125,7 +119,6 @@ and destructors!
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Rust
@@ -139,7 +132,6 @@ codify and enforce the rules of ownership
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Ownership Rules
@@ -162,7 +154,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Heap-allocated Strings
@@ -184,7 +175,6 @@ let embedded_in_binary: &str = "hello"; // immutable
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # One Owner
@@ -203,7 +193,6 @@ println!("{}, world!", s1); // error
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Reading the error message
@@ -242,7 +231,6 @@ error: could not compile `ownership` due to previous error
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # Reading the error message
@@ -269,7 +257,6 @@ println!("{}, world!", s1); // error
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Scope and Destructors
@@ -283,7 +270,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Ownership and Functions
@@ -310,7 +296,6 @@ What's the output of this program?
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 6
 ```
 
@@ -349,7 +334,6 @@ fn foo(m: &Mutex<i32>, random_choice: bool) -> Option<MutexGuard<i32>> {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 clicks: 4
 ```
 

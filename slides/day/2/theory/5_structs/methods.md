@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Methods
@@ -15,7 +14,6 @@ book chapter 5.3
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Syntax
@@ -54,7 +52,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Automatic (De-)Referencing
@@ -80,7 +77,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Additional Parameters
@@ -116,7 +112,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Associated Functions
@@ -147,7 +142,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Multiple `impl` Blocks
@@ -175,7 +169,6 @@ impl Rectangle {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Summary

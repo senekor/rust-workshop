@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Closures
@@ -15,7 +14,6 @@ book chapter 13.1
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # What is a Closure?
@@ -35,7 +33,6 @@ Unlike functions, closures can capture values from the scope in which they’re 
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Basic Syntax
@@ -60,7 +57,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Closures as Arguments
@@ -89,7 +85,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Mutating the Environment
@@ -115,7 +110,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Forcing a Move
@@ -146,7 +140,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `Fn`-Traits
@@ -167,7 +160,6 @@ but you might see them in documentation and error messages.
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # `Fn`-Trait Example

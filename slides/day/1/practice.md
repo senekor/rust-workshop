@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Practice
@@ -18,7 +17,6 @@ You'll receive step-by-step instructions in writing as well.
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 ![](/fork.png)
@@ -41,7 +39,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 ![](/install-page.png)
@@ -67,7 +64,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Choose your `$PATH`
@@ -96,7 +92,6 @@ fish_add_path ~/.cargo/bin
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Batteries included
@@ -117,7 +112,6 @@ transition: slide-up
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # Visual Studio Code Extensions
@@ -137,7 +131,6 @@ recommendations cover:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 <img
@@ -162,7 +155,6 @@ transition: slide-up
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Exercise Organization
@@ -181,7 +173,6 @@ transition: slide-up
 ```yaml
 layout: cover
 class: text-center
-transition: slide-left
 ```
 
 # Practice 🧑‍💻

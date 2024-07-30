@@ -1,6 +1,6 @@
 ```yaml
 favicon: rust-logo-64x64-blk.png
-transition: slide-left
+transition: slide-up
 titleTemplate: "%s"
 lineNumbers: true
 fonts:

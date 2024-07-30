@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Basic Types
@@ -15,7 +14,6 @@ book chapter 3.2
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Integer Types
@@ -36,7 +34,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Number Literals
@@ -57,7 +54,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Floating-point Types
@@ -76,7 +72,6 @@ let y: f32 = 3.0; // 32-bit
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Booleans
@@ -93,7 +88,6 @@ let y: bool = false;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Characters
@@ -119,7 +113,6 @@ let heart_eyed_cat = '😻';
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 3
 ```
 
@@ -145,7 +138,6 @@ let a: i32 = tup.0;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The Empty Tuple
@@ -168,7 +160,6 @@ let rusty_void: () = println!("printing doesn't return anything");
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 clicks: 3
 ```
 

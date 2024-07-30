@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Pattern Matching
@@ -15,7 +14,6 @@ book chapter 6.2
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `match` Expression
@@ -44,7 +42,6 @@ fn value_in_cents(coin: Coin) -> u8 {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Patterns that Bind to Values
@@ -77,7 +74,6 @@ fn receive(msg: Message) {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Matching on `Option`
@@ -103,7 +99,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Exhaustive Matching
@@ -128,7 +123,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Exhaustive Matching
@@ -142,7 +136,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Catch-all Patterns
@@ -162,7 +155,6 @@ match 0_i32 {
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Catch-all Patterns
@@ -182,7 +174,6 @@ match 0_i32 {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Catch-all Patterns
@@ -202,7 +193,6 @@ match 0_i32 {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Boilerplate...
@@ -223,7 +213,6 @@ match option_num {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Matching on a Single Pattern
@@ -247,7 +236,6 @@ if let Some(num) = maybe_num {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Looping `while` a Pattern Matches
@@ -271,7 +259,6 @@ while let Some(n) = numbers.pop() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Summary

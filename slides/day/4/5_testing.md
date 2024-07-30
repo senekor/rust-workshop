@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Testing
@@ -13,7 +12,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 A function like this can be anywhere.
@@ -34,7 +32,6 @@ It will be executed by `cargo test`.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 Do your tests have some shared util code?
@@ -66,7 +63,6 @@ due to the `#[cfg(test)]` attribute.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 You can return `Result`s from your tests.
@@ -91,7 +87,6 @@ As expected, `Ok` means the test passed, `Err` means it failed.
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Test Organization
@@ -121,7 +116,6 @@ with `main.rs` being small and simple.
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Documentation Tests

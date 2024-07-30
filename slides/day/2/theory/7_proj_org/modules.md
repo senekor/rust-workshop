@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Modules & Visibility
@@ -15,7 +14,6 @@ book chapter 7
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Declaring a Module
@@ -35,7 +33,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `pub` Keyword
@@ -67,7 +64,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Nesting
@@ -107,7 +103,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 3
 ```
 
@@ -151,7 +146,6 @@ mod garden {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Struct Field Visibility
@@ -178,7 +172,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The `use` Keyword
@@ -202,7 +195,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Using External Packages
@@ -230,7 +222,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 1
 ```
 
@@ -260,7 +251,6 @@ use leptos::prelude::*;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 3
 ```
 
@@ -296,7 +286,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Renaming Imports with `as`
@@ -325,7 +314,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Summary

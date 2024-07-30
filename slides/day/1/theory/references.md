@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # References and Borrowing
@@ -14,7 +13,6 @@ book chapter 4.2
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # What are references?
@@ -30,7 +28,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Syntax
@@ -61,7 +58,6 @@ let y: i32 = *r;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 2
 ```
 
@@ -97,7 +93,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Mutable References
@@ -120,7 +115,6 @@ let r = &mut x;
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Mutable References
@@ -134,7 +128,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Mutable references are exclusive
@@ -159,7 +152,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: none
 ```
 
 # Mutable references are exclusive
@@ -184,7 +176,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Mutable references are exclusive
@@ -209,7 +200,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Dangling References
@@ -234,7 +224,6 @@ compiler says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Borrrowing Rules
@@ -258,7 +247,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 clicks: 4
 ```
 

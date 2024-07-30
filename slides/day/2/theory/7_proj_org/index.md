@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Project Organization
@@ -15,7 +14,6 @@ book chapter 7
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 <img
@@ -29,7 +27,6 @@ transition: slide-up
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # The Crate
@@ -46,7 +43,6 @@ transition: slide-up
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # Above the Crate: The Package
@@ -64,7 +60,6 @@ transition: slide-up
 
 ```yaml
 layout: center
-transition: slide-up
 ```
 
 # Below the Crate: Modules
@@ -80,7 +75,6 @@ transition: slide-up
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 <img
@@ -94,7 +88,6 @@ transition: slide-up
 
 ```yaml
 layout: center
-transition: slide-left
 ```
 
 ```

@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # The Slice Type
@@ -15,7 +14,6 @@ book chapter 4.3
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Slices in C ?
@@ -44,7 +42,6 @@ the compiler cannot reason about memory safety.\
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Rust Slices
@@ -82,7 +79,6 @@ The full length of a slice is guaranteed valid memory.\
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # The String Slice
@@ -106,7 +102,6 @@ computer says:
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Borrowing rules apply to slices
@@ -125,7 +120,6 @@ println!("{}", s);
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # String Literals
@@ -141,7 +135,6 @@ let greeting: &str = "Hello, world!";
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Off-Topic: Vectors

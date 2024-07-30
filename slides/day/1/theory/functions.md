@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Functions
@@ -15,7 +14,6 @@ book chapter 3.3
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Basic Function
@@ -37,7 +35,6 @@ fn another_function() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 1
 ```
 
@@ -72,7 +69,6 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Expressions

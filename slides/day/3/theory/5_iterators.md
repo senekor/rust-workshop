@@ -1,7 +1,6 @@
 ```yaml
 layout: cover
 class: text-center
-transition: slide-up
 ```
 
 # Iterators
@@ -15,7 +14,6 @@ book chapter 13.2
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Processing a Series of Items
@@ -45,7 +43,6 @@ For a type to be an iterator, it needs to...
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Using an Iterator
@@ -59,7 +56,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Many Ways to Iterate
@@ -91,7 +87,6 @@ for elem in &mut nums {}
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 clicks: 2
 ```
 
@@ -136,7 +131,6 @@ impl str {
 ```yaml
 layout: center
 class: text-center
-transition: slide-up
 ```
 
 # Iterator Adapters
@@ -150,7 +144,6 @@ demo
 ```yaml
 layout: center
 class: text-center
-transition: slide-left
 ```
 
 # Performance?
