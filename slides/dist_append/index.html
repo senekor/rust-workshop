@@ -6,21 +6,57 @@
   <link rel="icon" href="1/rust-logo-64x64-blk.png">
   <title>Rust Workshop</title>
 </head>
+<style>
+  body {
+    margin: 0;
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+  }
+  .flex-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  a {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+  }
+  a:link {
+    color: hsl( 200, 60%, 50% );
+  }
+  a:visited {
+    color: hsl( 240, 50%, 70% );
+  }
+  a:hover {
+    color: hsl( 200, 60%, 70% );
+  }
+</style>
 <body>
   <!-- This page is the index for the deployment to GitHub Pages -->
-  <ul>
-    <li><a href="1">slides day 1</li>
-    <li><a href="rust-workshop-slides-1.pdf">slides day 1 (pdf)</li>
-    <li><a href="2">slides day 2</li>
-    <li><a href="rust-workshop-slides-2.pdf">slides day 2 (pdf)</li>
-    <li><a href="3">slides day 3</li>
-    <li><a href="rust-workshop-slides-3.pdf">slides day 3 (pdf)</li>
-    <li><a href="4">slides day 4</li>
-    <li><a href="rust-workshop-slides-4.pdf">slides day 4 (pdf)</li>
-    <li><a href="5">slides day 5</li>
-    <li><a href="rust-workshop-slides-5.pdf">slides day 5 (pdf)</li>
-    <li><a href="6">slides day 6</li>
-    <li><a href="rust-workshop-slides-6.pdf">slides day 6 (pdf)</li>
-  </ul>
+  <div class="flex-container">
+    <div style="flex-grow: 1"></div>
+    <a href="https://htmlcolorcodes.com/color-picker/">slides day 1</a>
+    <a href="rust-workshop-slides-1.pdf">slides day 1 (pdf)</a>
+    <div style="height: 1em"></div>
+    <a href="2">slides day 2</a>
+    <a href="rust-workshop-slides-2.pdf">slides day 2 (pdf)</a>
+    <div style="height: 1em"></div>
+    <a href="3">slides day 3</a>
+    <a href="rust-workshop-slides-3.pdf">slides day 3 (pdf)</a>
+    <div style="height: 1em"></div>
+    <a href="4">slides day 4</a>
+    <a href="rust-workshop-slides-4.pdf">slides day 4 (pdf)</a>
+    <div style="height: 1em"></div>
+    <a href="5">slides day 5</a>
+    <a href="rust-workshop-slides-5.pdf">slides day 5 (pdf)</a>
+    <div style="height: 1em"></div>
+    <a href="6">slides day 6</a>
+    <a href="rust-workshop-slides-6.pdf">slides day 6 (pdf)</a>
+    <div style="flex-grow: 1"></div>
+  </div>
 </body>
 </html>
