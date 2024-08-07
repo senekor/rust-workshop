@@ -1,6 +1,8 @@
 /* ./setup/shiki.ts */
 import { defineShikiSetup } from "@slidev/types";
 
+import { transformerNotationWordHighlight, transformerMetaWordHighlight } from "@shikijs/transformers";
+
 export default defineShikiSetup(() => {
   return {
     themes: {
@@ -8,7 +10,8 @@ export default defineShikiSetup(() => {
       light: "light-plus",
     },
     transformers: [
-      // ...
+      transformerNotationWordHighlight(),
+      transformerMetaWordHighlight(),
     ],
   };
 });

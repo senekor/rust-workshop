@@ -17,3 +17,10 @@
 .comment {
   --prism-comment-style: "";
 }
+
+.highlighted-word {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
