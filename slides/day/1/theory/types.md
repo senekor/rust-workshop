@@ -113,23 +113,54 @@ let heart_eyed_cat = '😻';
 ```yaml
 layout: center
 class: text-center
-clicks: 3
+transition: none
 ```
 
 # Tuples
 
-```rust {1|3|4|all}
+```rust {1}
 let tup: (i32, f64, u8) = (500, 6.4, 1);
 
 let (x, y, z) = tup;
 let a: i32 = tup.0;
 ```
 
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-87 left-118 w-5"
-    v-click="[2,3]"
-></div>
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: none
+```
+
+# Tuples
+
+```rust {3}
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+let (x, y, z) = tup;
+let a: i32 = tup.0;
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Tuples
+
+```rust {4} /.0/
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+let (x, y, z) = tup;
+let a: i32 = tup.0;
+```
 
 <Nr />
 
@@ -145,13 +176,9 @@ class: text-center
 also known as the "unit"
 
 ```rust
+// [!code word:\: ()]
 let rusty_void: () = println!("printing doesn't return anything");
 ```
-
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-82.5 left-81 w-9"
-></div>
 
 <Nr />
 
@@ -160,23 +187,56 @@ let rusty_void: () = println!("printing doesn't return anything");
 ```yaml
 layout: center
 class: text-center
-clicks: 3
+transition: none
 ```
 
 # Arrays
 
 size known at compile time
 
-```rust {1|2|3|all}
+```rust {1} /[i32; 5]/
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 let a = [3; 5]; // == [3, 3, 3, 3, 3]
 let x = a[0];
 ```
 
-<div
-    style="background-color: red"
-    class="h-0.8 rounded absolute top-76 left-101 w-16"
-    v-click="[0,1]"
-></div>
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: none
+```
+
+# Arrays
+
+size known at compile time
+
+```rust {2}
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let a = [3; 5]; // == [3, 3, 3, 3, 3]
+let x = a[0];
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Arrays
+
+size known at compile time
+
+```rust {3}
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let a = [3; 5]; // == [3, 3, 3, 3, 3]
+let x = a[0];
+```
 
 <Nr />
