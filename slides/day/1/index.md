@@ -84,6 +84,31 @@ class: text-center
 <Nr />
 
 ---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# About these slides
+
+<br/>
+
+Although they aren't meant as reference material...\
+Both the interactive version and PDF exports are available at:
+
+[senekor.github.io/rust-workshop](https://senekor.github.io/rust-workshop)
+
+<br/>
+
+Using the interactive slides:\
+Hover over the bottom-left corner for controls.
+
+<Arrow x1="200" y1="450" x2="120" y2="500" color="green" width="3" />
+
+<Nr />
+
+---
 src: ./theory/index.md
 ---
 
