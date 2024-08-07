@@ -41,6 +41,10 @@ src: ./functions.md
 ---
 
 ---
+src: ./macros.md
+---
+
+---
 src: ./control_flow.md
 ---
 
