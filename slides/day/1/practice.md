@@ -96,7 +96,7 @@ class: text-center
 
 # Batteries included
 
-|     component | purpose                 | example                     |
+| **component** | **purpose**             | **example**                 |
 | ------------: | :---------------------- | :-------------------------- |
 |        rustup | toolchain manager       | `rustup update`             |
 |         cargo | package manager         | `cargo add my-fav-library`  |
@@ -105,6 +105,22 @@ class: text-center
 |       rustfmt | formatter               | `cargo fmt`                 |
 |        clippy | linter                  | `cargo clippy`              |
 | rust-analyzer | LSP implementation      | N/A                         |
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Ensure you have a linker
+
+|   **System** | **install command**      |
+| -----------: | :----------------------- |
+| Debian-based | `sudo apt install gcc`   |
+|        MacOS | `xcode-select --install` |
 
 <Nr />
 
