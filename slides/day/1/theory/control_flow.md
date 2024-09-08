@@ -32,7 +32,7 @@ let size = if number < 5 {
 };
 ```
 
-What is the type of `size` ?
+The variable `size` will hold one of the three strings.
 
 <Nr />
 
@@ -65,12 +65,12 @@ class: text-center
 # `while` Loops
 
 ```rust {3,7}
-let mut number = 10;
+let mut countdown = 10;
 
-while number != 0 {
-    println!("{}!", number);
+while countdown != 0 {
+    println!("{}!", countdown);
 
-    number -= 1;
+    countdown -= 1;
 }
 
 println!("LIFTOFF!!!");
