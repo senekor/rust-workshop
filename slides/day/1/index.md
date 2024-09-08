@@ -69,14 +69,14 @@ class: text-center
 
 <div></div> <!-- prevent subheading -->
 
-|       |                       |                                                           |
-| :---- | --------------------: | :-------------------------------------------------------- |
-| Day 1 |  Language Basics 1 🤔 | common programming concepts & ownership                   |
-| Day 2 |  Language Basics 2 🤓 | structs, enums, modules, collections, error handling      |
-| Day 3 |  Advanced Features 🤯 | generics, traits, lifetimes, closures, iterators          |
-| Day 4 | The Rust Ecosystem 📦 | libraries, documentation, tools, news, CI/CD              |
-| Day 5 | Shippable Projects 🚀 | CLI tools, web APIs, python modules, WASM apps            |
-| Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback                      |
+|       |                      |                                                          |
+| :---- | -------------------: | :------------------------------------------------------- |
+| Day 1 |    Language Basics 1 | common programming concepts & ownership                  |
+| Day 2 |    Language Basics 2 | structs, enums, modules, collections, error handling     |
+| Day 3 |  Advanced Features 1 | generics, traits, lifetimes, closures, iterators         |
+| Day 4 |  Advanced Features 2 | smart pointers, dynamic dispatch, async programming      |
+| Day 5 |   The Rust Ecosystem | libraries, documentation, patterns, CI/CD, project start |
+| Day 6 |          Projects 🚀 | CLI tools, web APIs, python modules, LED matrix          |
 
 <Nr />
 
