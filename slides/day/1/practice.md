@@ -23,14 +23,14 @@ layout: center
 
 <div
     style="border-color: red"
-    class="border-4 absolute top-36.5 left-81 w-62 h-9"
+    class="border-4 absolute top-38.5 left-78 w-58 h-9"
 ></div>
 
 <div
     style="border-color: red"
-    class="border-4 absolute top-72.5 left-156 w-35.5 h-10.8"
+    class="border-4 absolute top-71.5 left-194.5 w-35.5 h-10.8"
 ></div>
-<Arrow color="red" x1="780" y1="420" x2="740" y2="350" />
+<Arrow color="red" x1="780" y1="420" x2="820" y2="350" />
 
 <Nr />
 
@@ -56,34 +56,6 @@ class: text-center
 <Arrow color="red" x1="400" y1="120" x2="460" y2="105" />
 
 <Arrow color="red" x1="100" y1="456" x2="180" y2="456" />
-
-<Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Choose your `$PATH`
-
-should be handled by the install script
-
-Make sure you you can call `cargo`.\
-If you can't, try some of these:
-
-```bash
-# POSIX shell
-source ~/.cargo/env
-# or
-export PATH="$HOME/.cargo/bin:$PATH"
-```
-
-```sh
-# fish
-fish_add_path ~/.cargo/bin
-```
 
 <Nr />
 
