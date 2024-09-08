@@ -87,7 +87,7 @@ layout: center
 class: text-center
 ```
 
-<img src="/book_cover.png" style="height: 70vh"/>
+<a href="https://doc.rust-lang.org/stable/book/"><img src="/book_cover.png" style="height: 70vh"/></a>
 
 <Nr />
 
