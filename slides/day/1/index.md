@@ -61,20 +61,6 @@ From bare-metal embedded to WebAssembly in the browser - Rust can comfortably ru
 ---
 
 ```yaml
-layout: cover
-class: text-center
-```
-
-# Goal
-
-## You are <Orange>confident</Orange> to start new projects in Rust
-## where it is the best technical fit.
-
-<Nr />
-
----
-
-```yaml
 layout: center
 class: text-center
 ```
