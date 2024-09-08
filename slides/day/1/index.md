@@ -19,22 +19,44 @@ layout: center
 class: text-center
 ```
 
-# Why do people use Rust <Orange>at Work</Orange>?
+# Why Rust?
 
-according to the [Rust Annual Survey 2023](https://blog.rust-lang.org/2024/02/19/2023-Rust-Annual-Survey-2023-results.html)
+<div style="height: 2em"></div>
 
 <div style="display: flex">
   <div style="flex-grow: 1"></div>
-  <div style="text-align: left">
-    <li>(85%) Rust allows us to build relatively correct and bug free software</li>
-    <li>(83%) For Rust's performance (speed, memory footprint) characteristics</li>
-    <li>(70%) Its security and safety properties are important to us</li>
-    <li>(70%) We find it enjoyable or fun to program in Rust</li>
+  <div style="text-align: left; font-size: 1.3em">
+    ✅ performance <br/>
+    ✅ safety <br/>
+    ✅ correctness <br/>
+    ✅ productivity <br/>
+    ✅ portability <br/>
   </div>
   <div style="flex-grow: 1"></div>
 </div>
 
 <Nr />
+
+<!--
+Rust has the same performance ceiling as C/C++.
+Inline assembly is possible
+
+Rust is memory safe like most garbage collected languages.
+Unlike most languages, it even prevents data-races in multi-threaded environments.
+
+Beyond safety aspects, Rust has many features that help you ensure your program does what it's supposed to.
+- no null-pointers
+- no implicit type conversions
+- algebraic data types
+
+Rust has excellent productivity tooling:
+- type inference
+- automatic formatting
+- great IDE support (via LSP)
+- package manager
+
+From bare-metal embedded to WebAssembly in the browser - Rust can comfortably run anywhere unlike any other language
+-->
 
 ---
 
