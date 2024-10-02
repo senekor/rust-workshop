@@ -110,3 +110,53 @@ async fn main() {
 ```
 
 <Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Async & Embedded
+
+```rust
+use embassy_nrf::gpio::{AnyPin, Input, Level, Output, OutputDrive, Pin, Pull};
+use embassy_time::{Duration, Timer};
+
+// Declare async tasks
+#[embassy_executor::task]
+async fn blink(pin: AnyPin) {
+    let mut led = Output::new(pin, Level::Low, OutputDrive::Standard);
+
+    loop {
+        // Timekeeping is globally available, no need to mess with hardware timers.
+        led.set_high();
+        Timer::after_millis(150).await;
+        led.set_low();
+        Timer::after_millis(150).await;
+    }
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Recommended talk:
+# Async Rust in Embedded Systems with Embassy
+
+<div style="height: 2em"></div>
+    
+<div style="display: flex">
+    <div style="flex-grow: 1"></div>
+    <Youtube id="H7NtzyP9q8E" />
+    <div style="flex-grow: 1"></div>
+</div>
+
+<Nr />
