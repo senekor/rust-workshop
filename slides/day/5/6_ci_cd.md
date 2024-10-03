@@ -6,8 +6,8 @@ class: text-center
 # Continuous
 # Integration & Delivery
 
-<div></div>
+<div style="height: 1em"></div>
 
-Talk is cheap, let's get our hands dirty!
+tutorial in ➡️ [`rust-exercises/day_4/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
 
 <Nr />

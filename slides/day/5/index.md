@@ -64,19 +64,6 @@ layout: cover
 class: text-center
 ```
 
-# Practice 🧑‍💻
-
-## [`rust-exercises/day_4/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
-
-<Nr />
-
----
-
-```yaml
-layout: cover
-class: text-center
-```
-
 # Final Project 🚀
 
 <div></div>
@@ -147,8 +134,43 @@ layout: cover
 class: text-center
 ```
 
-# Work on Project 🧑‍💻
+# Practice 🧑‍💻
 
-## [senekor.github.io/paekli-rs](https://senekor.github.io/paekli-rs)
+## [`rust-exercises/day_4/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
+
+<div style="height: 3em"></div>
+
+# Work on Projects
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <table>
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            paekli-rs
+          </td>
+          <td>
+            <a href="https://senekor.github.io/paekli-rs">senekor.github.io/paekli-rs</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            LED-Matrix
+          </td>
+          <td>
+            <a href="https://github.com/senekor/led-matrix-rs">github.com/senekor/led-matrix-rs</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
 
 <Nr />
