@@ -39,26 +39,22 @@ layout: center
 class: text-center
 ```
 
-# Beyond `rustup`
+# Beyond `rustup` ➡️ [blessed.rs](https://blessed.rs)
 
-<div style="height: 32px"></div>
+<div style="height: 1em"></div>
 
-### ...just read [blessed.rs](https://blessed.rs) ¯\\\_(ツ)\_/¯
-
-<Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Case Study #1 -- `cargo-deny`
-
-<div style="height: 32px"></div>
-
-# [docs.rs/cargo-deny](https://docs.rs/cargo-deny/)
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>cross compilation</li>
+    <li>dependency management & auditing</li>
+    <li>snapshot testing</li>
+    <li>benchmarking</li>
+    <li>release automation</li>
+    <li>and more...</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 <Nr />
 
@@ -69,10 +65,22 @@ layout: center
 class: text-center
 ```
 
-# Case Study #2 -- `divan`
+# FFI / Interop
 
-<div style="height: 32px"></div>
+<div style="height: 1em"></div>
 
-# [docs.rs/divan](https://docs.rs/divan/)
+Lots of great bindings generators, including but not limited to:
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>C</li>
+    <li>C++</li>
+    <li>Python</li>
+    <li>Node.js</li>
+    <li>and more...</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
 
 <Nr />

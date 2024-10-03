@@ -13,10 +13,6 @@ class: text-center
 ## Day 5
 
 ---
-src: ./0_recap.md
----
-
----
 
 ```yaml
 layout: cover
@@ -32,7 +28,6 @@ class: text-center
   <div style="text-align: left">
     <li>Libraries & Documentation</li>
     <li>Idiomatic APIs</li>
-    <li>News</li>
     <li>Developer Tools</li>
     <li>Testing</li>
     <li>Continuous Integration & Delivery</li>
@@ -48,10 +43,6 @@ src: 1_libs_docs.md
 
 ---
 src: 2_rusty_apis.md
----
-
----
-src: 3_news.md
 ---
 
 ---
