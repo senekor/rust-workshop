@@ -1,40 +1,20 @@
 //
 
 #[derive(Debug)]
-enum InesEmployee {
-    WiAssis {
-        years_worked: u8,
-        is_mse_student: bool,
-    },
-    WiMa {
-        years_worked: u8,
-    },
-    BigShot {
-        has_cool_vim_themed_mug: bool,
-        wears_hat_correctly: bool,
-    },
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
 }
 
 fn main() {
-    let employees = [
-        InesEmployee::WiAssis {
-            years_worked: 1,
-            is_mse_student: true,
-        },
-        InesEmployee::WiAssis {
-            years_worked: 2,
-            is_mse_student: false,
-        },
-        InesEmployee::WiMa { years_worked: 4 },
-        InesEmployee::BigShot {
-            has_cool_vim_themed_mug: true,
-            wears_hat_correctly: true,
-        },
-        InesEmployee::BigShot {
-            has_cool_vim_themed_mug: false,
-            wears_hat_correctly: false,
-        },
+    let messages = [
+        Message::Quit,
+        Message::Move { x: 12, y: 20 },
+        Message::Write("Hello, world!".into()),
+        Message::ChangeColor(120, 50, 200),
     ];
 
-    println!("{:#?}", employees);
+    println!("{:#?}", messages);
 }

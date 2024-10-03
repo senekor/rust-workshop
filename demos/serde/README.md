@@ -9,10 +9,9 @@ steps:
 - explain default feature flags & watch out
 - run `cargo add serde --features derive`
 - observer error going away
-- add `serde_json`, pretty print example (gush about composability)
+- add `serde_json`, pretty print example (talk about composability)
 - replace source with raw json string
 - add `serde_yaml`, show json->yaml conversion
 - macro attributes:
-  - `#[serde(default)]` for `is_mse_student`
-  - `#[serde(rename_all(serialize = "SCREAMING-KEBAB-CASE"))]` for `InesEmployee`
-  - `#[serde(try_from = "u8")]` for `WiAssisYear(u8)`
+  - `#[serde(default)]`
+  - `#[serde(rename(serialize = "SCREAMING-KEBAB-CASE"))]`
