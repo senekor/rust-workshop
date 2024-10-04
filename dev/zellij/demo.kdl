@@ -6,7 +6,18 @@ layout {
 	tab name="helix" {
 		pane {
 			command "hx"
-			args "."
+			args "src/main.rs"
+		}
+	}
+
+	swap_floating_layout name="scratchpad" {
+		floating_panes max_panes=1 {
+			pane {
+				x "10%"
+				y "20%"
+				width "80%"
+				height "60%"
+			}
 		}
 	}
 }
