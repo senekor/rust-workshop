@@ -68,7 +68,46 @@ layout: center
 class: text-center
 ```
 
-# Solution: Lifetime Annotations
+# Recommended Solution
+
+```rust
+fn longest(x: &str, y: &str) -> String {
+    if x.len() > y.len() {
+        x.clone()
+    } else {
+        y.clone()
+    }
+}
+```
+
+Cloning the string results in an additional heap allocation.
+
+This is perfectly fine in 99% of situations.
+
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-49 left-157 w-15"
+></div>
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-60.5 left-101 w-18.5"
+></div>
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-72.8 left-101 w-18.5"
+></div>
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: none
+```
+
+# Lifetime Annotations
 
 ```rust {1}
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -80,21 +119,26 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
+<div style="color: #00000000">
+    <!-- transparent dummy text for alignment with next slides -->
+    <h3>dummy text</h3>
+</div>
+
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-60 left-89 w-10"
+    class="h-0.8 rounded absolute top-56 left-89 w-10"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-60 left-109 w-7"
+    class="h-0.8 rounded absolute top-56 left-109 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-60 left-138.5 w-7"
+    class="h-0.8 rounded absolute top-56 left-138.5 w-7"
 ></div>
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-60 left-168.5 w-7"
+    class="h-0.8 rounded absolute top-56 left-168.5 w-7"
 ></div>
 
 <Nr />
@@ -104,6 +148,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
 # Lifetime Annotations
@@ -132,6 +177,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
 # Lifetime Annotations
@@ -160,6 +206,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
 # Lifetime Annotations
@@ -188,6 +235,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
 # Lifetime Annotations
@@ -217,6 +265,8 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 layout: center
 class: text-center
 ```
+
+<div style="height: 3.85em"></div>
 
 # Lifetime Annotations
 
@@ -378,7 +428,7 @@ class: text-center
 premature optimization is the root of all evil
 
 ```rust
-fn longest(x: &String, y: &String) -> String {
+fn longest(x: &str, y: &str) -> String {
     if x.len() > y.len() {
         x.clone()
     } else {
