@@ -286,3 +286,35 @@ class: text-center
 demo
 
 <Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+```rust
+fn main() {
+    let x = 3;
+
+    let mut nums: Vec<_> = (1..=16).collect();
+
+    my_retain(&mut nums, |elem| elem % x == 0);
+
+    println!("remaining: {:?}", nums);
+}
+
+fn my_retain<P>(nums: &mut Vec<i32>, predicate: P)
+where
+    P: Fn(i32) -> bool,
+{
+    for i in (0..nums.len()).rev() {
+        if !predicate(nums[i]) {
+            nums.remove(i);
+        }
+    }
+}
+```
+
+<Nr />

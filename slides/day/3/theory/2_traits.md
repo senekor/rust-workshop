@@ -234,6 +234,37 @@ layout: center
 class: text-center
 ```
 
+```rust
+use std::array;
+
+fn main() {
+    println!("{:?}", 42.clone_10_times());
+    println!();
+    println!("{:?}", String::from("hello").clone_10_times());
+    println!();
+    println!("{:?}", vec![1, 2].clone_10_times());
+}
+
+trait Clone10Times: Sized {
+    fn clone_10_times(self) -> [Self; 10];
+}
+
+impl<T: Clone> Clone10Times for T {
+    fn clone_10_times(self) -> [Self; 10] {
+        array::from_fn(|_| self.clone())
+    }
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
 # Useful Traits
 
 |                      |                                        |

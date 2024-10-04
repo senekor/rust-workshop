@@ -253,6 +253,39 @@ demo
 ```yaml
 layout: center
 class: text-center
+```
+
+```rust
+struct MyRange {
+    start: i32,
+    end: i32,
+}
+
+impl Iterator for MyRange {
+    type Item = i32;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        if self.start >= self.end {
+            return None;
+        }
+        let result = self.start;
+        self.start += 1;
+        Some(result)
+    }
+}
+
+fn my_range(start: i32, end: i32) -> MyRange {
+    MyRange { start, end }
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
 clicks: 2
 ```
 
@@ -302,6 +335,25 @@ class: text-center
 # Iterator Adapters
 
 demo
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+```rust
+pub fn get_solution(input: &str) -> u32 {
+    input
+        .split("\n\n")
+        .map(|elf| elf.lines().map(|line| line.parse::<u32>().unwrap()).sum())
+        .max()
+        .unwrap()
+}
+```
 
 <Nr />
 
