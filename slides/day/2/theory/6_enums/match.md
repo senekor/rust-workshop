@@ -136,30 +136,12 @@ demo
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
 # Catch-all Patterns
 
-```rust
-match 0_i32 {
-    7  => println!("You are lucky! 🥳"),
-    13 => println!("You are unlucky! 😢"),
-    x  => println!("squared: {}", x * x),
-}
-```
-
-<Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Catch-all Patterns
-
-```rust {4}
+```rust {all|4}
 match 0_i32 {
     7  => println!("You are lucky! 🥳"),
     13 => println!("You are unlucky! 😢"),
