@@ -25,6 +25,6 @@ class: text-center
 
 # Practice 🧑‍💻
 
-## [`rust-exerices/day_2/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_2/README.md#day-2)
+## [`rust-exercises/day_2/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_2/README.md#day-2)
 
 <Nr />

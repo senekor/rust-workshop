@@ -165,10 +165,10 @@ class: text-center
 
 # Practice 🧑‍💻
 
-## [github.com/senekor/rust-exerices](https://github.com/senekor/rust-exerices)
+## [github.com/senekor/rust-exercises](https://github.com/senekor/rust-exercises)
 
 <div class="h-8"></div>
 
-## [`rust-exerices/day_1/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_1/README.md#day-1)
+## [`rust-exercises/day_1/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_1/README.md#day-1)
 
 <Nr />

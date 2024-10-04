@@ -117,6 +117,6 @@ class: text-center
 
 # Practice 🧑‍💻
 
-## [`rust-exerices/day_3/README.md`](https://github.com/senekor/rust-exerices/blob/main/day_3/README.md#day-3)
+## [`rust-exercises/day_3/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_3/README.md#day-3)
 
 <Nr />
