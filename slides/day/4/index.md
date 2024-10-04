@@ -13,7 +13,7 @@ class: text-center
 ## Day 4
 
 ---
-src: ./0_recap.md
+src: ./theory/index.md
 ---
 
 ---
@@ -23,6 +23,8 @@ layout: cover
 class: text-center
 ```
 
-# TODO
+# Practice 🧑‍💻
+
+## [`rust-exercises/day_4/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
 
 <Nr />
