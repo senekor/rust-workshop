@@ -21,9 +21,10 @@ demo:
 
     # setup helix config
     nu -c "open ~/.config/helix/config.toml |
-        upsert theme 'github_light_high_contrast' |
+        upsert theme modus_operandi |
         upsert editor.cursorline true |
         upsert editor.cursorcolumn true |
+        upsert editor.scrolloff 3 |
         save --force helix-demo-config.toml"
 
     cd demos
