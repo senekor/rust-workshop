@@ -171,24 +171,6 @@ layout: cover
 class: text-center
 ```
 
-# Exercise Organization
-
-|                  |                                        |
-| ---------------: | :------------------------------------- |
-| custom exercises | in the repo you forked                 |
-|        rustlings | download a folder, e.g. inside fork    |
-|         Exercism | online editor or need to configure CLI |
-|   Advent of Code | locally wherever you want              |
-
-<Nr />
-
----
-
-```yaml
-layout: cover
-class: text-center
-```
-
 # Practice 🧑‍💻
 
 ## [github.com/senekor/rust-exercises](https://github.com/senekor/rust-exercises)
