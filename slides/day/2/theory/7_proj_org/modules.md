@@ -20,11 +20,22 @@ class: text-center
 
 demo
 
-<!--
-    Let's not spend too much time on modules.
-    They are not necessary to achieve anything in Rust.
-    (except visibility boundaries)
--->
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+```rust
+// main.rs - the root of the crate
+
+mod inline_module { /* more code... */ }
+
+mod file_module; // located in file_module.rs
+```
 
 <Nr />
 

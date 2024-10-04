@@ -81,3 +81,36 @@ demo
     - replace ',' with 'x' in main
     - strip '-' in main
 -->
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+```rust
+#[derive(Debug)]
+enum AreaError {
+    BadSeparator,
+    BadInteger(std::num::ParseIntError),
+}
+fn main() {
+    match calculate_area("12x8") {
+        Ok(area) => println!("area: {area}"),
+        Err(e) => match e { /* compiler ensures all errors are handled */ }, }
+}
+fn calculate_area(input: &str) -> Result<usize, AreaError> {
+    let (length, width) = match input.split_once('x') {
+        Some(t) => t,
+        None => return Err(AreaError::BadSeparator),
+    };
+    Ok(parse_number(length)? * parse_number(length)?)
+}
+fn parse_number(num: &str) -> Result<usize, AreaError> {
+    match num.parse() {
+        Ok(n) => Ok(n),
+        Err(e) => Err(AreaError::BadInteger(e)), } }
+```
+
+<Nr />

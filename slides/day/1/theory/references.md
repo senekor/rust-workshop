@@ -130,6 +130,27 @@ layout: center
 class: text-center
 ```
 
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    change(&mut s);
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
 # Mutable references are exclusive
 
 ```rust
