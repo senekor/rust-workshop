@@ -284,6 +284,6 @@ Generic code is essentially copy-pasted for every type parameter.
 
 There is zero runtime cost to using generics.
 
-(comparable to C++ templates)
+(just like C++ templates)
 
 <Nr />
