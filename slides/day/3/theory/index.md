@@ -9,7 +9,7 @@ layout: cover
 class: text-center
 ```
 
-# Advanced Features
+# Advanced Features 1
 
 book chapters 10 & 13
 

@@ -21,7 +21,7 @@ demo:
 
     # setup helix config
     cp ~/.config/helix/config.toml helix-demo-config.toml
-    sd 'kanagawa' 'catppuccin_latte' helix-demo-config.toml
+    sd 'kanagawa' 'github_light_high_contrast' helix-demo-config.toml
 
     cd demos
     demos=( $(ls) )
