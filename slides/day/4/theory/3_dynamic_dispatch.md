@@ -75,29 +75,3 @@ fn main() {
 ```
 
 <Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Closures
-
-```rust
-fn get_translator(language: &str) -> Box<dyn Fn(&str) -> &str> {
-    match language {
-        "it" => Box::new(|_| "Babede buppi!"),
-           _ => Box::new(|_| "Sorry, I don't speak {language}."),
-    }
-}
-
-fn main() {
-    let italian = get_translator("it");
-    let sausage_order = italian("Can I get a salami?");
-    println!("{sausage_order}");
-}
-```
-
-<Nr />
