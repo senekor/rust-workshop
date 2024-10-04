@@ -13,6 +13,23 @@ class: text-center
 ## Day 4
 
 ---
+
+```yaml
+layout: cover
+class: text-center
+```
+
+# Heads-up:
+# Bring your LED-Matrix!
+
+<div style="height: 1em"></div>
+
+Next week, will get hands on with practical projects.<br/>
+Among other options, you can program the LED-Matrix in Rust!
+
+<Nr />
+
+---
 src: ./theory/index.md
 ---
 
