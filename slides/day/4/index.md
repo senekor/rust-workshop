@@ -13,6 +13,10 @@ class: text-center
 ## Day 4
 
 ---
+src: ./theory/index.md
+---
+
+---
 
 ```yaml
 layout: cover
@@ -28,10 +32,6 @@ Next week, will get hands on with practical projects.<br/>
 Among other options, you can program the LED-Matrix in Rust!
 
 <Nr />
-
----
-src: ./theory/index.md
----
 
 ---
 
