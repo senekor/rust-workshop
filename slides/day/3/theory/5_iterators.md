@@ -240,6 +240,19 @@ for elem: &mut i32 in nums.iter_mut() {
 ```yaml
 layout: center
 class: text-center
+```
+
+# Writing an Iterator
+
+demo
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
 clicks: 2
 ```
 
