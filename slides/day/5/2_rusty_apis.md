@@ -31,6 +31,8 @@ class: text-center
 ```yaml
 layout: center
 class: text-center
+```
+
 # Case Study #2 -- `serde`
 
 <div style="height: 32px"></div>

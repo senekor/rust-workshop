@@ -120,7 +120,6 @@ class: text-center
 
 # Documentation Tests
 
-
 ```rust
 /// Increments a number by one.
 ///
@@ -136,7 +135,7 @@ pub fn inc(x: i32) -> i32 {
 
 <img
     src="/doc_example.png"
-    style="position: absolute; top: 170px; left: 630px; height: 150px"
+    style="position: absolute; top: 180px; left: 650px; height: 150px"
 />
 
 `cargo test` will run this example as a test!
