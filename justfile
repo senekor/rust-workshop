@@ -20,7 +20,7 @@ demo:
 
     # setup helix config
     cp ~/.config/helix/config.toml helix-demo-config.toml
-    sd 'kanagawa' 'catppuccin_latte' helix-demo-config.toml
+    sd 'kanagawa' 'github_light' helix-demo-config.toml
 
     cd demos
     demos=( $(ls) )
