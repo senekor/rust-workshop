@@ -140,18 +140,21 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
+transition: none
 ```
 
-# The `Fn`-Traits
+# What is the Type of a Closure?
 
-You won't have to use these traits directly,\
-but you might see them in documentation and error messages.
+```rust
+let square: ??? = |x| x * x;
+```
 
-|    Trait | Informal Meaning                             | Connection to Ownership Rules       |
-| -------: | :------------------------------------------- | :---------------------------------- |
-| `FnOnce` | can be called only once                      | moves captured value out of closure |
-|  `FnMut` | can be called many times but not shared      | mutates captured value              |
-|     `Fn` | can be called and shared without restriction | captures only immutable references  |
+We don't need to write the type, but can we?
+
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-72 left-103 w-7"
+></div>
 
 <Nr />
 
@@ -162,20 +165,124 @@ layout: center
 class: text-center
 ```
 
-# `Fn`-Trait Example
+# What is the Type of a Closure?
 
 ```rust
-// Signature of `std::vec::Vec::retain`
-// (T is the type of the elements of the vector)
-//
-pub fn retain<F>(&mut self, f: F)
-where
-    F: FnMut(&T) -> bool,
+let square: fn(i32) -> i32 = |x| x * x;
 ```
 
-`retain` must call the function `f` multiple times (once per element).\
-Therefore, the trait bound `FnOnce` would _not_ be enough.\
-There is no reason to restrict mutation in `f`, so `FnMut` is the best choice.\
-`Fn` would be unnecessarily restrictive.
+This is a _function pointer_ and occupies space in memory.
+
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-72 left-103 w-34"
+></div>
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Doesn't work with capturing...
+
+```rust
+let x = 3;
+let times_x: fn(i32) -> i32 = |y| x * y;
+// ❌ error: expected fn pointer, found closure
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Another thing that doesn't work
+
+```rust
+let x = 3;
+let mut times_x = |y| x * y;
+
+let x = 5;
+times_x = |y| x * y;
+```
+
+<div style="height: 1em"></div>
+
+```txt {lines:false}
+mismatched types
+expected closure, found a different closure
+  = note: no two closures, even if identical, have the same type
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# The `Fn`-Traits
+
+|    Trait | Informal Meaning                             | Connection to Ownership Rules      |
+| -------: | :------------------------------------------: | :--------------------------------- |
+|     `Fn` | can be called and shared without restriction | captures only immutable references |
+|  `FnMut` | can be called many times but not shared      | mutates captured values            |
+| `FnOnce` | can be called only once                      | moves captured values into closure |
+
+<div style="height: 1em"></div>
+
+Closures have _unnamable_ types.\
+We can only refer to them via the traits they implement.
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# The `Fn`-Traits
+
+```rust
+let mut text_buffer = String::from("To whom it may concern\n\n");
+
+// implements `Fn() -> usize`
+let buf_len = || text_buffer.len();
+
+// implements `FnMut(&str)`
+let mut append_to_buf = |s| text_buffer.push_str(s);
+
+// implements `FnOnce()`
+let print_and_drop_buf = move || println!("{text_buffer}");
+```
+
+<div style="height: 1em"></div>
+
+Note: `Fn` is a "superset" of `FnMut`, which in turn is a "superset" of `FnOnce`.
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# `Fn`-Trait Example: `Vec::retain`
+
+demo
 
 <Nr />
