@@ -52,6 +52,29 @@ layout: center
 class: text-center
 ```
 
+# Struct Update Syntax
+
+```rust {5-8}
+let rect = Rectangle {
+    width: 200,
+    height: 100,
+};
+let wide_rect = Rectangle {
+    width: 400,
+// [!code word:..:1]
+    ..rect, // useful with many fields
+}
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
 # Field Access
 
 ```rust
