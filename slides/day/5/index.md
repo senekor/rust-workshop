@@ -94,16 +94,3 @@ class: text-center
 ## [rw-fp.buenzli.dev](https://rw-fp.buenzli.dev)
 
 <Nr />
-
----
-
-```yaml
-layout: center
-class: text-center
-```
-
-# Please suggest improvements
-# for next week!
-# 🦀
-
-Check the readme of your repository for the form link.

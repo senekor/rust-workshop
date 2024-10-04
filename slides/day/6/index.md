@@ -40,21 +40,6 @@ class: text-center
 ---
 
 ```yaml
-layout: center
-class: text-center
-```
-
-# Please suggest improvements
-# for the next workshop!
-# 🦀
-
-Check the readme of your repository for the form link.
-
-<Nr />
-
----
-
-```yaml
 layout: cover
 class: text-center
 ```
