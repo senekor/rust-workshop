@@ -45,9 +45,151 @@ layout: center
 class: text-center
 ```
 
-# Using an Iterator
+````md magic-move
+```rust {all|4|6|8-14|16-18|8-18}
+// manually calling next
 
-demo
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    // a
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
+
+    // b
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
+
+    // crash
+    let item = iter.next().unwrap();
+    println!("next item: {}", item);
+}
+```
+```rust {8-11|8-12}
+// looping until crash
+
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    loop {
+        let item = iter.next().unwrap();
+        println!("next item: {}", item);
+    }
+    // still crashes at third iteration
+}
+```
+```rust {9-13}
+// handling the None-case
+
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    loop {
+        let item: Option<char> = iter.next();
+        if item.is_none() {
+            break;
+        }
+        let item: char = item.unwrap();
+        println!("next item: {}", item);
+    }
+}
+```
+```rust {9-11|8-11,13}
+// let-else pattern matching
+
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    loop {
+        let Some(item) = iter.next() else {
+            break;
+        };
+        println!("next item: {}", item);
+    }
+}
+```
+```rust {8,10|6,8}
+// while-let
+
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    while let Some(item) = iter.next() {
+        println!("next item: {}", item);
+    }
+}
+```
+```rust {6}
+// for-loop
+
+fn main() {
+    let v = vec!['a', 'b'];
+
+    for item in v {
+        println!("next item: {}", item);
+    }
+}
+```
+````
+
+<Nr />
+
+---
+
+```yaml
+layout: two-cols
+class: text-center
+```
+
+# Before
+
+```rust {4-11,13}{lines:false}
+fn main() {
+    let v = vec!['a', 'b'];
+
+    let mut iter = v.into_iter();
+
+    loop {
+        let item = iter.next();
+        if item.is_none() {
+            break;
+        }
+        let item: char = item.unwrap();
+        println!("next item: {}", item);
+    }
+}
+```
+
+::right::
+
+# After
+
+```rust {4-11,13}{lines:false}
+fn main() {
+    let v = vec!['a', 'b'];
+
+
+
+    for item in v {
+
+
+
+
+
+        println!("next item: {}", item);
+    }
+}
+```
 
 <Nr />
 
