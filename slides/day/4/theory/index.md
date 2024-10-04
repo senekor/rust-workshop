@@ -44,3 +44,25 @@ src: ./3_dynamic_dispatch.md
 ---
 src: ./4_async.md
 ---
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Congratulations!
+
+<div style="font-size: 5em">🥳 🧑‍🎓 🥳</div>
+
+<div style="height: 1em"></div>
+
+## You now have a solid grasp of all the tools
+## available in Rust.
+
+<div style="height: 1em"></div>
+
+## It's time to start building stuff!
+
+<Nr />

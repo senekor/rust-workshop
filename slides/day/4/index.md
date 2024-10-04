@@ -19,6 +19,30 @@ src: ./theory/index.md
 ---
 
 ```yaml
+layout: center
+class: text-center
+```
+
+# Outlook Day 5 & 6
+
+It's all about practical skills now!
+<!-- <div style="height: 1em"></div> -->
+
+<div style="display: flex">
+  <div style="flex-grow: 1"></div>
+  <div style="text-align: left">
+    <li>libraries, APIs, documentation</li>
+    <li>automated testing and deployment</li>
+    <li>a variety of practice projects</li>
+  </div>
+  <div style="flex-grow: 1"></div>
+</div>
+
+<Nr />
+
+---
+
+```yaml
 layout: cover
 class: text-center
 ```
