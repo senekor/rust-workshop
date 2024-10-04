@@ -6,7 +6,7 @@ setup:
 
 # render slides on a dev server
 slides day:
-    cd slides && npm run slidev -- --port 304{{day}} day/{{day}}/index.md
+    cd slides && npm run slidev -- --port 304{{ day }} day/{{ day }}/index.md
 
 serve-paekli-rs:
     just paekli-rs/serve
@@ -21,7 +21,7 @@ demo:
     # setup helix config
     cp ~/.config/helix/config.toml helix-demo-config.toml
     sd 'kanagawa' 'catppuccin_latte' helix-demo-config.toml
-    
+
     cd demos
     demos=( $(ls) )
     choice="$(echo "${demos[@]}" | tr ' ' "\n" | fzf)"
