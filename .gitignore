@@ -5,3 +5,5 @@ Cargo.lock
 # pseudo-submodules
 exercises
 paekli-rs
+
+helix-demo-config.toml

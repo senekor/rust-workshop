@@ -18,6 +18,10 @@ demo:
     #!/bin/bash
     set -euo pipefail
 
+    # setup helix config
+    cp ~/.config/helix/config.toml helix-demo-config.toml
+    sd 'kanagawa' 'catppuccin_latte' helix-demo-config.toml
+    
     cd demos
     demos=( $(ls) )
     choice="$(echo "${demos[@]}" | tr ' ' "\n" | fzf)"

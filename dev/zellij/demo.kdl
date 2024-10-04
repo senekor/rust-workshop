@@ -6,7 +6,7 @@ layout {
 	tab name="helix" {
 		pane {
 			command "hx"
-			args "src/main.rs"
+			args "--config" "../../helix-demo-config.toml" "src/main.rs"
 		}
 	}
 
