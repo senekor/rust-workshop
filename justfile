@@ -17,6 +17,7 @@ zellij:
 demo:
     #!/bin/bash
     set -euo pipefail
+    set -m # job control
 
     # setup helix config
     cp ~/.config/helix/config.toml helix-demo-config.toml
@@ -27,4 +28,5 @@ demo:
     choice="$(echo "${demos[@]}" | tr ' ' "\n" | fzf)"
 
     cd $choice
-    alacritty --option 'font.size=18' --command zellij --layout ../../dev/zellij/demo.kdl
+    alacritty --command zellij --layout ../../dev/zellij/demo.kdl &
+    disown

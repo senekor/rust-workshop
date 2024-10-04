@@ -1,6 +1,5 @@
 //
-//
-//
+
 fn main() {
     //                heap-allocated String
     //                vvvvvvvvvvvvvvvvvvvvv
