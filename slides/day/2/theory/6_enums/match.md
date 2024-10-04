@@ -195,20 +195,38 @@ match option_num {
 ```yaml
 layout: center
 class: text-center
+clicks: 1
 ```
 
 # Matching on a Single Pattern
 
-```rust
+```rust {1,3-5|1,7-10}
 let maybe_num: Option<i32> = Some(10);
+
 if let Some(num) = maybe_num {
     println!("number detected: {}", num);
+}
+
+let Some(num) = maybe_num else {
+    println!("404: number not found");
+    return;
 }
 ```
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-75 left-77 w-39"
+    class="h-0.8 rounded absolute top-63 left-76 w-16"
+    v-click="[0,1]"
+></div>
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-87 left-76 w-9"
+    v-click="[1,2]"
+></div>
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-87 left-141 w-10"
+    v-click="[1,2]"
 ></div>
 
 <Nr />
@@ -231,7 +249,7 @@ while let Some(n) = numbers.pop() {
 
 <div
     style="background-color: red"
-    class="h-0.8 rounded absolute top-75 left-66 w-42"
+    class="h-0.8 rounded absolute top-75 left-66 w-22"
 ></div>
 
 <Nr />
