@@ -45,11 +45,15 @@ class: text-center
 
 # `loop`
 
-`continue` and `break` work as expected
-
 ```rust
 loop {
     println!("computer go brrr");
+
+    if done() {
+        break;
+    } else {
+        continue;
+    }
 }
 ```
 
