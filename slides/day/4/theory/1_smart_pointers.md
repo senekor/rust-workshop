@@ -173,10 +173,10 @@ struct NewsWebsite {
 }
 impl NewsWebsite {
     fn read_article(&self) {
-        if *self.free_articles_read.borrow() >= 2 {
+        if *RefCell::borrow(&self.free_articles_read) >= 2 {
             panic!("You have used up your free articles quota!")
         }
-        *self.free_articles_read.borrow_mut() += 1;
+        *RefCell::borrow_mut(&self.free_articles_read) += 1;
     }
 }
 fn main() {
@@ -201,8 +201,8 @@ class: text-center
 ```rust
 fn main() {
     let x = RefCell::new(1);
-    let r1 = x.borrow_mut();
-    let r2 = x.borrow(); // panic! 😱 (instead of compiler error)
+    let r1 = RefCell::borrow_mut(&x);
+    let r2 = RefCell::borrow(&x); // panic! 😱 (instead of compiler error)
 }
 ```
 
@@ -224,8 +224,8 @@ fn main() {
     let r1 = Rc::clone(&x);
     let r2 = Rc::clone(&x);
 
-    *r1.borrow_mut() += 1;
-    *r2.borrow_mut() += 1;
+    *RefCell::borrow_mut(&r1) += 1;
+    *RefCell::borrow_mut(&r2) += 1;
 
     println!("{}", x.borrow()); // 3
 }
@@ -272,7 +272,7 @@ fn main() {
         value: PrintWhenDropped('b'),
         neighbor: Some(Rc::clone(&a)),
     }));
-    a.borrow_mut().neighbor.replace(Rc::clone(&b)); // reference cycle
+    RefCell::borrow_mut(&a).neighbor.replace(Rc::clone(&b)); // reference cycle
 }
 ```
 

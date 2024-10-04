@@ -1,6 +1,6 @@
 #![allow(unused)]
 
-use std::{borrow::Borrow, cell::RefCell, collections::btree_map, rc::Rc};
+use std::{cell::RefCell, collections::btree_map, rc::Rc};
 
 struct PrintWhenDropped(char);
 
@@ -29,16 +29,12 @@ fn main() {
     // - Fix it with weak references (`Rc::downgrade`).
     // - show usage of weak reference
     //
-    // a.borrow_mut().neighbor.replace(Rc::clone(&b));
+    // RefCell::borrow_mut(&a).neighbor.replace(Rc::clone(&b));
 
-    let temp = Rc::borrow(&a);
-    let temp = RefCell::borrow(temp);
-    match &temp.neighbor {
+    match &RefCell::borrow(&a).neighbor {
         Some(neighbor) => {
-            let temp = Rc::borrow(neighbor);
-            let temp = RefCell::borrow(temp);
-            println!("the neighbor of a is {}", temp.value.0);
+            println!("the neighbor of a is {}", RefCell::borrow(neighbor).value.0);
         }
         None => println!("a has no neighbor"),
-    }
+    };
 }
