@@ -1,0 +1,55 @@
+theme = "modus_operandi"
+
+[editor]
+scrolloff = 3
+line-number = "absolute"
+bufferline = "multiple"
+mouse = false
+true-color = true
+cursorline = true
+cursorcolumn = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+esc = ":update"
+C-h = "save_selection"
+j = "flip_selections"
+h = "jump_backward"
+H = "jump_forward"
+k = ":buffer-close"
+K = ":buffer-close-others"
+S-left = "select_prev_sibling"
+S-right = "select_next_sibling"
+S-up = "expand_selection"
+S-down = "shrink_selection"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.normal.space.w]
+h = "hsplit"
+p = "rotate_view_reverse"
+
+[keys.select]
+j = "flip_selections"
+
+[keys.insert]
+esc = [
+    "normal_mode",
+    ":update",
+]
+C-h = [
+    "commit_undo_checkpoint",
+    ":update",
+]
