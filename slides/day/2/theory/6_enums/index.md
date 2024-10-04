@@ -143,7 +143,7 @@ class: text-center
 <div style="display: flex">
   <div style="flex-grow: 1"></div>
   <div style="text-align: left">
-    The C pointer mixes two unrelated concepts:
+    The C-style pointer mixes two unrelated concepts:
     <li>Indirection</li>
     <li>Optionality (something or nothing)</li>
   </div>
@@ -164,14 +164,17 @@ class: text-center
   <div style="text-align: center">
     Rust:
     <table>
-      <tr>
-        <td>Indirection:</td>
-        <td>Reference <code>&</code></td>
-      </tr>
-      <tr>
-        <td>Optionality:</td>
-        <td>❓</td>
-      </tr>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td>Indirection:</td>
+          <td>Reference <code>&</code></td>
+        </tr>
+        <tr>
+          <td>Optionality:</td>
+          <td>❓</td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div style="flex-grow: 1"></div>
