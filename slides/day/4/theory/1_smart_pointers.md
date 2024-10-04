@@ -148,6 +148,13 @@ fn main() {
 } // ref count: 0 (shared_node gets dropped)
 ```
 
+<img src="/graph.png" style="width: 12em; position: absolute; top: 4em; left: 40em" />
+
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-97 left-139 w-22"
+></div>
+
 <Nr />
 
 ---
@@ -159,21 +166,24 @@ class: text-center
 
 # Interior Mutability
 
-```rust
-struct SecretAgent {
-    collected_intel: RefCell<Option<&'static str>>,
+```rust {none|1-4|6-11|14-17|all}
+#[derive(Default)]
+struct NewsWebsite {
+    free_articles_read: RefCell<usize>,
 }
-impl SecretAgent {
-    /// This is safe because `self` is immutable 😇
-    fn tell_secret(&self, info: &'static str) {
-        *self.collected_intel.borrow_mut() = Some(info); // muahaha I lied 😈
+impl NewsWebsite {
+    fn read_article(&self) {
+        if *self.free_articles_read.borrow() >= 2 {
+            panic!("You have used up your free articles quota!")
+        }
+        *self.free_articles_read.borrow_mut() += 1;
     }
 }
 fn main() {
-    let trustworthy_person = SecretAgent { collected_intel: RefCell::new(None) };
-
-    // safe because `tell_secret` takes an immutable reference (right?)
-    trustworthy_person.tell_secret("Stacey cheated on her boyfriend 🤫");
+    let news_website = NewsWebsite::default();
+    news_website.read_article();
+    news_website.read_article();
+    news_website.read_article(); // panic! gotta buy a subscription...
 }
 ```
 

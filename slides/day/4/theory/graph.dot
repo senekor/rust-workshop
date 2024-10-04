@@ -1,0 +1,10 @@
+digraph G {
+    bgcolor="#00000000"
+    node [style=filled, fillcolor=white]
+    "12" [fillcolor=orange]
+
+    "12" -> "Nil"
+    shared_node -> "12"
+    "24" -> "12"
+    other_node -> "24"
+}
