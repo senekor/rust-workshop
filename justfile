@@ -20,8 +20,11 @@ demo:
     set -m # job control
 
     # setup helix config
-    cp ~/.config/helix/config.toml helix-demo-config.toml
-    sd 'kanagawa' 'github_light_high_contrast' helix-demo-config.toml
+    nu -c "open ~/.config/helix/config.toml |
+        upsert theme 'github_light_high_contrast' |
+        upsert editor.cursorline true |
+        upsert editor.cursorcolumn true |
+        save --force helix-demo-config.toml"
 
     cd demos
     demos=( $(ls) )
