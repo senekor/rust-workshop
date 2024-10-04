@@ -86,7 +86,7 @@ some_t *foo(some_t *p);
     <li>Does the function only read from the pointer or does it write to it?</li>
     <li>Can the return value alias the argument?</li>
     <li>Where is the documentation?</li>
-    <li>Please let there be documentation.</li>
+    <li>Please let there be documentation...</li>
   </div>
   <div style="flex-grow: 1"></div>
 </div>
