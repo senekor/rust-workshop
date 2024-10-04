@@ -91,7 +91,7 @@ class: text-center
 ```
 
 ```rust
-use tokio::{join, time};
+use tokio::time;
 
 async fn do_stuff(name: &str) {
     println!("{name:>5}: He...");
@@ -103,7 +103,9 @@ async fn do_stuff(name: &str) {
 
 #[tokio::main(worker_threads = 1)]
 async fn main() {
-    join!(do_stuff("Alice"), do_stuff("Bob"));
+    let alice_task = tokio::spawn(do_stuff("Alice"));
+    do_stuff("Bob").await;
+    alice_task.await.unwrap();
 }
 ```
 

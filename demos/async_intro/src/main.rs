@@ -2,7 +2,7 @@
 //
 // Note that we need a dependency for the runtime.
 //  vvvvv
-use tokio::{join, runtime, time};
+use tokio::{runtime, time};
 
 async fn do_stuff(name: &str) {
     println!("{name:>5}: He...");
@@ -18,10 +18,13 @@ fn main() {
         .build()
         .unwrap();
 
-    let alice_task = do_stuff("Alice");
-    let bob_task = do_stuff("Bob");
+    let alice_task = rt.spawn(do_stuff("Alice"));
+    let bob_task = rt.spawn(do_stuff("Bob"));
 
-    let both_tasks = async { join!(alice_task, bob_task) };
+    let both_tasks = async {
+        alice_task.await.unwrap();
+        bob_task.await.unwrap();
+    };
 
-    let _ = rt.block_on(both_tasks);
+    rt.block_on(both_tasks);
 }
