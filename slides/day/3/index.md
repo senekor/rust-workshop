@@ -37,59 +37,6 @@ You should still read the book at your own pace if you're serious about learning
 ---
 
 ```yaml
-layout: cover
-class: text-center
-```
-
-# Outlook
-
-|       |                       |                                                           |
-| :---- | --------------------: | :-------------------------------------------------------- |
-| Day 4 | The Rust Ecosystem 📦 | libraries, documentation, tools, news, CI/CD              |
-| Day 5 | Shippable Projects 🚀 | CLI tools, web APIs, python modules, WASM apps            |
-| Day 6 |            Wrap-Up ✅ | finish projects, questions, feedback, self-congratulation |
-
-<Nr />
-
----
-
-```yaml
-layout: cover
-class: text-center
-```
-
-# Performance Challenge
-
-<div style="display: flex">
-  <div style="flex-grow: 1"></div>
-  <div style="text-align: left">
-    <li>3 exercises to maximize performance, a new one unlocks every Friday.</li>
-    <li>A benchmark determines the 3 winners who will receive a prize each.</li>
-    <li>The deadline for all 3 submissions is the <b>3rd of April</b>.</li>
-  </div>
-  <div style="flex-grow: 1"></div>
-</div>
-
-<div class="h-8"></div>
-
-<div class="flex justify-center">
-<img
-  style="height: 160px"
-  src="/clark.jpg"
-/>
-<div class="w-8"></div>
-<div class="flex flex-col">
-  <div class="flex-1"></div>
-  <a class="text-8" href="https://challenge.buenzli.dev">challenge.buenzli.dev</a>
-  <div class="flex-1"></div>
-</div>
-</div>
-
-<Nr />
-
----
-
-```yaml
 layout: center
 class: text-center
 ```
