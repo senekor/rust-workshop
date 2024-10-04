@@ -198,29 +198,40 @@ fn main() {
 ```yaml
 layout: center
 class: text-center
+clicks: 3
 ```
 
-# Many Ways to Iterate
+# Iteration and Borrowing
 
-```rust {1|3-5|7-11|13-17|all}
+```rust {1|3-6|8-11|13-16}
 let nums = vec![1, 2, 3];
 
-// take ownership of items, destroy collection.
-let iter = nums.into_iter();
-for elem in nums {}
+for elem: i32 in nums {
+    // elem is deallocated
+}
+// nums is destroyed
 
-// iterate over immutable references, leave collection intact.
-let iter = nums.iter();
-let iter = (&nums).into_iter();
-for elem in nums.iter() {}
-for elem in &nums {}
+for elem: &i32 in nums.iter() {
+    // can only read from elem
+}
+// nums is still intact
 
-// iterate over mutable references, modify collection.
-let iter = nums.iter_mut();
-let iter = (&mut nums).into_iter();
-for elem in nums.iter_mut() {}
-for elem in &mut nums {}
+for elem: &mut i32 in nums.iter_mut() {
+    // can modify value of elem
+}
+// nums is still intact
 ```
+
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-75 left-135 w-15"
+    v-click="[2,3]"
+></div>
+<div
+    style="background-color: red"
+    class="h-0.8 rounded absolute top-105 left-145 w-25"
+    v-click="[3,4]"
+></div>
 
 <Nr />
 
