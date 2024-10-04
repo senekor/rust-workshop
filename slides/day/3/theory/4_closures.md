@@ -24,7 +24,7 @@ Closures are inspired by functional programming, where anonymous functions are o
 at runtime and passed around as argumets to and return values from other functions.\
 They are sometimes called _lambdas_ by other languages.
 
-Unlike functions, closures can capture values from the scope in which they’re defined.
+Unlike regular functions, closures can capture values from the scope in which they were defined.
 
 <Nr />
 
