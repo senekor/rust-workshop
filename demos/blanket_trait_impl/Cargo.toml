@@ -1,0 +1,9 @@
+[package]
+name = "blanket_trait_impl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lints.clippy]
+clone_on_copy = "allow"

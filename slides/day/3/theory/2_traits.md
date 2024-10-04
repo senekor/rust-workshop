@@ -223,17 +223,7 @@ class: text-center
 
 # Blanket Implementations
 
-```rust
-trait ToAngryString {
-    fn to_angry_string(&self) -> String;
-}
-
-impl<T: ToString> ToAngryString for T {
-    fn to_angry_string(&self) -> String {
-        self.to_string().to_uppercase()
-    }
-}
-```
+demo
 
 <Nr />
 
