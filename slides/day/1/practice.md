@@ -100,6 +100,32 @@ class: text-center
 
 ```yaml
 layout: center
+class: text-center
+```
+
+# Initialize, compile and run a Rust project
+
+```
+$ cargo new hello
+    Creating binary (application) `hello` package
+
+$ cd hello
+$ ls --tree
+.
+├── Cargo.toml
+└── src
+   └── main.rs
+
+$ cargo run
+Hello, world!
+```
+
+<Nr />
+
+---
+
+```yaml
+layout: center
 ```
 
 # Visual Studio Code Extensions
