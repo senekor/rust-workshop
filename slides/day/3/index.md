@@ -19,24 +19,6 @@ src: ./theory/index.md
 ---
 
 ```yaml
-layout: cover
-```
-
-# What I left out from the book
-
-- Things that are easy to pick up along the way.\
-  (counter example: turbo fish `::<>` is impossible to google)
-- Topics you're unlikely to run into at the start of your Rust journey.\
-  (smart pointers, interior mutability, dynamic dispatch,\
-  concurrency (`Send`, `Sync`), `unsafe` Rust, macros...)
-
-You should still read the book at your own pace if you're serious about learning Rust!
-
-<Nr />
-
----
-
-```yaml
 layout: center
 class: text-center
 ```
