@@ -143,3 +143,44 @@ let x = 5;
 ```
 
 <Nr />
+
+---
+
+```yaml
+layout: center
+class: text-center
+transition: none
+```
+
+# Shadowing
+
+```rust {1-6}
+let x: i32 = 5;
+{
+    let x = 6;
+    // x == 6
+}
+// x == 5
+let x: &str = "five";
+```
+
+<!-- Do not remove the shadowing slides - shadowing appears in rustlings -->
+
+---
+
+```yaml
+layout: center
+class: text-center
+```
+
+# Shadowing
+
+```rust {1,7}
+let x: i32 = 5;
+{
+    let x = 6;
+    // x == 6
+}
+// x == 5
+let x: &str = "five";
+```
