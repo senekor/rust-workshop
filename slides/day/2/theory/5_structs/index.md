@@ -62,8 +62,8 @@ let rect = Rectangle {
 let wide_rect = Rectangle {
     width: 400,
 // [!code word:..:1]
-    ..rect, // useful with many fields
-}
+    ..rect // useful with many fields
+};
 ```
 
 <Nr />
