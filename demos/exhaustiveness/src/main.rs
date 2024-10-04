@@ -1,7 +1,5 @@
 //
 
-#![allow(unused)]
-
 enum Weekday {
     Monday,
     Tuesday,

@@ -1,7 +1,5 @@
 //
 
-#![allow(unused)]
-
 #[derive(Debug)]
 enum InesEmployee {
     WiAssis {

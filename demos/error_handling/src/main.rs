@@ -1,7 +1,5 @@
 //
 
-#![allow(unused)]
-
 fn main() {
     let bad_separator = "12,8";
     let bad_length = "-12x8";
