@@ -109,7 +109,7 @@ foo
 </div>
 
 <Arrow
-    x1="540" x2="420" y1="313" y2="313"
+    x1="540" x2="440" y1="313" y2="313"
     class="text-lime-500"
 ></Arrow>
 <div class="text-lime-500 absolute top-75 left-138 w-64 h-32">
