@@ -113,16 +113,16 @@ This topic works well for many possible combinations of clients and servers.
 basic, CLI-only example:
 
 ```txt {lines: false}
-$ paeckli-cli receive
-I don't have any paeckli for you! I'm sorry 😢
+$ paekli-cli receive
+I don't have any paekli for you! I'm sorry 😢
 
-$ paeckli-cli send --express "Ferris Plushie 🦀"
+$ paekli-cli send --express "Ferris Plushie 🦀"
 
-$ paeckli-cli receive
+$ paekli-cli receive
 { "content": "Ferris Plushie 🦀", "express": true }
 ```
 
-Now imagine you send a paeckli via CLI and it automatically\
+Now imagine you send a paekli via CLI and it automatically\
 arrives in the web app, pushed via websocket 🤯
 
 <Nr />
@@ -136,7 +136,7 @@ class: text-center
 
 # Practice 🧑‍💻
 
-## [`rust-exercises/day_4/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
+## [`rust-exercises/day_5/README.md`](https://github.com/senekor/rust-exercises/blob/main/day_4/README.md#day-4)
 
 <div style="height: 3em"></div>
 
