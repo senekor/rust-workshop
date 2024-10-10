@@ -163,7 +163,7 @@ class: text-center
             LED-Matrix
           </td>
           <td>
-            <a href="https://github.com/senekor/led-matrix-rs">github.com/senekor/led-matrix-rs</a>
+            <a href="https://github.zhaw.ch/senk/led-matrix-rs-template">github.zhaw.ch/senk/led-matrix-rs-template</a>
           </td>
         </tr>
       </tbody>
