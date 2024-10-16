@@ -21,7 +21,6 @@ book chapters 15, 16, 17 & async
       <li>Concurrency & Parallelism</li>
       <li>Dynamic Dispatch</li>
       <li>Asynchronous Programming</li>
-      <li>TODO Patterns ?</li>
     </ul>
   </div>
   <div style="flex-grow: 1"></div>
